@@ -1,0 +1,93 @@
+[
+    {
+        name: "+1 All-Purpose Tool",
+        source: "TCE",
+        page: 119,
+        rarity: "uncommon",
+        reqAttune: "by an artificer",
+        reqAttuneTags: [
+            {
+                class: "artificer|tce"
+            }
+        ],
+        wondrous: true,
+        bonusSpellAttack: "+1",
+        bonusSpellSaveDc: "+1",
+        focus: [
+            "Artificer"
+        ],
+        entries: [
+            "This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan's tool of your choice (see the \"Equipment\" chapter in the {@book Player's Handbook|PHB} for a list of {@item artisan's tools|PHB}). Whatever form the tool takes, you are proficient with it.",
+            "While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.",
+            "As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don't know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can't be used again until the next dawn."
+        ]
+    },
+    {
+        name: "+1 Amulet of the Devout",
+        source: "TCE",
+        page: 119,
+        rarity: "uncommon",
+        reqAttune: "by a cleric or paladin",
+        reqAttuneTags: [
+            {
+                class: "cleric"
+            },
+            {
+                class: "paladin"
+            }
+        ],
+        wondrous: true,
+        weight: 1,
+        bonusSpellAttack: "+1",
+        bonusSpellSaveDc: "+1",
+        entries: [
+            "This amulet bears the symbol of a deity inlaid with precious stones or metals. While you wear the holy symbol, you gain a +1 bonus to spell attack rolls and the saving throw DCs of your spells.",
+            "While you wear this amulet, you can use your Channel Divinity feature without expending one of the feature's uses. Once this property is used, it can't be used again until the next dawn."
+        ]
+    },
+    {
+        name: "+1 Arcane Grimoire",
+        source: "TCE",
+        page: 120,
+        rarity: "uncommon",
+        reqAttune: "by a wizard",
+        reqAttuneTags: [
+            {
+                class: "wizard"
+            }
+        ],
+        wondrous: true,
+        weight: 3,
+        bonusSpellAttack: "+1",
+        bonusSpellSaveDc: "+1",
+        focus: [
+            "Wizard"
+        ],
+        entries: [
+            "While you are holding this leather-bound book, you can use it as a spellcasting focus for your wizard spells, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your wizard spells.",
+            "You can use this book as a spellbook. In addition, when you use your Arcane Recovery feature, you can increase the number of spell slot levels you regain by 1."
+        ]
+    },
+    {
+        name: "+1 Bloodwell Vial",
+        source: "TCE",
+        page: 122,
+        rarity: "uncommon",
+        reqAttune: "by a sorcerer",
+        reqAttuneTags: [
+            {
+                class: "sorcerer"
+            }
+        ],
+        wondrous: true,
+        bonusSpellAttack: "+1",
+        bonusSpellSaveDc: "+1",
+        focus: [
+            "Sorcerer"
+        ],
+        entries: [
+            "To attune to this vial, you must place a few drops of your blood into it. The vial can't be opened while your attunement to it lasts. If your attunement to the vial ends, the contained blood turns to ash. You can use the vial as a spellcasting focus for your spells while wearing or holding it, and you gain a +1 bonus to spell attack rolls and to the saving throw DCs of your sorcerer spells.",
+            "In addition, when you roll any Hit Dice to recover hit points while you are carrying the vial, you can regain 5 sorcery points. This property of the vial can't be used again until the next dawn."
+        ]
+    }
+]

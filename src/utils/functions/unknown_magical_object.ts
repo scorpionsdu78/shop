@@ -1,0 +1,971 @@
+import type {Item} from '../../models/item.ts'
+
+export default (): Promise<Item[]> => {
+  return Promise.resolve([
+    {
+      name: "+2 Studded Leather Armor of Acid Resistance",
+      source: "TDCSR",
+      page: 271,
+      type: "LA",
+      resist: [
+        "acid"
+      ],
+      tier: "major",
+      rarity: "unknown (magic)",
+      reqAttune: true,
+      weight: 13,
+      ac: 12,
+      bonusAc: "+2",
+      entries: [
+        "You have a +2 bonus to AC while wearing this armor.",
+        "You have resistance to acid damage while you wear this armor.",
+        "{@note Worn by {@creature Scanlan Shorthalt|TDCSR}.}"
+      ]
+    },
+    {
+      name: "+2 Studded White Dragon Leather Armor of Cold Resistance",
+      source: "TDCSR",
+      page: 267,
+      type: "LA",
+      resist: [
+        "cold"
+      ],
+      tier: "major",
+      rarity: "unknown (magic)",
+      reqAttune: true,
+      weight: 13,
+      ac: 12,
+      bonusAc: "+2",
+      entries: [
+        "You have a +2 bonus to AC while wearing this armor.",
+        "You have resistance to cold damage while you wear this armor.",
+        "{@note Worn by {@creature Vex'ahlia|TDCSR}.}"
+      ]
+    },
+    {
+      name: "Arcanaloth's Music Box",
+      source: "ToA",
+      page: 188,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      value: 75000,
+      entries: [
+        "This music box is made of dark wood with gold filigree. Each of its five sides is sculpted with the image of a horned woman playing a different {@item musical instrument|PHB}: a {@item dulcimer|PHB}, a {@item flute|PHB}, a harp, a {@item lyre|PHB}, and a {@item viol|PHB}. While touching the box, you can use an action to make it play music featuring one of the instruments shown, which can be heard up to 60 feet away. You can also use an action to stop the music."
+      ]
+    },
+    {
+      name: "Azuremite",
+      source: "TDCSR",
+      page: 141,
+      type: "IDG|TDCSR",
+      rarity: "unknown (magic)",
+      entries: [
+        "The ruins of this sprawling city are now known as the Crystalfen Caverns. These caves are home to scattered veins of {@item azuremite|TDCSR}, a gorgeous blue crystal that formed from millennia of psychic energies existing near element deposits. Curious explorers who discovered the veins found that, when mined and refined into a fine dust, the {@item azuremite|TDCSR} powder is a strong mind-altering agent and induces temporary visions and other psychic phenomena.",
+        "While a number of small, isolated entrances to this labyrinth of tunnels have been discovered and adventuring parties have attempted to chart the mines, the caverns are so vast and deep that either they gave up for fear of becoming lost, or they were assailed by the terrible denizens of the caverns, never to return. Most who now brave the caverns are foolish treasure hunters or criminals seeking to mine more {@item azuremite|TDCSR} to sell on the black market."
+      ],
+      miscTags: [
+        "CNS"
+      ]
+    },
+    {
+      name: "Bob",
+      source: "ToA",
+      page: 89,
+      baseItem: "battleaxe|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 4,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "This +1 battleaxe floats on water and other liquids, and grants its bearer advantage on Strength ({@skill Athletics}) checks made to swim."
+      ]
+    },
+    {
+      name: "Candle Mace",
+      source: "BGDIA",
+      page: 39,
+      baseItem: "mace|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 4,
+      weaponCategory: "simple",
+      dmg1: "1d6",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      entries: [
+        "You have a +1 bonus to attack and damage rolls made with this magic weapon. The head of this mace sheds bright light in a 5-foot-radius and dim light for an additional 5 feet. When you wield this mace, you can extinguish or ignite its light as an action."
+      ],
+      light: [
+        {
+          bright: 5,
+          dim: 10
+        }
+      ]
+    },
+    {
+      name: "Circlet of Wisdom",
+      source: "TDCSR",
+      page: 263,
+      rarity: "unknown (magic)",
+      wondrous: true,
+      ability: {
+        wis: 2
+      },
+      entries: [
+        "{@note Worn by {@creature Keyleth, Voice of the Tempest|TDCSR}, increases her Wisdom score by +2.}"
+      ]
+    },
+    {
+      name: "Clockwork Dog",
+      source: "SKT",
+      page: 44,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "This Tiny clockwork dog made of copper and tin comes with a copper wind-up key. As an action, you can use the key to wind the dog, after which it follows you for 12 hours. At the end of that duration, the clockwork dog stops until wound again. The dog has AC 5, 1 hit point, and a walking speed of 30 feet."
+      ]
+    },
+    {
+      name: "Command Amulet",
+      source: "XMM",
+      page: 277,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      weight: 1,
+      entries: [
+        "Each {@creature Shield Guardian|XMM} is magically bound to an amulet. While the guardian and its amulet are on the same plane of existence, the amulet's wearer can telepathically call the guardian to travel to it, and the guardian knows the distance and direction to the amulet. If the guardian is within 60 feet of the amulet's wearer, half of any damage the wearer takes (round up) is transferred to the guardian.",
+        "A shield guardian's command amulet might be passed down through a magic-using society or family for generations."
+      ]
+    },
+    {
+      name: "Conch of Safe Rest",
+      source: "TTP",
+      page: 17,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      weight: 2,
+      entries: [
+        "You can use an action to blow this pearlescent conch like a {@item horn|PHB}, creating an effect identical with that of a {@spell Leomund's tiny hut} spell. The conch disappears once the spell takes effect. The effect ends if you leave the spell's area."
+      ]
+    },
+    {
+      name: "Crusader's Shortsword",
+      alias: [
+        "Lost Sword"
+      ],
+      source: "CoS",
+      page: 81,
+      baseItem: "shortsword|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      reqAttune: true,
+      sentient: true,
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "P",
+      bonusWeapon: "+1",
+      entries: [
+        "The Crusader's Shortsword is a sentient lawful good {@item +1 shortsword} (Intelligence 11, Wisdom 13, Charisma 13). It has hearing and normal vision out to a range of 120 feet. It communicates by transmitting emotion to the creature carrying or wielding it.",
+        "The sword's purpose is to fight evil. The sword has the following additional properties:",
+        {
+          type: "list",
+          items: [
+            "The sword continually sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Only by destroying the sword can this light be extinguished.",
+            "A lawful good creature can attune itself to the sword in 1 minute.",
+            "While attuned to the weapon, the sword's wielder can use the sword to cast the {@spell crusader's mantle} spell. Once used, this property of the sword can't be used again until the next dawn."
+          ]
+        }
+      ],
+      light: [
+        {
+          bright: 15,
+          dim: 30
+        }
+      ],
+      attachedSpells: [
+        "crusader's mantle"
+      ]
+    },
+    {
+      name: "Dagger of Guitar Solos",
+      source: "WDMM",
+      page: 228,
+      baseItem: "dagger|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 1,
+      value: 75000,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      entries: [
+        "This drow-made dagger is decorated with silver web filigree. It magically plays a fragment of a guitar solo when struck or used to strike a foe."
+      ]
+    },
+    {
+      name: "Dancing Monkey Fruit",
+      source: "ToA",
+      page: 205,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      value: 500,
+      entries: [
+        "This rare magical fruit produces enough juice to fill a vial. Any humanoid that eats a dancing monkey fruit or drinks its juice must succeed on a {@dc 14} Constitution saving throw or begin a comic dance that lasts for 1 minute. Humanoids that can't be {@condition poisoned} are immune to this magical effect.",
+        "The dancer must use all its movement to dance without leaving its space and has disadvantage on attack rolls and Dexterity saving throws, and other creatures have advantage on attack rolls against it. Each time it takes damage, the dancer can repeat the saving throw, ending the effect on itself on a success. When the dancing effect ends, the humanoid suffers the {@condition poisoned} condition for 1 hour."
+      ]
+    },
+    {
+      name: "Dowsing Dagger",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "A curved jade blade fashioned by the River Heralds, this {@item +1 dagger} can detect the presence of fresh water within 200 feet of the wielder."
+      ]
+    },
+    {
+      name: "Draconic Longsword",
+      source: "ToA",
+      page: 173,
+      baseItem: "longsword|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      entries: [
+        "This longsword has a dragon-shaped hilt. While you carry it, you gain the ability to speak and understand the Draconic language."
+      ]
+    },
+    {
+      name: "Dragon Sensing Longsword",
+      source: "PotA",
+      page: 90,
+      baseItem: "longsword|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "This +1 longsword is made of dragon bone and with a dragon-leather grip. It has rubies in its pommel and hilt. The sword grows warm and the rubies glow slightly when the sword is within 120 feet of a dragon."
+      ]
+    },
+    {
+      name: "Dragon Thighbone Club",
+      source: "SKT",
+      page: 105,
+      baseItem: "greatclub|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      reqAttune: "optional",
+      weight: 250,
+      weaponCategory: "simple",
+      property: [
+        "2H"
+      ],
+      dmg1: "1d8",
+      dmgType: "B",
+      entries: [
+        "This red dragon's thighbone is 14 feet long, 250 lbs, and is wrapped in old leather, suggesting that it was once used as a giant's greatclub.",
+        "When you hit a creature of the dragon type with this weapon, it deals an extra {@damage 2d8} bludgeoning damage.",
+        "If you attune to the greatclub, it magically shrinks to a size that you can wield effectively."
+      ]
+    },
+    {
+      name: "Dragongleam",
+      source: "HotDQ",
+      page: 84,
+      otherSources: [
+        {
+          source: "ToD",
+          page: 84
+        }
+      ],
+      baseItem: "spear|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      charges: 10,
+      entries: [
+        "This spear is enchanted with 10 charges of a {@spell daylight} spell for use in twilight or dark forest underbrush. The command phrase is \"Tiamat's eyes shine,\" written in Draconic runes on the spear's crossguard."
+      ],
+      attachedSpells: [
+        "daylight"
+      ]
+    },
+    {
+      name: "Faerie Dust",
+      source: "SKT",
+      page: 35,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "A pinch of this dust can substitute for the material components of any enchantment spell of 3rd level or lower. If a pinch of faerie dust is sprinkled on a creature, roll percentile dice and consult the Faerie Dust table to determine the effect.",
+        {
+          type: "table",
+          caption: "Faerie Dust",
+          colLabels: [
+            "d100",
+            "Magical Effect"
+          ],
+          colStyles: [
+            "col-2 text-center",
+            "col-10"
+          ],
+          rows: [
+            [
+              "01-70",
+              "The creature sprinkled with dust gains a flying speed of 60 feet for 10 minutes."
+            ],
+            [
+              "71-80",
+              "The creature sprinkled with dust must succeed on a {@dc 11} Constitution saving throw or fall {@condition unconscious} for 1 minute. The creature awakens if it takes damage or if it is shaken or slapped as an action."
+            ],
+            [
+              "81-90",
+              "The creature sprinkled with dust must succeed on a {@dc 11} Wisdom saving throw or be affected by a {@spell confusion} spell."
+            ],
+            [
+              "91-00",
+              "The creature sprinkled with dust becomes {@condition invisible} for 1 hour. Any equipment it is wearing or carrying is {@condition invisible} as long as it is on the creature's person. The effect on the creature ends if it attacks, deals any damage, or casts a spell."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      name: "Falkir's Helm of Pigheadedness",
+      source: "WDMM",
+      page: 141,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      curse: true,
+      entries: [
+        "This steel helm is shaped like the head of a boar. Once you don the helm, it can't be removed until you die or until a {@spell remove curse} spell or similar magic is cast on it. If you wear the helm and are a humanoid, you gain the following flaw until the helm is removed: \"I'm exceedingly stubborn and think I'm right all the time.\" (This flaw supersedes any conflicting flaw.)"
+      ]
+    },
+    {
+      name: "Flame Tongue Shortsword of Greed",
+      source: "TftYP",
+      page: 179,
+      baseItem: "shortsword|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      reqAttune: true,
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "P",
+      entries: [
+        "You can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 40-foot radius and dim light for an additional 40 feet. While the sword is ablaze, it deals an extra {@damage 2d6} fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
+        "While you are attuned to this sword you can use an action to mentally command it to detect gems and jewels. You learn the kind and number of such objects within 60 feet of the sword."
+      ],
+      light: [
+        {
+          bright: 40,
+          dim: 80
+        }
+      ]
+    },
+    {
+      name: "Gravenhollow Compass Ring",
+      source: "OotA",
+      page: 141,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "This gold ring is fitted with a star ruby worth 1,000 gp. A {@spell detect magic} spell reveals that the gem radiates a faint aura of divination magic. The gem's star-shaped core is a magical compass that guides the ring's wearer along the safest, shortest route to Gravenhollow."
+      ]
+    },
+    {
+      name: "Green Copper Ewer",
+      source: "CoS",
+      page: 188,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "Any poisonous liquid poured into the ewer is instantly transformed into an equal amount of sweet wine. Furthermore, a creature that grasps the ewer's handle can command the ewer to fill with 1 gallon of wine, and it can't produce more wine until the next dawn."
+      ]
+    },
+    {
+      name: "Hag Eye",
+      source: "MM",
+      page: 177,
+      reprintedAs: [
+        "Hag Eye|XDMG"
+      ],
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "A hag coven can craft a magic item called a hag eye, which is made from a real eye coated in varnish and often fitted to a pendant or other wearable item. The hag eye is usually entrusted to a minion for safekeeping and transport. A hag in the coven can take an action to see what the hag eye sees if the hag eye is on the same plane of existence. A hag eye has AC 10, 1 hit point, and {@sense darkvision} with a radius of 60 feet. If it is destroyed, each coven member takes {@damage 3d10} psychic damage and is {@condition blinded} for 24 hours.",
+        "A hag coven can have only one hag eye at a time, and creating a new one requires all three members of the coven to perform a ritual. The ritual takes 1 hour, and the hags can't perform it while {@condition blinded}. During the ritual, if the hags take any action other than performing the ritual, they must start over."
+      ]
+    },
+    {
+      name: "Hew",
+      source: "LMoP",
+      page: 33,
+      reprintedAs: [
+        "Hew|PaBTSO"
+      ],
+      baseItem: "battleaxe|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 4,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "This +1 battleaxe deals maximum damage when the wielder hits a plant creature or an object made of wood. The axe's creator was a dwarf smith who feuded with the dryads of a forest where he cut firewood. Whoever carries the axe feels uneasy whenever he or she travels through a forest."
+      ]
+    },
+    {
+      name: "Horizon Puzzle Cube",
+      source: "BGG",
+      page: 86,
+      rarity: "unknown (magic)",
+      wondrous: true,
+      entries: [
+        "A Horizon puzzle cube is an 8-inch magical cube made of gold, iron, crystal, and copper, and it is worth 5,000 gp to a sage or collector. A functioning puzzle cube can be solved with 30 minutes of work and a successful {@dc 25} Intelligence ({@skill Investigation}) check. When the cube is solved, a 30-foot-diameter portal appears before the creature who solved the cube, leading to the northeastern platform of Horizon's Edge. The portal is two-way and remains open for 10 minutes or until a creature uses an action to change the puzzle's configuration. Puzzle cubes don't function while on Horizon's Edge, but a device somewhere in the demiplane allows a cube to function in reverse while the cube is fitted into it."
+      ]
+    },
+    {
+      name: "Jade Serpent Staff",
+      source: "WDMM",
+      page: 92,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "This staff is broken into five pieces, each worth 100 gp for the jade alone. The entire staff can be restored with {@spell mending} cantrips; each casting of the spell repairs one break in the staff. If the staff is made whole, it transforms from an object into an animated jade serpent that has the statistics of a {@creature giant poisonous snake}, with these changes:",
+        {
+          type: "list",
+          items: [
+            "The serpent is a construct that understands and obeys whoever was holding the staff when it transformed.",
+            "It has immunity to poison damage and the {@condition poisoned} condition. It doesn't require air, food, drink, or sleep.",
+            "When it drops to 0 hit points, roll a {@dice d6}. On a roll of 1, the snake turns to dust and is destroyed. On any other roll, it changes back into a staff and breaks into {@dice 1d4 + 1} pieces that must be magically mended before the staff can be used again."
+          ]
+        }
+      ]
+    },
+    {
+      name: "Junky +1 Dagger",
+      source: "TftYP",
+      page: 77,
+      baseItem: "dagger|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 1,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      bonusWeapon: "+1",
+      entries: [
+        "You have a +1 bonus to attack and damage rolls made with this dagger, which looks like junk. When it is used, its grip frays, its blade chips, and it flakes rust. If you get a natural 1 on an attack roll while wielding this weapon, it breaks and becomes nonmagical."
+      ]
+    },
+    {
+      name: "Macuahuitl",
+      source: "TftYP",
+      page: 70,
+      baseItem: "longsword|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "You have a +1 bonus to attack and damage rolls made with this longsword, which is made of laminated wood, and inset with jagged teeth of obsidian. It deals an extra {@damage 2d6} damage to any creature of the plant type."
+      ]
+    },
+    {
+      name: "Master's Amulet",
+      source: "MM",
+      page: 271,
+      reprintedAs: [
+        "Command Amulet|XMM"
+      ],
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "Every {@creature shield guardian} has an amulet magically linked to it. A shield guardian can have only one corresponding amulet, and if that amulet is destroyed, the shield guardian is {@condition incapacitated} until a replacement amulet is created. A shield guardian's amulet is subject to direct attack if it isn't being worn or carried. It has AC 10, 10 hit points, and immunity to poison and psychic damage. Crafting an amulet requires 1 week and costs 1,000 gp in components.",
+        "A shield guardian's solitary focus is to protect the amulet's wearer. The amulet's wearer can command the guardian to attack its enemies or to guard the wielder against attack. If an attack threatens to injure the wearer, the construct can magically absorb the blow into its own body, even at a distance.",
+        "A spellcaster can store a single spell within a shield guardian, which can then cast the spell on command or under specific conditions. Many a wizard has been rendered helpless by enemies, only to surprise those foes when its shield guardian unleashes potent magical power."
+      ]
+    },
+    {
+      name: "Mind Flayer Skull",
+      source: "WDMM",
+      page: 197,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "While you have the skull in your possession, you are {@condition invisible} to mind flayers, as is anything you are wearing or carrying."
+      ]
+    },
+    {
+      name: "Orcus Figurine",
+      source: "CM",
+      page: 44,
+      rarity: "unknown (magic)",
+      wondrous: true,
+      entries: [
+        "Carved from an ogre's {@condition petrified} heart, the gray figurine depicts the Demon Prince of Undeath in ghastly detail, clutching his skull-topped wand in one hand and three severed heads by the hair in the other. The figurine smells like decaying flesh, and this scent is detectable out to a range of 5 feet.",
+        "The figurine is a Tiny object with AC 17, 3 hit points, and immunity to all types of damage except radiant damage. A {@spell detect evil and good} spell or similar magic reveals that the figurine has been desecrated. As long as it has at least 1 hit point, the figurine has the following magical properties:",
+        {
+          type: "list",
+          items: [
+            "Undead within 30 feet of the figurine can't be turned.",
+            "Dead creatures within 30 feet of the figurine can't be brought back to life.",
+            "A creature that holds the figurine while praying to Orcus for at least 1 hour has a {@chance 10} chance of summoning a smoky avatar of the demon lord. Once this avatar is summoned, it can't be summoned again for 30 days. Orcus's avatar has the statistics of a {@creature wraith} except that it's chaotic evil. It attacks all non-undead creatures it encounters, and it disappears after 1 hour or when reduced to 0 hit points."
+          ]
+        }
+      ],
+      hasFluffImages: true
+    },
+    {
+      name: "Pathfinder's Greataxe",
+      source: "PotA",
+      page: 175,
+      baseItem: "greataxe|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 7,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "1d12",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "When you wield this +1 greataxe, you always know the way to the nearest passage leading from underground toward the surface, as well as the approximate depth the axe is underground."
+      ]
+    },
+    {
+      name: "Pearl of Undead Detection",
+      source: "WDMM",
+      page: 76,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      value: 50000,
+      entries: [
+        "This black pearl glows faintly when undead are within 120 feet of it."
+      ]
+    },
+    {
+      name: "Petrified Grung Egg",
+      source: "ToA",
+      page: 144,
+      type: "OTH",
+      resist: [
+        "poison"
+      ],
+      rarity: "unknown (magic)",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      entries: [
+        "While this egg is on your person, you can use an action to speak its command word and regain one expended spell slot. If the expended slot was of 4th level or higher, the new slot is 3rd level. Once you have used the egg, it can't be used again until the next dawn.",
+        "Additionally, while you are attuned to the egg, you gain resistance to poison damage.",
+        "The egg turns to dust and is destroyed if it leaves the Tomb of the Nine Gods."
+      ]
+    },
+    {
+      name: "Pirate's Cutlass",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "This {@item +1 shortsword} is a terrifying weapon with a serrated edge. It grants its wielder advantage on Charisma ({@skill Intimidation}) checks when brandished."
+      ]
+    },
+    {
+      name: "Primal Amulet",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "This beaded jade necklace bears an ancient symbol of the River Heralds. When worn, the primal amulet allows its wearer to cast {@spell speak with animals}, {@spell locate object}, and {@spell pass without trace}. Once the amulet has been used to cast a spell, it can't be used to cast that spell again until the next dawn."
+      ]
+    },
+    {
+      name: "Prying Blade",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "A hooked blade useful on board a ship or as a cutting tool in the wilderness, this {@item +1 shortsword} grants its wielder advantage on Strength ({@skill Athletics}) checks to climb or to escape while {@condition restrained}."
+      ]
+    },
+    {
+      name: "Radiance",
+      source: "CM",
+      page: 87,
+      type: "WD|DMG",
+      rarity: "unknown (magic)",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      bonusSpellAttack: "+1",
+      entries: [
+        "While holding this wand, you gain a +1 bonus to spell attack rolls. In addition, you ignore {@quickref Cover||3||half cover} when making a spell attack. Radiance is in the form of an exquisite golden hand mirror.",
+        "While surrounded by darkness, it sheds dim light in a 5-foot radius. A creature that is attuned to Radiance can use a bonus action while holding the mirror to cast the {@spell enhance ability} spell, choosing itself and no other creature as the spell's target. Once this property of the wand is used, it can't be used again until the next dawn."
+      ],
+      light: [
+        {
+          dim: 5
+        }
+      ],
+      attachedSpells: [
+        "enhance ability"
+      ]
+    },
+    {
+      name: "Residuum",
+      source: "TDCSR",
+      page: 75,
+      type: "TG",
+      rarity: "unknown (magic)",
+      weight: 1,
+      value: 50000,
+      entries: [
+        "The sheer amount of leftover arcane power within the {@item whitestone|TDCSR} of the mountains is incredibly receptive to enchantment. Magic items that incorporate at least an ounce of {@item whitestone|TDCSR} into their construction require only one-quarter the creation time of other magic items. Some alchemists in {@book Emon|TDCSR|3|Emon, the City of Fellowship} have discovered that dissolving {@item whitestone|TDCSR} with specific acids can leave behind pure residuum, which can substitute for expensive spell components when such materials are not readily available.",
+        "If a spell has a component cost that consumes the component, its caster can substitute the required component for an amount of residuum of an equal value. One pound of pure residuum is worth approximately 500 gp in most markets, though it becomes extremely expensive and difficult to find outside of {@book Emon|TDCSR|3|Emon, the City of Fellowship} or the city of {@book Whitestone|TDCSR|3|Whitestone} itself.",
+        "Residuum can also be heated and blown into glass, forming a shimmering, greenish surface. Residuum slates or orbs can be used in stationary enchanting tables. Archmages willing to pay exorbitant rates—easily 20,000 gp or more—may acquire an {@item Residuum enchanting slate|TDCSR|enchanting slate} that can be used to expedite the creation of all magic items. Using such a table allows anyone crafting a magic item to do so in one-quarter of the usual time."
+      ],
+      miscTags: [
+        "CNS"
+      ]
+    },
+    {
+      name: "Residuum Enchanting Slate",
+      source: "TDCSR",
+      page: 75,
+      type: "T",
+      rarity: "unknown (magic)",
+      wondrous: true,
+      value: 2000000,
+      entries: [
+        "{@item Residuum|TDCSR} can also be heated and blown into glass, forming a shimmering, greenish surface. Residuum slates or orbs can be used in stationary enchanting tables. Archmages willing to pay exorbitant rates—easily 20,000 gp or more—may acquire an {@item Residuum enchanting slate|TDCSR|enchanting slate} that can be used to expedite the creation of all magic items. Using such a table allows anyone crafting a magic item to do so in one-quarter of the usual time."
+      ]
+    },
+    {
+      name: "Shield of Shouting",
+      source: "ToA",
+      page: 116,
+      type: "S",
+      rarity: "unknown (magic)",
+      weight: 6,
+      ac: 2,
+      entries: [
+        "A {@spell detect magic} spell reveals an aura of transmutation magic around this shield, which has a minor magical property: words spoken by the shield's bearer are amplified and sound ten times louder than normal."
+      ]
+    },
+    {
+      name: "Silver Sword",
+      source: "MTF",
+      page: 89,
+      type: "M",
+      tier: "major",
+      rarity: "unknown (magic)",
+      reqAttune: "by a creature that has psionic ability",
+      reqAttuneTags: [
+        {
+          psionics: true
+        }
+      ],
+      weight: 6,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "2d6",
+      dmgType: "S",
+      bonusWeapon: "+3",
+      entries: [
+        "You have a +3 bonus to attack and damage rolls made with this magic weapon. On a critical hit against a target in an astral body (as with the {@spell astral projection} spell), you can cut the silvery cord that tethers the target to its material body, instead of dealing damage."
+      ]
+    },
+    {
+      name: "Sorcerous Spyglass",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "This elegant brass {@item spyglass|phb} features an intricate lens mechanism. A creature looking through the sorcerous spyglass has advantage on Wisdom ({@skill Perception}) checks to detect things that can be seen. In addition, the user can view magical auras while looking through the spyglass, as if under the effect of a {@spell detect magic} spell."
+      ]
+    },
+    {
+      name: "Statuette of Augury",
+      source: "PaBTSO",
+      page: 62,
+      rarity: "unknown (magic)",
+      wondrous: true,
+      entries: [
+        "This gold statuette of an elf is worth 100 gp, and is imbued with divination magic. A non-evil creature grasping the statue can ask it a question and receive a telepathic response, as though the creature had cast {@spell augury}. Once a creature has asked its question and received a response, it can never activate the statuette again."
+      ],
+      attachedSpells: [
+        "augury"
+      ]
+    },
+    {
+      name: "Statuette of Saint Markovia",
+      source: "CoS",
+      page: 152,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      value: 25000,
+      bonusSavingThrow: "+1",
+      entries: [
+        "This golden statuette grants any good-aligned creature that carries it a +1 bonus to saving throws."
+      ]
+    },
+    {
+      name: "Stonky's ring",
+      source: "CM",
+      page: 132,
+      type: "RG|DMG",
+      rarity: "unknown (magic)",
+      reqAttune: true,
+      entries: [
+        "While wearing this ring, you can cast the {@spell telekinesis} spell at will, but you can target only objects that aren't being worn or carried.",
+        "Any character who attunes to the ring gains control of Stonky's creations, though the {@creature skitterwidget|cm|skitterwidgets} ignore commands spoken more than 30 feet away from them."
+      ],
+      attachedSpells: [
+        "telekinesis"
+      ]
+    },
+    {
+      name: "Sunbeam Compass",
+      source: "TDCSR",
+      page: 143,
+      type: "OTH",
+      rarity: "unknown (magic)",
+      wondrous: true,
+      entries: [
+        "A device that always directs the user to the sun by emitting a small light at the tip of the needle in a glass orb, allowing it to rotate in all directions—a very useful tool when exploring subterranean territory.",
+        "Created by {@book Karaline von Ethro|TDCSR|3|Karaline von Ethro}."
+      ]
+    },
+    {
+      name: "Suude (Blue)",
+      source: "TDCSR",
+      page: 85,
+      type: "IDG|TDCSR",
+      rarity: "unknown (magic)",
+      entries: [
+        "Exandria's most infamous drug, {@item suude|TDCSR} is a glittering powder made from {@book residuum|TDCSR|3|An Enchanting Export}. It was first developed by power-hungry archmages in the {@book Age of Arcanum|TDCSR|1|Age of Arcanum} as an incense burned to enhance focus during ritual spellcasting. The secret to its refinement has been lost and rediscovered a variety of times since the {@book Calamity|TDCSR|1|The Calamity}, and many different types of {@item suude|TDCSR} have been developed by arcanists in search of ever-greater power. It has terrible addictive and mentally degenerative properties, even when used sparingly.",
+        "After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors—yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
+        "On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
+        "Blue suude allows you to use the {@optfeature Twinned Spell|PHB} Metamagic option."
+      ],
+      miscTags: [
+        "CNS"
+      ]
+    },
+    {
+      name: "Suude (Brown)",
+      source: "TDCSR",
+      page: 85,
+      type: "IDG|TDCSR",
+      rarity: "unknown (magic)",
+      entries: [
+        "Exandria's most infamous drug, {@item suude|TDCSR} is a glittering powder made from {@book residuum|TDCSR|3|An Enchanting Export}. It was first developed by power-hungry archmages in the {@book Age of Arcanum|TDCSR|1|Age of Arcanum} as an incense burned to enhance focus during ritual spellcasting. The secret to its refinement has been lost and rediscovered a variety of times since the {@book Calamity|TDCSR|1|The Calamity}, and many different types of {@item suude|TDCSR} have been developed by arcanists in search of ever-greater power. It has terrible addictive and mentally degenerative properties, even when used sparingly.",
+        "After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors—yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
+        "On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
+        "Brown suude allows you to use the {@optfeature Extended Spell|PHB} Metamagic option."
+      ],
+      miscTags: [
+        "CNS"
+      ]
+    },
+    {
+      name: "Suude (Red)",
+      source: "TDCSR",
+      page: 85,
+      type: "IDG|TDCSR",
+      rarity: "unknown (magic)",
+      entries: [
+        "Exandria's most infamous drug, {@item suude|TDCSR} is a glittering powder made from {@book residuum|TDCSR|3|An Enchanting Export}. It was first developed by power-hungry archmages in the {@book Age of Arcanum|TDCSR|1|Age of Arcanum} as an incense burned to enhance focus during ritual spellcasting. The secret to its refinement has been lost and rediscovered a variety of times since the {@book Calamity|TDCSR|1|The Calamity}, and many different types of {@item suude|TDCSR} have been developed by arcanists in search of ever-greater power. It has terrible addictive and mentally degenerative properties, even when used sparingly.",
+        "After burning {@item suude|TDCSR} within a vessel and inhaling its fumes as an action, you take 22 ({@damage 4d10}) psychic damage and must make a {@dc 10} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, you become {@condition poisoned} for 1 hour and fall {@condition unconscious} for 1 minute, or until you are shaken awake as an action. During this time, the world seems to move in slow motion, and your vision is twisted in kaleidoscopic colors—yet your focus is never distorted. If one dose of {@item suude|TDCSR}, or more, is used within 1 hour of another, the DC of the Constitution {@quickref saving throws|PHB|2|1|saving throw} is increased by 5 per additional dose. If you fail this save by 10 or more, you instantly drop to 0 hit points.",
+        "On a success, you gain the ability to use one of the following Metamagic options as a sorcerer for the next minute, requiring no sorcery points. The type of Metamagic you gain access to depends on the type of {@item suude|TDCSR}, and once you use it, you can't use it again until you inhale {@item suude|TDCSR} again.",
+        "Red suude allows you to use the {@optfeature Distant Spell|PHB} Metamagic option."
+      ],
+      miscTags: [
+        "CNS"
+      ]
+    },
+    {
+      name: "Tankard of Plenty",
+      source: "HotDQ",
+      page: 74,
+      otherSources: [
+        {
+          source: "ToD",
+          page: 90
+        }
+      ],
+      type: "OTH",
+      rarity: "unknown (magic)",
+      entries: [
+        "This golden stein is decorated with dancing dwarves and grain patterns. Speaking the command word (\"Illefarn\") while grasping the handle fills the tankard with three pints of rich dwarven ale. This power can be used up to three times per day."
+      ]
+    },
+    {
+      name: "Teleporter Ring",
+      source: "WDH",
+      page: 157,
+      type: "RG|DMG",
+      rarity: "unknown (magic)",
+      entries: [
+        "As an action, a creature wearing a teleporter ring can activate the teleportation circle either in area K22 or area E1, teleporting itself and up to six other willing creatures from one circle to the other."
+      ]
+    },
+    {
+      name: "The Codicil of White",
+      source: "IDRotF",
+      page: 317,
+      rarity: "unknown (magic)",
+      wondrous: true,
+      entries: [
+        "The Codicil of White is a tall, thin volume bound in white ermine fur over seasoned boards of white pine and sealed with a clasp and lock of tarnished silver. The book is cold to the touch, and the fur is worn about the edges from use. The twenty-seven pages within are of vellum painted with silver gilt on the outer edges. The whole is sewn to a leather binding with strips of sinews, making it quite durable.",
+        "A creature with the codicil in its possession has resistance to cold damage.",
+        "The codicil was written by followers of Auril as a primer on her worship. The first page is a title page with the snowflake symbol of Auril on it. The remaining pages describe various priestly rituals and ceremonies in chilling detail. Nestled among these descriptions is a spell that wizards can learn ({@spell frost fingers|IDRotF}), and a poem called \"Rime of the Frostmaiden\" (see appendix E). The poem is an incantation, the power of which can be used to split a glacier (see chapter 6). The poem might have other capabilities, at your discretion"
+      ],
+      hasFluffImages: true
+    },
+    {
+      name: "Vanquisher's Banner",
+      source: "XMtS",
+      page: 19,
+      rarity: "unknown (magic)",
+      entries: [
+        "This battle-worn but unbroken standard bears the insignia of one of the forces of the Legion of Dusk. A creature that holds the vanquisher's banner can use a bonus action to grant an ally advantage on the ally's next attack roll, saving throw, or ability check."
+      ]
+    },
+    {
+      name: "Vial of Thought Capture",
+      source: "AZfyT",
+      page: 4,
+      rarity: "unknown (magic)",
+      entries: [
+        "This dark blue vial allows you to read another's surface thoughts and capture them as thought strands, storing the strands within the vial. As an action, you can activate the vial to target a creature you can see within 10 feet of you to learn its surface thoughts and pull the thoughts learned out of the creature's head as a tangible glowing string of energy known as a thought strand. The strands can be stored in the vial for up to 24 hours or until the vial reaches capacity, in which case the oldest strands dissipate. A creature affected by the vial knows that its thoughts are being probed.",
+        "The vial can also store thought strands created by the {@spell encode thoughts|ggr} cantrip. It does not extend the duration of those strands beyond 8 hours, but stored strands do not disappear if you cast {@spell encode thoughts|ggr} again during the duration of the cantrip.",
+        "The vial has 3 charges and can store up to 3 thought strands. It regains all its charges daily at dusk."
+      ]
+    },
+    {
+      name: "White Dragon Cape",
+      source: "TftYP",
+      page: 193,
+      type: "OTH",
+      resist: [
+        "cold"
+      ],
+      rarity: "unknown (magic)",
+      entries: [
+        "You have resistance to cold damage while wearing this cape."
+      ]
+    },
+    {
+      name: "Whitestone",
+      source: "TDCSR",
+      page: 75,
+      type: "TG",
+      rarity: "unknown (magic)",
+      entries: [
+        "The sheer amount of leftover arcane power within the whitestone of the {@book Alabaster Sierra|TDCSR|3|Alabaster Sierras} mountains is incredibly receptive to enchantment. Magic items that incorporate at least an ounce of whitestone into their construction require only one-quarter the creation time of other magic items. Some alchemists in {@book Emon|TDCSR|3|Emon, the City of Fellowship} have discovered that dissolving whitestone with specific acids can leave behind pure {@item residuum|TDCSR}, which can substitute for expensive spell components when such materials are not readily available."
+      ]
+    },
+    {
+      name: "Yester Hill Axe",
+      alias: [
+        "Treebane"
+      ],
+      source: "CoS",
+      page: 198,
+      baseItem: "battleaxe|phb",
+      type: "M",
+      rarity: "unknown (magic)",
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      entries: [
+        "The axe's handle is carved with leaves and vines, and it weighs half as much as a normal battleaxe. When the axe hits a plant, whether an ordinary plant or a plant creature, the target takes an extra {@damage 1d8} slashing damage. When a creature of non-good alignment wields the axe, it sprouts thorns whenever its wielder makes an attack with it. These thorns prick the wielder for 1 piercing damage after the attack is made, and this damage is considered magical."
+      ]
+    }
+  ] as Item[])
+}
