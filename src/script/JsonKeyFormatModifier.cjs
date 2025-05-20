@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-const filePath = './items_very rare.json'; // Remplace par le chemin exact de ton fichier
-const outputFilePath = './items_very_rare.json'; // Fichier de sortie
+const filePath = './tgs/items_legendary.json'; // Remplace par le chemin exact de ton fichier
+const outputFilePath = './tgs/items legendary.json'; // Fichier de sortie
 
 fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {

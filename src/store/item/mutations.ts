@@ -1,30 +1,30 @@
 import type {MutationTree} from 'vuex'
-import type {ItemsState, State} from '../type.ts'
+import type {ItemsState} from '../type.ts'
 import type {Item} from '../../models/item.ts'
 
 const mutations: MutationTree<ItemsState> = {
-  setLegendary(state: State, payload: Item[]) {
+  setLegendary(state: ItemsState, payload: Item[]) {
     state.legendary = payload
   },
-  setCommon(state: State, payload: Item[]) {
+  setCommon(state: ItemsState, payload: Item[]) {
     state.common = payload
   },
-  setNone(state: State, payload: Item[]) {
+  setNone(state: ItemsState, payload: Item[]) {
     state.none = payload
   },
-  setUnknown(state: State, payload: Item[]) {
+  setUnknown(state: ItemsState, payload: Item[]) {
     state.unknown = payload
   },
-  setRare(state: State, payload: Item[]) {
+  setRare(state: ItemsState, payload: Item[]) {
     state.rare = payload
   },
-  setVeryRare(state: State, payload: Item[]) {
+  setVeryRare(state: ItemsState, payload: Item[]) {
     state.veryRare = payload
   },
-  setUncommon(state: State, payload: Item[]) {
+  setUncommon(state: ItemsState, payload: Item[]) {
     state.uncommon = payload
   },
-  setArtifact(state: State, payload: Item[]) {
+  setArtifact(state: ItemsState, payload: Item[]) {
     state.artifact = payload
   },
 }

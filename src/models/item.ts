@@ -5,8 +5,8 @@ export class Item {
   page: number;
   rarity: string;
   wondrous: boolean;
-
   // Champs optionnels
+  type?: string;
   freeRules2024?: boolean;
   reprintedAs?: string[];
   tier?: string;

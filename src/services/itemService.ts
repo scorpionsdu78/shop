@@ -26,6 +26,24 @@ class ItemService {
  public static async getArtifactItem(): Promise<Item[]> {
    return connector.get_artifact_object()
  }
+  public static async getTgsLegendaryItem(): Promise<Item[]> {
+    return connector.get_tgs_legendary_object()
+  }
+  public static async getTgsCommonItem(): Promise<Item[]> {
+    return connector.get_tgs_common_object()
+  }
+  public static async getTgsRareItem(): Promise<Item[]> {
+    return connector.get_tgs_rare_object()
+  }
+  public static async getTgsUncommonItem(): Promise<Item[]> {
+    return connector.get_tgs_uncommon_object()
+  }
+  public static async getTgsVeryRareItem(): Promise<Item[]> {
+    return connector.get_tgs_very_rare_object()
+  }
+  public static async getTgsArtifactItem(): Promise<Item[]> {
+    return connector.get_tgs_artifact_object()
+  }
 }
 
 export default ItemService

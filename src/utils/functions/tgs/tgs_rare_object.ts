@@ -1,0 +1,11051 @@
+import type {Item} from '../../../models/item.ts'
+
+export default function tgsRareObject(): Promise<Item[]> {
+  return Promise.resolve([
+    {
+      name: "Abjurer's Bangle (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 32,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "You can clasp or remove this metal bracelet around the wrist or ankle of yourself or a willing creature within your reach using an action. The bangle emits a ward of abjuration magic from it that has 75 hit points. A creature wearing the bangle can use its reaction when it takes damage to speak the bangle's command word, causing the magical ward to take the damage instead. Any excess damage carries over to the creature when the bangle's ward is reduced to 0 hit points, at which point the bangle becomes a nonmagical bracelet."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Abjurers-Bangle.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Adventurer's Overcoat",
+      source: "GriffonsSaddlebag2",
+      page: 32,
+      type: "",
+      resist: [
+        "cold"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This well-traveled and now faded overcoat has been worn by countless other mountaineering adventurers. A thin layer of frost hangs along the coat's hem. While wearing the coat, you and friendly creatures within 5 feet of you have resistance to cold damage."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Adventurers-Overcoat.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Aged Goodberry Wine",
+      source: "GriffonsSaddlebag2",
+      page: 33,
+      type: "P",
+      tier: "minor",
+      rarity: "rare",
+      charges: 8,
+      entries: [
+        "This bottle of thick red wine is miraculously made from magical goodberries and peonies using a closely kept family recipe. It tastes fruity and floral, with notes of honey and the feeling of a fresh breeze, and is deeply rejuvenating. The bottle comes with 8 servings of the syrupy potion, which each take 1 minute to drink.",
+        "When you drink this wine, you can regain hit points by spending any number of Hit Dice, as if you'd finished a short rest. You regain 1 extra hit point for each Hit Die you spend in this way. The wine provides enough nourishment to sustain a creature for one day. In addition, for the next hour, whenever you roll a Wisdom or Charisma ability check or saving throw, you add {@dice 1d4} to the total of the roll."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Aged--Goodberry-Wine.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Air Render",
+      source: "GriffonsSaddlebag2",
+      page: 33,
+      baseItem: "shortbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 2,
+      weaponCategory: "simple",
+      property: [
+        "A",
+        "2H"
+      ],
+      range: "80/320",
+      dmg1: "1d6",
+      dmgType: "P",
+      bonusWeapon: "+1",
+      entries: [
+        "When you make a ranged attack with this magic bow, you can choose to fire a mote of wind instead of using an arrow. When you do, you gain a +1 bonus to the attack and damage rolls, and you can choose the form the wind takes, causing it to deal either bludgeoning, piercing, or slashing damage (your choice). When you roll a 20 on an attack roll made in this way, the target also suffers from one of the following effects:",
+        {
+          type: "entries",
+          name: "Bludgeoning Gust",
+          entries: [
+            "If the mote of wind dealt bludgeoning damage, the target must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone} or pushed 15 feet away from you (your choice). If the target is Huge or larger, it automatically succeeds on the saving throw."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Piercing Wind",
+          entries: [
+            "If the mote of wind dealt piercing damage, you can immediately make another attack with the same mote of wind against a different creature that is within 15 feet of the original target. This attack deals piercing damage."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Slashing Tornado",
+          entries: [
+            "If the mote of wind dealt slashing damage, each other creature within 5 feet of the original target must succeed on a {@dc 15} Dexterity saving throw or take {@damage 2d6} slashing damage."
+          ]
+        }
+      ],
+      ammoType: "arrow|phb",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Air-Render.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Amulet of Immutability",
+      source: "GriffonsSaddlebag2",
+      page: 34,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This adamantine amulet protects you from magic that would threaten to alter your form against your will. While wearing the amulet, you have advantage on saving throws against transmutation spells of 5th level or lower that would transform or control you, such as {@spell enlarge/reduce|PHB}, {@spell levitate|PHB}, or {@spell slow|PHB}.",
+        "In addition, when you are targeted by the {@spell polymorph|PHB} spell, you can choose to automatically succeed on the saving throw."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-Immutability.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Amulet of the Lycanthrope",
+      source: "GriffonsSaddlebag2",
+      page: 34,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      curse: true,
+      entries: [
+        "This rounded amulet depicts a harrowing crescent moon with blood-red claw marks running through its center. The markings emit a dim red light on the day of a full moon.",
+        "If you're not a lycanthrope, you can use a bonus action while wearing the amulet to assume a more bestial appearance, taking on the claws and defining features of either a bear, rat, tiger, or wolf (your choice). This transformation lasts for 1 minute or until you drop to 0 hit points or use a bonus action to revert to your normal form. For the duration, you can use your claws as natural weapons when making unarmed strikes. If you hit with them, you deal slashing damage equal to {@damage 1d8} + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike. In addition, you have advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell for the duration of the transformation. This property can't be used again for 12 hours or until the next dusk, whichever comes first. Alternatively, if it's within 24 hours of a full moon, this property can be used again after 6 hours, instead of 12.",
+        "If you're already a lycanthrope and are wearing the amulet, your claw and bite attacks while in your animal or hybrid forms deal an extra {@damage 1d8} necrotic damage and count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. In addition, your bite attack save DC increases by 3.",
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "This amulet is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you have disadvantage on saving throws made to resist becoming cursed by lycanthropy."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-the-Lycanthrope.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Amulet of the Sentinel",
+      source: "GriffonsSaddlebag2",
+      page: 34,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 2}",
+      charges: 8,
+      entries: [
+        "This golden amulet of an eye has a large ruby embedded in its center and eight smaller gems around it. The amulet has 8 charges and regains {@dice 1d6 + 2} expended charges daily at dawn. While wearing this amulet, you can expend 1 or more of its charges to use one of the following properties:",
+        {
+          type: "entries",
+          name: "Alertness",
+          entries: [
+            "When you roll for initiative, you can use your reaction to expend 1 charge to add your proficiency bonus to the roll."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Protection",
+          entries: [
+            "When a creature that you can see within 30 feet of you suffers a critical hit, you can use your reaction to expend 2 charges to turn that hit into a normal hit. Any effects triggered by a critical hit are canceled."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Vigilance",
+          entries: [
+            "When one or more creatures that you can see within 30 feet of you are forced to make a saving throw, you can use your reaction to expend 2 or more charges. For 2 charges, you grant one affected creature of your choice advantage on the saving throw. For each additional charge you expend, you grant one more affected creature of your choice advantage on the saving throw. You make this choice after you see the roll, but before the GM says whether the roll succeeds or fails."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Amulet-of-the-Sentinel.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Appraiser's Eye",
+      source: "GriffonsSaddlebag2",
+      page: 36,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a creature missing an eye",
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This golden sphere is the size of an eyeball with a bejeweled iris. Its weight is negligible. The sphere has 3 charges and regains {@dice 1d3} expended charges daily at dawn. Even if you aren't attuned to the sphere, you can use it and its charges for the following properties.",
+        "While holding the eye, you can use an action to expend 1 of its charges to cast the {@spell identify|PHB} spell from it. Alternatively, you can use the eye as the material component required for the {@spell legend lore|PHB} spell. When you do, there is only a cumulative {@chance 10|10 percent} chance that the sphere is consumed by the spell.",
+        "While you're attuned to the sphere, it also functions like a normal eye while it's in your socket, and you have advantage on Intelligence checks you make to determine an item's value, as well as on Wisdom ({@skill Perception}) checks that rely on sight. In addition, if you cast {@spell legend lore|PHB} and use the sphere as the material component for the spell while you're attuned to it, the {@chance 10|10 percent} chance that the sphere is consumed by the spell isn't cumulative, and in the event that the sphere is consumed by the spell, it loses this property and can no longer be used as a component for the spell, but isn't destroyed."
+      ],
+      attachedSpells: [
+        "identify"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Appraisers-Eye.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Arcanist Gauntlets",
+      source: "GriffonsSaddlebag2",
+      page: 38,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      wondrous: true,
+      recharge: "midnight",
+      rechargeAmount: 5,
+      charges: 5,
+      focus: true,
+      entries: [
+        "This pair of rich silk gloves is guarded by an enchanted mithral shell that sporadically releases arcane power. You can use the gauntlets as a spellcasting focus while wearing them, and when you cast a spell using a spell slot of 5th level or lower, you can choose to roll a {@dice d6}. If you roll a number on the d6 equal to or greater than the spell's slot level, the spell draws on the magic within the gauntlets, instead of your own, and is cast without expending a spell slot. The slot must be of a level you can normally cast. The gauntlets can provide up to 5 levels worth of spell slots in this way each day, and no two slots can be the same level.",
+        "If the number rolled on the {@dice d6} is less than the spell slot's level, you cast the spell as normal and expend the spell slot. If you don't have the spell slot to cast the spell, the spell fails and the slot is counted toward the gauntlets' daily provided spell slots.",
+        "For example, a 9th-level wizard can use the gauntlets to provide either one 5th-level spell slot or a 4th- and 1st-level spell slot over the course of a day, but not two 2nd- or 3rd-level spell slots."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Arcanist-Gauntlets.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Arcanist's Scribing Wand",
+      source: "GriffonsSaddlebag2",
+      page: 38,
+      type: "WD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a wizard",
+      reqAttuneTags: [
+        {
+          class: "wizard"
+        }
+      ],
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 1}",
+      charges: 7,
+      entries: [
+        "This wand's handle has a fountain pen nib at its end that releases its own magical ink. When you use this pen to copy a spell into your spellbook, the gold it takes to do so is halved. Swinging the wand causes tiny droplets of illusory ink to trail behind it.",
+        "The wand has 7 charges for the following properties:",
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "While holding the wand, you can use an action to expend 1 of its charges to cast one of the following spells from it: {@spell comprehend languages|PHB} (written language only) or {@spell illusory script|PHB}."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Cloudscript",
+          entries: [
+            "While holding the wand, you can use an action to expend 2 of its charges to cause up to 10 words to appear in the sky. The words are formed from wisps of clouds or smoke (your choice) and remain in place as long as you concentrate (as if concentrating on a spell), to a maximum of 1 hour, or until a wind of moderate or greater speed (at least 10 miles per hour) disperses them."
+          ]
+        },
+        "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand dissolves into a puddle of mundane ink and is destroyed."
+      ],
+      attachedSpells: [
+        "comprehend languages",
+        "illusory script"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Arcanists-Scribing-Wand.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Armor of Icarus",
+      source: "GriffonsSaddlebag2",
+      page: 39,
+      baseItem: "breastplate|phb",
+      type: "MA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 20,
+      ac: 14,
+      bonusAc: "+1",
+      modifySpeed: {
+        static: {
+          fly: 30
+        }
+      },
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4 + 2}",
+      charges: 6,
+      entries: [
+        "This sculpted breastplate has a pair of small mechanical wings attached to its back. You gain a +1 bonus to AC while wearing this armor. The armor has 6 charges and regains {@dice 1d4 + 2} expended charges daily at dawn. While wearing the armor, you can use an action to expend 1 of its charges to magically unfurl the mechanical wings and fly up to 60 feet in a straight line toward a point of bright light that you can see (such as a torch, light spell, or the sun) without provoking opportunity attacks. The wings remain unfurled until you touch the ground, during which time you fall at a rate of 30 feet per round and gain a flying speed of 30 feet, which you can use to glide horizontally as you descend. While gliding in this way, you cannot fly upwards unless you use the armor to fly toward a point of bright light again. When you land on the ground while falling in this way, the mechanical wings refold themselves to your back, and you take no damage from falling."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Armor-of-Icarus.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Astral Caltrops",
+      source: "GriffonsSaddlebag2",
+      page: 39,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "As an action, you can spread these magic caltrops over a square area that is 5 feet on a side. Any creature that enters the area must succeed on a {@dc 15} Dexterity saving throw or stop moving this turn and take 1 piercing damage. When this happens, the caltrops explode in a burst of extraplanar energy, destroying the caltrops and dealing {@damage 6d6} force damage to the creature and causing it to rise vertically up to 20 feet, as if by the {@spell levitate} spell. The creature remains suspended in this way for {@dice 1d4} rounds, during which time its speed becomes 0. The effect ends early if the creature takes any damage.",
+        "When the caltrops are spread on the ground, they become nearly invisible and float up to 1 inch off the ground. A creature notices the caltrops with a successful {@dc 20} Wisdom ({@skill Perception}) check. You can reclaim the invisible caltrops for later use with 1 minute of careful searching and collecting. The caltrops stop floating and become visible once they're reclaimed in this way."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Astral-Caltrops.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Badge of the Wayfarer",
+      source: "GriffonsSaddlebag2",
+      page: 40,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This badge is formed in the shape of a maple leaf with an embossed porcelain mug. While wearing the badge, you can recite its command phrase over the course of 1 minute to cast the {@spell plane shift|PHB} spell using the badge. When cast in this way, the spell's destination can only be the Wayfarer's Respite on the Astral Plane, an inn and pub of legend that drifts throughout the astral sea. The inn has no doors leading outside and can only be entered using the badge. Inside, the Wayfarer's Respite is large, comfortable, and decadent. It's frequently busy, despite its exclusivity, but always seems to have enough room and beds available for the wayward band of adventurers. The inn is expensive and suited for an aristocratic lifestyle, but is known to be willing to barter or trade for treasure, information, and favors.",
+        "Any creature that teleports to the inn is magically transported with their belongings back to their original location after 24 hours. You can use the badge to cast the {@spell plane shift|PHB} spell again in this way to return to your original location early. Once you return from the Wayfarer's Respite, the badge can't be used again until 7 days have passed.",
+        "The badge's command phrase and purpose is a closely-kept secret. While casting {@spell identify|PHB} on the badge only reveals the fact that the badge is magical, a {@spell legend lore|PHB} spell reveals the badge's command phrase and properties."
+      ],
+      attachedSpells: [
+        "plane shift"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Badge-of-the-Wayfarer.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bandolier of the Elements",
+      source: "GriffonsSaddlebag2",
+      page: 42,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This cross-chest bandolier has 6 magic {@item dagger|PHB|daggers} sheathed across it. When you take the {@action Attack} action while wearing this bandolier, you can use a bonus action to throw 1 of the daggers, making a ranged attack with it, provided you have a free hand. When you hit a target with one of these daggers, roll a {@dice d6} and consult the table below. The target takes an extra {@damage 1d6} damage of the type determined by the table, in addition to the weapon's damage, and the dagger disappears. On a miss, the dagger vanishes and reappears in the bandolier.",
+        "A {@item dagger|PHB} vanishes if you don't hurl it right away and immediately reappears in the bandolier. {@dice 1d6} missing daggers reappear in the bandolier's empty sheaths daily at dawn.",
+        {
+          type: "table",
+          colLabels: [
+            "d6",
+            "Damage Type"
+          ],
+          colStyles: [
+            "col-2 text-center",
+            "col-10 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              "Acid"
+            ],
+            [
+              "2",
+              "Cold"
+            ],
+            [
+              "3",
+              "Fire"
+            ],
+            [
+              "4",
+              "Lightning"
+            ],
+            [
+              "5",
+              "Poison"
+            ],
+            [
+              "6",
+              "Thunder"
+            ]
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bandolier-of-the-Elements.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bartender's Armistice",
+      source: "GriffonsSaddlebag2",
+      page: 42,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "A {@i bartender's armistice} is a magical coaster typically kept by wary tavernkeepers for cases of extreme danger. When found, a bartender's armistice comes in a set of {@dice 1d3 + 1} coasters. Each coaster is 4 inches across, and its weight is negligible.",
+        "As an action, you can speak the coaster's command word and throw it at a point on the ground you can see within 30 feet of you. When you do, the coaster becomes fixed in place at the point and emits a magical field in a 30-foot-radius, 15-foot-high cylinder that's centered on it. Each creature within the area must make a {@dc 15} Charisma saving throw when the field appears or when it enters the area for the first time on a turn or starts its turn there. A creature can choose to fail this saving throw if it wishes. On a failed save, a creature is {@condition charmed} by you while it remains within the field. A {@condition charmed} creature is indifferent about creatures it can see that it's hostile toward. This indifference ends if the target is attacked or harmed by a spell, or if it witnesses any of its friends being harmed. If you or your companions harm a {@condition charmed} creature or its friends, the charm ends. When the charm or field ends, the creature becomes hostile again, unless the GM rules otherwise.",
+        "When a creature makes an attack or casts a harmful spell that either affects a target within the field or enters or leaves the field's area, that creature must first make a {@dc 15} Wisdom saving throw. On a failed save, the attack or spell fails and is expended, and the action is wasted.",
+        "Each creature within the field has advantage on any Charisma ({@skill Persuasion}) check it makes to deescalate a violent situation. In addition, if a creature in the area is {@condition unconscious} when the field appears, it immediately stabilizes if it has 0 hit points.",
+        "The coaster has AC 15 and 25 hit points. The field remains for 10 minutes or until the coaster drops to 0 hit points, at which point the coaster is destroyed and the field ends. If the field ends after the full duration, there is a {@chance 10|10 percent} chance that the coaster remains magical and can be used again. Otherwise, the coaster becomes nonmagical."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bartenders-Armistice.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Beads of Meditation",
+      source: "GriffonsSaddlebag2",
+      page: 43,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This beaded necklace can be used as a set of prayer beads or special rosary. While wearing or holding the beads, you can use an action to end one effect on yourself that is causing you to be {@condition charmed} or {@condition frightened}.",
+        "If you're a cleric, monk, or paladin, you can use an action to hold onto the beads to further channel your spirituality. If you're a monk, you regain {@dice 1d4 + 1} expended ki points. If you're a cleric or paladin, you regain one use of your Channel Divinity. This property can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Beads-of-Meditation.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Belt of the Hell Hound",
+      source: "GriffonsSaddlebag2",
+      page: 44,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      curse: true,
+      entries: [
+        "When you wear this belt, you can feel the fires of the lower planes burn inside you. While wearing the belt, when you make a melee attack against a creature and have advantage on the attack, the target takes an extra {@damage 1d6} fire damage from the attack on a hit.",
+        "In addition, while wearing this belt, you can use an action to release a hellish howl. When you do, you exhale a plume of flames from your mouth in a 15-foot cone. Each creature in the area must succeed on a {@dc 15} Dexterity saving throw, taking {@damage 6d6} fire damage on a failed save, or half as much damage on a successful one. The fire ignites flammable objects in the area that aren't being worn or carried. Once this property has been used, it can't be used again until the next dawn.",
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "Once you wear this belt, you can't remove it unless you are targeted by the {@spell remove curse|PHB} spell or similar magic. While wearing the belt, you must eat twice the normal amount of food each day (a minimum of 2 pounds) to avoid {@condition exhaustion}. In addition, while wearing the belt, there is a cumulative {@chance 10|10 percent} chance when you die and again at the end of each hour you remain dead that you immediately immolate and turn to ash."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Belt-of-the-Hell-Hound.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Blackthorn Spear of the Moonless Hunter",
+      source: "GriffonsSaddlebag2",
+      page: 45,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      bonusWeapon: "+2",
+      modifySpeed: {
+        bonus: {
+          walk: 10
+        }
+      },
+      entries: [
+        "This spiny, black bone spear is a favorite among nocturnal hunting tribes. While attuned to the spear, you can always see the faint outline of it, even in total darkness. You gain a +2 bonus to attack and damage rolls made with this magic weapon.",
+        "This spear contains a fragment of the moonless hunter, an ancient spirit that can be channeled to assume some of its powers. While holding the spear, you can use a bonus action to call forth and assume the spirit of the moonless hunter. While assuming the spirit, your eyes become pure white, and you gain the following benefits:",
+        {
+          type: "list",
+          items: [
+            "You ignore the effects of {@condition exhaustion}.",
+            "You can't sleep or be put to sleep by magical means, and you can't take or benefit from finishing a long rest.",
+            "You have advantage on Dexterity ({@skill Stealth}) checks.",
+            "You can see normally in darkness, both magical and nonmagical, out to a range of 60 feet.",
+            "You can use a bonus action to cause the spear to fly back to your empty hand or land at your feet (your choice), provided that the spear is within 60 feet of you.",
+            "Your walking speed increases by 10 feet."
+          ]
+        },
+        "You can assume the spirit in this way for up to 8 hours. The effect ends early if you release the spirit as a bonus action or if you're farther than 60 feet away from the spear for more than 1 minute. The spirit returns to the spear when you are no longer assuming it, at which point you gain 1 level of {@condition exhaustion} for every 2 hours you assumed the spirit (minimum 1 level). {@condition Exhaustion} gained in this way can only be reduced by finishing a long rest."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Blackthorn-Spear-of-the-Moonless-Hunter.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bloodmire Rod of the Witch Doctor",
+      source: "GriffonsSaddlebag2",
+      page: 47,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a cleric, druid, paladin, or warlock",
+      reqAttuneTags: [
+        {
+          class: "cleric"
+        },
+        {
+          class: "druid"
+        },
+        {
+          class: "paladin"
+        },
+        {
+          class: "warlock"
+        }
+      ],
+      recharge: "dusk",
+      rechargeAmount: "{@dice 1d4 + 2}",
+      charges: 6,
+      focus: [
+        "Cleric",
+        "Druid",
+        "Paladin",
+        "Warlock"
+      ],
+      entries: [
+        "This gnarled wooden scepter from the Bloodmire is set with a strange, cracked opal at its head and can be used as a spellcasting focus. The rod has 6 charges and regains {@dice 1d4 + 2} expended charges daily at dusk.",
+        "While holding the rod, you can expend 1 of its charges as an action to create a magical tether of light between the rod and another creature you can see within 30 feet of you. The tether's color and effects depend on what kind of tether you create. You can only have one of each tether at a time.",
+        {
+          type: "entries",
+          name: "Empowering Tether",
+          entries: [
+            "This tether is a brilliant white. A creature affected by this tether regains {@dice 2d10} hit points when it's first affected by it, and while it's connected to the tether, it deals an extra {@damage 1d10} damage of the weapon's type to the first target it hits with a melee weapon attack on each of its turns. In addition, on each of your following turns while you maintain the tether, you can expend 1 of the rod's charges as a bonus action to send a surge of healing magic through the tether and cause the target to regain {@dice 2d10} hit points."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Withering Tether",
+          entries: [
+            "This tether is a sickly red. A creature affected by this tether must make a Constitution saving throw when it's first affected by it, using your spell save DC. On a failed save, a creature takes {@damage 2d10} necrotic damage, and on each of your following turns while you maintain the tether, you can use a bonus action to deal {@damage 1d10} necrotic damage to the target automatically. On a successful save, a creature takes half as much necrotic damage, and the tether immediately ends."
+          ]
+        },
+        "The tether ends after 1 minute. It ends early if you sever the tether (no action required), are no longer holding the rod, the target ends its turn more than 30 feet away from you, the target has total cover from you, or if you or the target fall {@condition unconscious}."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloodmire-Rod-of-the-Witch-Doctor.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bloodshard Trident",
+      source: "GriffonsSaddlebag2",
+      page: 48,
+      baseItem: "trident|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weaponCategory: "martial",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      entries: [
+        "This magic trident has grooves in its obsidian surface that are used to channel blood in rituals of self-sacrifice. While holding the trident, you can use a bonus action to make a blood offering. When you do, choose a number of hit points to sacrifice. You take necrotic damage equal to the amount you sacrifice, which can't be reduced or prevented in any way. For every 5 hit points you sacrifice, the trident creates 1 shard of magic obsidian, which floats alongside the trident's three prongs for 1 minute. You can have up to 3 shards in this way at a time. The trident deals an extra {@damage 1d4} piercing damage to any target it hits for each floating shard it has.",
+        "When you throw the trident while it has at least 1 floating shard, the weapon flies back to your hand immediately after the attack."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloodshard-Trident.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bounder's Ball",
+      source: "GriffonsSaddlebag2",
+      page: 50,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This enchanted strip of metal is bound to a friendly spirit, which emits a faint glow and seems to vibrate with excitement when held. When you throw this item, a playful animal spirit appears beside you and chases after it. Immediately after you throw it, the spirit returns the ball to you.",
+        "You can attach the {@i bounder's ball} to the base of a weapon that does not have the heavy property by pressing it against the weapon for at least 10 minutes. Once you do, you can use a bonus action to speak the ball's command word to cause the weapon to shed bright light in a 10-foot radius and dim light for an additional 10 feet. Speaking the command word again or stowing the weapon puts out the light. When you make a ranged attack with the glowing weapon, the ball's animal spirit appears and happily retrieves it. Immediately after the attack, the spirit returns the weapon to your hand or drops it at your feet (your choice).",
+        "You can remove the ball from the weapon over the course of a short rest by gently tugging at it, as if from an animal's mouth. The spirit is ethereal and doesn't occupy any space. If you have a {@item companion's band|TGS1}, the spirit can interact with the one created by the band."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bounders-Ball.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bow of the Cobra",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Longbow"
+        },
+        {
+          name: "Shortbow"
+        }
+      ],
+      inherits: {
+        nameSuffix: " of the Cobra",
+        source: "GriffonsSaddlebag2",
+        page: 50,
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        recharge: "dawn",
+        rechargeAmount: "{@dice 1d4}",
+        charges: 4,
+        entries: [
+          "This metallic bow resembles the shape of a mighty cobra and is covered in spots of patina. When you fire an arrow from the bow, you can choose to coat the arrow in a thin layer of acid. A target hit with the acid-coated arrow takes an extra {@damage 1d4} acid damage. Hit or miss, a nonmagical coated arrow is destroyed after the attack.",
+          "In addition, the bow has 4 charges and regains {@dice 1d4} expended charges daily at dawn. When you take the {@action Attack} action using this bow, you can expend 1 of its charges to replace one of your weapon attacks with a special attack. This special attack duplicates the effect of the {@spell Melf's acid arrow} spell and uses the same attack bonus as your normal weapon attacks with the bow."
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Cobra.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 50,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4}",
+      charges: 4,
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Cobra.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This metallic bow resembles the shape of a mighty cobra and is covered in spots of patina. When you fire an arrow from the bow, you can choose to coat the arrow in a thin layer of acid. A target hit with the acid-coated arrow takes an extra {@damage 1d4} acid damage. Hit or miss, a nonmagical coated arrow is destroyed after the attack.",
+        "In addition, the bow has 4 charges and regains {@dice 1d4} expended charges daily at dawn. When you take the {@action Attack} action using this bow, you can expend 1 of its charges to replace one of your weapon attacks with a special attack. This special attack duplicates the effect of the {@spell Melf's acid arrow} spell and uses the same attack bonus as your normal weapon attacks with the bow."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Longbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 5000,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Longbow of the Cobra",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 50,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4}",
+            charges: 4,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Cobra.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Bow of the Cobra",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Shortbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 2500,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Shortbow of the Cobra",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 50,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4}",
+            charges: 4,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Cobra.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Bow of the Cobra",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Bow of the Eldritch Archer",
+      source: "GriffonsSaddlebag2",
+      page: 50,
+      baseItem: "shortbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 2,
+      weaponCategory: "simple",
+      property: [
+        "A",
+        "2H"
+      ],
+      range: "80/320",
+      dmg1: "1d6",
+      dmgType: "P",
+      entries: [
+        "This unearthly bow is disjointed and gruesome. It's made of an ashen, twisted wood that acts as a conduit for eldritch energy and has a series of fleshy tendrillike growths that bulge through the wood's grain. Arrows shot from this bow are destroyed once they're fired, turning into a projectile of pure energy instead. This projectile deals {@damage 1d10} force damage, instead of the arrow's normal damage, and retains any magical properties of the destroyed arrow. Hit or miss, a projectile is lost after the attack.",
+        "These energy projectiles can sometimes pierce enemies. Once on each of your turns when you make an attack using this weapon, you can force another creature 10 feet directly behind the original target to make a DC 15 Dexterity saving throw. On a failed save, the creature takes {@damage 1d10} force damage."
+      ],
+      ammoType: "arrow|phb",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Eldritch-Archer.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Bow of the Twilight Valkyrie",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Longbow"
+        },
+        {
+          name: "Shortbow"
+        }
+      ],
+      inherits: {
+        nameSuffix: " of the Twilight Valkyrie",
+        source: "GriffonsSaddlebag2",
+        page: 50,
+        tier: "major",
+        rarity: "rare",
+        entries: [
+          "This bow balances the positive and negative magics from the upper and lower planes of existence. Once on each of your turns when you make an attack with the bow as part of the {@action Attack} action, you can channel either positive or negative energy into the attack. When you do, you take a –5 penalty to the attack roll. If you channeled positive energy into the attack and hit, the target takes an extra {@damage 2d6} radiant damage, and the next attack roll made against it by a creature other than you before the start of your next turn has advantage. If you channeled negative energy into the attack, the target takes an extra {@damage 2d6} necrotic damage, and the next attack roll the target makes before the end of your next turn has disadvantage."
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Twilight-Valkyrie.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 50,
+      tier: "major",
+      rarity: "rare",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Twilight-Valkyrie.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This bow balances the positive and negative magics from the upper and lower planes of existence. Once on each of your turns when you make an attack with the bow as part of the {@action Attack} action, you can channel either positive or negative energy into the attack. When you do, you take a –5 penalty to the attack roll. If you channeled positive energy into the attack and hit, the target takes an extra {@damage 2d6} radiant damage, and the next attack roll made against it by a creature other than you before the start of your next turn has advantage. If you channeled negative energy into the attack, the target takes an extra {@damage 2d6} necrotic damage, and the next attack roll the target makes before the end of your next turn has disadvantage."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Longbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 5000,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Longbow of the Twilight Valkyrie",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 50,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Twilight-Valkyrie.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Bow of the Twilight Valkyrie",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Shortbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 2500,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Shortbow of the Twilight Valkyrie",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 50,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bow-of-the-Twilight-Valkyrie.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Bow of the Twilight Valkyrie",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Bracers of the Iron Octopus",
+      source: "GriffonsSaddlebag2",
+      page: 52,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These iron bracers are ornamented with an embossed octopus and tentacle designs. While wearing the bracers, you gain a +5 bonus on ability checks and saving throws to resist and escape from being {@condition grappled}.",
+        "In addition, you can use an action to speak the bracers' command word. When you do, the bracers' iron and leather twist and writhe, falling off your arms. The bracers become a {@creature giant octopus|MM} at a point within 10 feet of you under your control that acts on its own initiative count. By using a bonus action to speak the command word again, you return the bracers to their normal form in a space formerly occupied by the octopus.",
+        "This octopus is made of leather and iron, is a construct instead of a beast, and has a +2 bonus to its AC. On your turn, you can mentally command the octopus if it is within 60 feet of you and you aren't {@condition incapacitated}. You decide what action the octopus takes and where it moves during its next turn, or you issue it a general command, such as to attack your enemies or guard a location.",
+        "If the octopus is reduced to 0 hit points, it dies and reverts to its bracer form. The bracers then shatter and are destroyed. If the octopus reverts to bracer form before losing all its hit points, it regains all of them."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bracers-of-the-Iron-Octopus.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Caduceus Flail",
+      source: "GriffonsSaddlebag2",
+      page: 54,
+      baseItem: "flail|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a cleric or paladin",
+      reqAttuneTags: [
+        {
+          class: "cleric"
+        },
+        {
+          class: "paladin"
+        }
+      ],
+      weight: 2,
+      weaponCategory: "martial",
+      dmg1: "1d8",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      entries: [
+        "This holy flail serves as a conduit for divine warriors and pulses with holy light, allowing you to fend off evil while protecting the wounded. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While holding the flail, you can use a bonus action to speak the weapon's command word to cause it to glow, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. The light lasts until you use a bonus action to speak the command word again or until you drop or stow the flail. When you hit an undead with the glowing flail, that target takes an extra {@damage 1d8} radiant damage.",
+        "When you use your Channel Divinity while holding the glowing flail, hostile creatures in the weapon's bright light take radiant damage equal to {@damage 1d8} + your spellcasting modifier, and friendly creatures in the bright light regain hit points equal to the same amount. This damage is dealt before any other effects from your Channel Divinity. In addition, if your Channel Divinity forces a creature to make a saving throw, any undead in the flail's bright light that fail the saving throw are also blinded until the end of your next turn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Caduceus-Flail.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Captain's Pride",
+      type: "GV|DMG",
+      requires: [
+        {
+          type: "LA"
+        }
+      ],
+      excludes: {
+        name: "Padded Armor"
+      },
+      inherits: {
+        namePrefix: "Captain's Pride (",
+        nameSuffix: ")",
+        nameRemove: " Armor",
+        source: "GriffonsSaddlebag2",
+        page: 57,
+        resist: [
+          "acid",
+          "bludgeoning",
+          "piercing",
+          "slashing"
+        ],
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        entries: [
+          "This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
+          "In addition, you can use a bonus action to shift into a watery, elemental form, gaining the following benefits for the duration:",
+          {
+            type: "list",
+            items: [
+              "Your speed increases by 10 feet.",
+              "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, as well as resistance to acid damage.",
+              "You have advantage on ability checks to avoid or escape being {@condition grappled} or {@condition restrained}. If you're already {@condition grappled} or {@condition restrained} when you shift into this form, you automatically escape.",
+              "While you're underwater, Wisdom ({@skill Perception}) checks made to see you have disadvantage."
+            ]
+          },
+          "This form lasts as long as you concentrate (as if concentrating on a spell), to a maximum of 1 minute. Once this property of the armor has been used, it can't be used again until the next dawn."
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Captains-Pride.webp"
+              }
+            }
+          ]
+        }
+      },
+      nameRemove: " Armor",
+      source: "GriffonsSaddlebag2",
+      page: 57,
+      resist: [
+        "acid",
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Captains-Pride.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This well-crafted leather armor comes with a sturdy, enveloping longcoat, bearing on its back the insignia of a well-known pirate captain. When you attune to it, the insignia changes to one that represents you instead. While wearing this armor, climbing and swimming don't cost you extra movement, and you can breathe underwater.",
+        "In addition, you can use a bonus action to shift into a watery, elemental form, gaining the following benefits for the duration:",
+        {
+          type: "list",
+          items: [
+            "Your speed increases by 10 feet.",
+            "You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, as well as resistance to acid damage.",
+            "You have advantage on ability checks to avoid or escape being {@condition grappled} or {@condition restrained}. If you're already {@condition grappled} or {@condition restrained} when you shift into this form, you automatically escape.",
+            "While you're underwater, Wisdom ({@skill Perception}) checks made to see you have disadvantage."
+          ]
+        },
+        "This form lasts as long as you concentrate (as if concentrating on a spell), to a maximum of 1 minute. Once this property of the armor has been used, it can't be used again until the next dawn."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Leather Corslet",
+            source: "TLotRR",
+            page: 72,
+            type: "LA",
+            rarity: "none",
+            weight: 10,
+            value: 450,
+            currencyConversion: "M-E",
+            ac: 12,
+            dexterityMax: 3,
+            armor: true,
+            entries: [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ]
+          },
+          specificVariant: {
+            name: "Captain's Pride (Leather Corslet)",
+            source: "GriffonsSaddlebag2",
+            type: "LA",
+            rarity: "rare",
+            weight: 10,
+            currencyConversion: "M-E",
+            ac: 12,
+            dexterityMax: 3,
+            armor: true,
+            entries: [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ],
+            page: 57,
+            tier: "major",
+            reqAttune: true,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Captains-Pride.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "acid",
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            genericVariant: {
+              name: "Captain's Pride",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Leather Shirt",
+            source: "TLotRR",
+            page: 72,
+            type: "LA",
+            rarity: "none",
+            weight: 8,
+            value: 100,
+            currencyConversion: "M-E",
+            ac: 11,
+            dexterityMax: 4,
+            armor: true,
+            entries: [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ]
+          },
+          specificVariant: {
+            name: "Captain's Pride (Leather Shirt)",
+            source: "GriffonsSaddlebag2",
+            type: "LA",
+            rarity: "rare",
+            weight: 8,
+            currencyConversion: "M-E",
+            ac: 11,
+            dexterityMax: 4,
+            armor: true,
+            entries: [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ],
+            page: 57,
+            tier: "major",
+            reqAttune: true,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Captains-Pride.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "acid",
+              "bludgeoning",
+              "piercing",
+              "slashing"
+            ],
+            genericVariant: {
+              name: "Captain's Pride",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Chain Devil Gloves",
+      source: "GriffonsSaddlebag2",
+      page: 58,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These leather gloves are fashioned from the hands of a slain chain devil. While wearing these gloves, an ethereal chain attaches itself to any weapon you throw that has the thrown property. The chain has a reach of 60 feet and breaks its connection to the weapon if the weapon is held by a creature or if you are ever more than 60 feet away from it. You can have up to 4 of these chains at any time.",
+        "As an action, you can cause these chains to suddenly retract and pull any attached weapons with them. Any creature within the path of one or more of these weapons must make a DC 15 Dexterity saving throw. On a failed save, a creature takes force damage equal to the damage die of the thrown weapon. A solid object or wall blocks the path of the retracted chain and weapon.",
+        "A retracted weapon lands harmlessly at your feet or in an open hand once it reaches you."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chain-Devil-Gloves.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Champion's Greatbow",
+      source: "GriffonsSaddlebag2",
+      page: 58,
+      baseItem: "longbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "A",
+        "H",
+        "2H"
+      ],
+      range: "150/600",
+      dmg1: "1d10",
+      dmgType: "P",
+      entries: [
+        "This large bow is wrought from the boughs of an old, resilient tree. Its wooden frame is exceptionally sturdy but difficult to draw. You must have a Strength score of 13 or higher to wield this bow. This bow's damage die is a {@dice d10}, and when you make a ranged attack with this bow, you score a critical hit on a roll of 19 or 20.",
+        "Once on each of your turns when you make a ranged attack with this weapon, you can use the bow to fire a {@item javelin|PHB} or {@item spear|PHB}, instead of an arrow, without affecting the bow's damage die. When you do, the bow's normal and long ranges are halved for the attack. If the attack hits, the target takes extra piercing damage equal to your Strength modifier."
+      ],
+      ammoType: "arrow|phb",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Champions-Greatbow.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Chi-Balancing Tea",
+      source: "GriffonsSaddlebag2",
+      page: 58,
+      type: "P",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "This potion is specially brewed by the monks of Durheim using a unique leaf found only in their gardens. The tea remains magically warm while inside its traditional porcelain bottle. The potion's flavor is deep and smoky, and leaves a sour aftertaste like the air after a storm.",
+        "When you drink this potion, it cures any short-term madness afflicting you, and if you are {@condition charmed} or {@condition frightened}, it ends those conditions. In addition, if you have 2 or more levels in the monk class, you regain {@dice 1d4 + 1} expended ki points."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chi-Balancing-Tea.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Chimeric Collar",
+      source: "GriffonsSaddlebag2",
+      page: 59,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This magic collar has three sections of sculpted metal bound by a strip of leather, with each section representing the head of a dragon, lion, and ram. You can place the collar on a willing Medium or smaller creature using an action. If the creature is a friendly beast companion or familiar (such as one summoned by the {@spell find familiar|PHB} spell), you can speak the collar's command word as part of this action to create a magical bond between you and the creature. The bond remains until the collar is removed.",
+        "You can use a bonus action to speak the collar's command word while you can see the bonded creature within 30 feet of you. When you do, the creature grows in size to become Large, provided there's enough space. When it becomes enlarged, the creature gains {@dice 2d10 + 4} temporary hit points, can understand {@language Draconic} (but can't speak it), and magically grows a second, identical head next to its own that lasts for the duration of the effect. Whenever the enlarged creature takes the {@action Attack} action, it can make two attacks, or it can take the Multiattack action instead if it has that action. The creature remains enlarged for up to 1 minute, until it drops to 0 hit points, or until you end the effect using a bonus action. Once this property of the collar has been used, it can't be used again until the next dawn.",
+        "If the beast or familiar wearing the collar is a transformed humanoid or other creature, such as by the {@spell polymorph|PHB} spell or similar magic, the bond fails when you speak the command word and the collar has no effect. If the bonded creature is a familiar summoned by the {@spell find familiar|PHB} spell, the collar and familiar disappear into a pocket dimension together whenever you temporarily dismiss it. If the bonded familiar is dismissed forever or drops to 0 hit points, it leaves the collar behind. A creature can only gain the benefits of one magical collar at a time."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chimeric-Collar.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Chromatic Obsidian Greataxe",
+      source: "GriffonsSaddlebag2",
+      page: 59,
+      baseItem: "greataxe|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 7,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "1d12",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "This prismatic greataxe is made using chromatic obsidian, a dazzling type of stone found where several Elemental Planes meet. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you roll a 20 on an attack roll made with this magic weapon, the target must make a DC 15 Constitution saving throw. A target takes {@damage 1d6} cold damage, {@damage 1d6} fire damage, {@damage 1d6} lightning damage, and {@damage 1d6} radiant damage on a failed save, or half as much damage on a successful one. Roll the damage dice separately, recording any 6 you roll. For each 6 you roll in this way, use the table below to determine which of the following effects apply.",
+        {
+          type: "table",
+          colLabels: [
+            "Damage Type",
+            "Effect"
+          ],
+          colStyles: [
+            "col-3 text-left",
+            "col-9 text-left"
+          ],
+          rows: [
+            [
+              "Cold",
+              "The target's speed is halved until the end of your next turn."
+            ],
+            [
+              "Fire",
+              "The target takes an extra 6 fire damage at the end of its next turn."
+            ],
+            [
+              "Lightning",
+              "The target can't take reactions until the end of your next turn."
+            ],
+            [
+              "Radiant",
+              "The next attack roll made against the target before the end of your next turn has advantage."
+            ]
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Chromatic-Obsidian-Greataxe.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Clockwork Colony Toolbox",
+      source: "GriffonsSaddlebag2",
+      page: 62,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This trim bronze toolbox rattles softly with the sound of bolts, screws, and other tools inside. The box weighs 3 pounds and is 3 feet long, 1 foot wide, and 1 foot deep. Inside the toolbox are four empty, resizable bins with nothing inside. Any metal object left inside the closed toolbox for 1 hour becomes meticulously clean and polished.",
+        "Similarly, any small machine (such as a compass or {@item hunting trap|PHB}) left inside the closed toolbox for 1 hour is magically repaired. Any magical item with \"clockwork\" in its name regains all its hit points when left in the toolbox in this way. If the magical item has charges or additional magical properties, it regains {@dice 1d4} expended charges and the ability to use those properties again. Once an item or object has been restored in this way, it can't be restored by the toolbox again for 24 hours."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Clockwork-Colony-Toolbox.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Coldfire Anvil",
+      source: "GriffonsSaddlebag2",
+      page: 64,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      weight: 50,
+      entries: [
+        "This cold, iron anvil weighs 50 pounds and is 1 and a half feet long. It has three magic runes on its side from the Everglacier that magically enchant any item sharpened, forged, or otherwise smithed using this anvil. Over the course of a full workday, or half as long if you're proficient with {@item smith's tools|PHB}, you can use the anvil to turn a nonmagical metal weapon into a coldfire one. A coldfire weapon is magical and deals an extra {@damage 1d6} cold damage to any target it hits, but is made fragile like ice. When you make an attack roll using a coldfire weapon and roll a 1, roll a {@dice d20}. On a 9 or lower, the weapon shatters and is destroyed, releasing a biting burst of icy air that deals {@damage 2d6} cold damage to all creatures within 10 feet of the weapon. After 7 days, a coldfire weapon loses the enchantment and becomes nonmagical again.",
+        "Once the anvil has been used to enchant a weapon in this way, it can't do so again for {@dice 1d6 + 1} days."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Coldfire-Anvil.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Comet Ballista",
+      source: "GriffonsSaddlebag2",
+      page: 64,
+      baseItem: "heavy crossbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 18,
+      weaponCategory: "martial",
+      property: [
+        "A",
+        "H",
+        "LD",
+        "2H"
+      ],
+      range: "100/400",
+      dmg1: "1d10",
+      dmgType: "B",
+      entries: [
+        "This crossbow is partially covered in cold shards of stone and metal and uses {@item sling bullet|PHB|sling bullets} as ammunition instead of {@item crossbow bolt|PHB|crossbow bolts}. When you fire a sling bullet from this magic crossbow, it flashes with blue light and leaves behind a brief, glimmering trail of cold, sparkling dust. Ranged attacks with this weapon deal bludgeoning damage, instead of piercing damage, and any target hit by it takes an extra {@damage 1d6} cold damage. In addition, the first time you hit a target on each of your turns with a ranged attack using this weapon, each creature within 10 feet of the target must succeed on a DC 13 Constitution saving throw or take {@damage 1d6} cold damage.",
+        {
+          type: "entries",
+          name: "Hailing Comets",
+          entries: [
+            "You can use an action to fire the crossbow into the air and speak its command word, choosing a point that you can see within 120 feet of you when you do. The sling bullet scatters into icy dust and is destroyed, but magically conjures a barrage of miniscule falling comets above the point. The comets fall in a 20-foot-radius, 40-foot-tall cylinder centered on that point and disappear once they hit the ground. Each creature within the area must make a DC 13 Dexterity saving throw, taking {@damage 8d6} cold damage on a failed save, or half as much damage on a successful one. Once this property has been used, it can't be used again until the next dawn."
+          ]
+        }
+      ],
+      ammoType: "sling bullet|phb",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Comet-Ballista.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Conspirator's Coat",
+      source: "GriffonsSaddlebag2",
+      page: 64,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      recharge: "dusk",
+      rechargeAmount: "{@dice 1d4 + 1}",
+      charges: 5,
+      entries: [
+        "This magic longcoat is adorned with raven feathers and carved jet buttons. While wearing this coat, you have advantage on Charisma ({@skill Deception}) checks. In addition, the coat has 5 charges and regains {@dice 1d4 + 1} expended charges daily at dusk. While wearing the coat, you can use a bonus action to expend 1 of its charges to disappear, releasing up to three ravens from your location under your control that scatter into the air. Each raven has AC 12, 1 hit point, and can fly up to 40 feet as part of this bonus action without provoking opportunity attacks. At the start of your next turn, the ravens vanish, and you reappear in the space of one of the ravens (your choice).",
+        "If all the ravens are reduced to 0 hit points, you reappear early in the same space as the last one that died. When you do, any excess damage dealt to the raven carries over to your normal form."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Conspirators-Coat.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Contingency Band",
+      source: "GriffonsSaddlebag2",
+      page: 64,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      entries: [
+        "Each of this leather ring's three braided bands bears the design of a dark, winding serpent. You can use an action to submerge the ring in a {@item potion of healing} or similar healing draft. If the ring is left to sit in a potion for 1 minute in this way, the ring magically consumes it and any of its healing properties. For each potion the ring has consumed, one of its dark serpents glows with a faint red light. The ring can have up to 3 consumed potions at a time.",
+        "Immediately after you take damage while wearing the ring, you can use your reaction to speak its command word and gain the healing effects of one of the ring's consumed potions (your choice). The consumed potion is then lost, and one of the ring's serpents becomes dark once more."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Contingency-Band.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Cottage Chest",
+      source: "GriffonsSaddlebag2",
+      page: 65,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This 1-foot-long chest looks like a replica of a woodland cottage and is magically locked. You can use an action to place this chest on the ground and speak its command word. The chest immediately unlocks and grows into a cottage that remains until you use an action to speak the command word that dismisses it, which works only if the cottage is empty. When dismissed, the cottage returns to its normal chest form. If there isn't enough space for the cottage or there are creatures in its area when you speak the command word, the chest remains locked and the action is wasted.",
+        "The cottage is a wooden, two-story building that's 40 feet wide and 65 feet long. Inside is a kitchen, a dining room, and a large parlor with an ever-burning fire in its hearth. A curling stairway leads to the second floor, which has 4 bedrooms equipped with furniture you'd find in a modest to respectable inn. The first floor has six windows, and each bedroom on the second floor has one. When activated, the cottage has a small door on the side facing you. The door opens only at your command, which you can speak as a bonus action. It is immune to the {@spell knock|PHB} spell and similar magic, such as that of a {@item chime of opening|DMG}.",
+        "The cottage's kitchen is filled with magical utensils that automatically stir, measure, and heat all manner of cuisine. Any check made using {@item cook's utensils|PHB} within the cottage has advantage on the roll. When left to its own devices, the cottage magically produces an array of baked goods for up to 8 creatures when the cottage appears for the first time each day and again each day at dawn until it is dismissed. Eating the food within the cottage provides enough nourishment to sustain a creature for one day. If any baked goods are left uneaten, they vanish at dawn as the new goods appear. Any baked good, furniture, or similar object vanishes when taken outside the cottage and immediately reappears inside.",
+        "Further, fey and fiends can't enter the cottage unless you choose to let them, and creatures can't move or travel into it using teleportation or by extradimensional or interplanar means.",
+        "The cottage is made of wood and plaster, and its magic prevents it from being tipped over or moved. The roof, the door, and the walls (including the windows) each have 60 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a {@spell wish} spell can repair the cottage (this use of the spell counts as replicating a spell of 8th level or lower). Each casting of {@spell wish} causes the roof, the door, or one wall to regain all its hit points."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Cottage-Chest.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Covolt Scythe",
+      source: "GriffonsSaddlebag2",
+      page: 66,
+      baseItem: "glaive|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 6,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "R",
+        "2H"
+      ],
+      dmg1: "1d10",
+      dmgType: "S",
+      entries: [
+        "This jagged scythe is forged with covolt, an elemental blue metal that carries storm-like properties. When you hit a creature with an attack using this magic weapon, it takes an extra {@damage 1d8} lightning damage. Once on each of your turns when you hit a creature with this weapon, you can choose a different creature within 10 feet of the target. That creature must succeed on a DC 15 Dexterity saving throw or take {@damage 1d8} lightning damage as an arc of electricity lashes out at it from the original target."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Covolt-Scythe.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Crown of the Mindmaster Matriarch",
+      source: "GriffonsSaddlebag2",
+      page: 66,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a wizard",
+      reqAttuneTags: [
+        {
+          class: "wizard"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "This golden crown is inset with a powerful fire ruby and veiled with light, mithral chain. The crown's descending prongs overlap with your temples and third eye, expanding your mind's commanding reach. While wearing this crown, you can use an action to cast the {@spell rary's telepathic bond|PHB|telepathic bond} spell from it.",
+        "In addition, while wearing the crown, you can use an action to cast the {@spell dominate person} spell using your spell save DC from it. On a failed save, a creature is affected by the spell for the duration, and for the next 24 hours after the spell ends, you have advantage on Charisma checks you make to interact with it. These effects end early if you or an ally deals damage to the creature. If the target is connected to you through your telepathic bond, it has disadvantage on the saving throw to resist this spell's effects when cast in this way. Once this property has been used, it can't be used again until the next dawn."
+      ],
+      attachedSpells: [
+        "dominate person",
+        "rary's telepathic bond"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Crown-of-the-Mindmaster-Matriarch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Cube of Teleportation",
+      source: "GriffonsSaddlebag2",
+      page: 67,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This hefty, metal cube is about 6 inches on a side and weighs 3 pounds. One of the cube's sides looks like a metallic stamp, and is made of countless interlocking and shifting panels that reconfigure themselves to magically generate a new, unique sigil sequence daily at dawn, as described in the {@spell teleportation circle} spell. Its five other sides are flat and blank, or, at the GM's discretion, have up to 5 different sigil sequences recorded onto them.",
+        "If you find a permanent {@spell teleportation circle}, you can place and hold one of the cube's flat sides against the circle for 1 hour, focusing on it for the duration (as if concentrating on a spell). If you hold and focus on the cube for the full duration, the circle's sigil sequence is recorded onto the cube's face. If a sigil was already on the cube's face, it's replaced by the new one.",
+        "The cube has 3 charges and regains {@dice 1d3} expended charges daily at dawn. If you hold one of the cube's recorded sigil sequences on the ground face-down and focus on it for 1 minute (as if concentrating on a spell), the cube expends 1 of its charges and duplicates the effect of the {@spell teleportation circle} circle spell, using the sigil sequence from the cube's face to form the spell's {@spell teleportation circle} on the ground below it.",
+        "Alternatively, you can hold the stamp side of the cube on the ground and focus on it for 1 minute (as if concentrating on a spell). If you hold and focus on the cube for the full duration, it magically applies its unique sigil sequence onto the ground in a 10-foot-diameter {@spell teleportation circle}, provided that there's enough space to do so. This circle remains for 1 hour, and can only be used as a destination circle for the duration. Once this property has been used, it can't be used again until the next dawn, unless you use an action to expend 1 of the cube's charges to generate a new sigil sequence and regain the use of this property. Once you've placed a unique {@spell teleportation circle} in this way, you can use this side of the cube as if it were a normal sigil sequence recording for the generated circle."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Cube-of-Teleportation.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dawn and Dusk",
+      source: "GriffonsSaddlebag2",
+      page: 69,
+      baseItem: "mace|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weaponCategory: "simple",
+      bonusWeapon: "+1",
+      entries: [
+        "You gain a +1 bonus to attack and damage rolls made with this magic weapon, which also has the light property. The weapon transforms at different times of the day. At dawn, the weapon's form becomes a {@item mace|PHB}, whose head is ringed with a line of radiating spikes. At dusk, it becomes a {@item sickle|PHB} with star designs along its crescent edge. A target hit with the mace takes an extra {@damage 1d4} radiant damage. A target hit with the sickle takes an extra {@damage 1d6} necrotic damage."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dawn-and-Dusk.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Deathloop Watch",
+      source: "GriffonsSaddlebag2",
+      page: 69,
+      tier: "minor",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This golden pocket watch has a skull-shaped lid with three panes of blue glass that cover its two eyes and nose. At the center of the watch is a secondary dial with a small, skeletal hand that indicates the amount of hit points you have remaining. If you die while the watch is on your person, the watch reverses your personal time stream just long enough to keep you alive, returning you to life with 1 hit point and allowing you to immediately stand up. When the watch reverses time in this way, one of the watch's three glass panes cracks and can't be repaired by mundane or magical means. For each pane of cracked glass, there is a cumulative {@chance 25|25 percent} chance that the watch fails to reverse time when you die. When all three panes of glass are cracked, the watch becomes nonmagical, although it can still be used to tell the time."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Deathloop-Watch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Direstone Runic Wand",
+      source: "GriffonsSaddlebag2",
+      page: 71,
+      type: "WD|DMG",
+      scfType: "arcane",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      weight: 1,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 1}",
+      charges: 7,
+      entries: [
+        "A rigid stone wand used by the arcane dwarves of the Direstone mines. The wand has 7 charges. While holding it, you can use an action to expend 1 or more of its charges to trace one of the following runes in the air to invoke its properties (spell save DC 15):",
+        {
+          type: "entries",
+          name: "Algiz",
+          entries: [
+            "You can expend 3 charges to grant 1 creature you can see within 10 feet of you resistance to fire damage for 1 hour."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Eihwaz",
+          entries: [
+            "You can expend 2 charges to cast the {@spell arcane lock|PHB} spell. When you use this spell to lock a second object, the spell ends on the first one."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Hagalaz",
+          entries: [
+            "You can expend 2 charges to cast the {@spell shatter|PHB} spell."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Kenaz",
+          entries: [
+            "You can expend 1 charge to cast the {@spell burning hands|PHB} spell, or 2 charges to cast the {@spell heat metal|PHB} spell."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Raidho",
+          entries: [
+            "You can expend 4 charges to cast the {@spell stone shape|PHB} spell. This version of the spell can alter the form of either stone or natural metal (such as iron or silver)."
+          ]
+        },
+        "Alternatively, you can use the wand to cast the {@spell illusory script|PHB} spell over the course of 1 minute by expending 1 of its charges, but can only use it to write on stone or metal surfaces.",
+        "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into stone dust. If you are not a {@race dwarf|PHB} when this happens, you must also succeed on a DC 20 Constitution saving throw or be {@condition petrified} until freed by the {@spell greater restoration|PHB} spell or similar magic."
+      ],
+      attachedSpells: [
+        "arcane lock",
+        "burning hands",
+        "heat metal",
+        "illusory script",
+        "shatter",
+        "stone shape"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Direstone-Runic-Wand.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Diviner's Dice",
+      source: "GriffonsSaddlebag2",
+      page: 71,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This set of three six-sided crystal dice is weakly connected to the tides of fate. You can roll these dice as an action and record the numbers rolled. Once rolled, you can't record any other numbers in this way until the next dawn. While you have the dice on your person, you can use a reaction when you or a creature you can see within 60 feet of you makes an attack roll or ability check to add or subtract one of the recorded numbers from the attack roll or ability check's total. You can wait to use this reaction until after the creature rolls the {@dice d20}, but must decide before the GM says whether the roll succeeds or fails. Each recorded number can only be used once. You lose any unused recorded numbers daily at dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Diviners-Dice.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Djinn and Tonic (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 71,
+      type: "P",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "The following {@item djinn and tonic|GriffonsSaddlebag2} is a rare variant with additional properties. It also tastes better. When you drink this potion, you gain the effect of the {@spell gaseous form|PHB} spell for 10 minutes (no concentration required) or until you end it early using an action. When the effect ends, your form rematerializes in a rush of air, forcing all Large and smaller creatures within 30 feet of you to make a DC 15 Strength saving throw. On a failed save, a creature is pushed 10 feet away from you and knocked {@condition prone}."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Djinn-and-Tonic.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Doom Bloom",
+      source: "GriffonsSaddlebag2",
+      page: 72,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This dark, velvety lotus has tiny pinpricks of starlight in its petals and releases lofting, magical pollen. Once picked, a doom bloom withers and is destroyed after {@dice 1d6 + 1} days. As an action, you can inhale the magical pollen from a picked flower and speak the name of a creature or location that's on the same plane of existence as you, duplicating the effect of the {@spell scrying|PHB} spell (save DC 15).",
+        "If the target of the effect fails the saving throw, the spell succeeds and the flower explodes into a burst of pollen and is destroyed. If the target succeeds on the saving throw, you instead witness hundreds of brief, painful visions until the start of your next turn that show you untold ways that you might die. When the visions end, you take {@damage 6d6} psychic damage, but the flower isn't destroyed. Once this property of the flower has been used, it can't be used again for 24 hours.",
+        "Doom blooms typically grow on their own, but can sometimes be found near others. When the flower dies or is destroyed, a new one grows after {@dice 1d6 + 1} days in the same place in which it last grew. If the flower was successfully used to duplicate the effect of the {@spell scrying|PHB} spell, the new flower grows at the location where the spell's sensor first appeared instead. If the sensor followed a creature, there is a {@chance 10|10 percent} chance that an additional flower will grow after {@dice 1d6 + 1} days at the sensor's location at the end of each minute of the spell's duration."
+      ],
+      attachedSpells: [
+        "scrying"
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Doom-Bloom.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dragonband",
+      source: "GriffonsSaddlebag2",
+      page: 73,
+      type: "",
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This metal bracelet hangs loosely from a wrist or ankle and is made from either brass, bronze, copper, gold, or silver wire. The clasp is cast in the shape of a metallic dragon's head matching the metal used in the rest of the band.",
+        "While wearing the band, you can use an action to speak its command word and cause it to unravel and shatter, destroying the bracelet. When it does, it releases a powerful blast of energy in a wave around you. Each creature within 20 feet of the band other than you must make a DC 15 Dexterity saving throw, taking {@damage 10d6} damage on a failed save, or half as much damage on a successful one. The damage type is determined by the type of metal used in the band, using the table below.",
+        {
+          type: "table",
+          colLabels: [
+            "Metal",
+            "Damage Type"
+          ],
+          colStyles: [
+            "col-3 text-left",
+            "col-9 text-left"
+          ],
+          rows: [
+            [
+              "Brass",
+              "Fire"
+            ],
+            [
+              "Bronze",
+              "Lightning"
+            ],
+            [
+              "Copper",
+              "Acid"
+            ],
+            [
+              "Gold",
+              "Fire"
+            ],
+            [
+              "Silver",
+              "Cold"
+            ]
+          ],
+          footnotes: [
+            "Optional Footer"
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dragonband.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dragonbreath Ammunition",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Arrow"
+        },
+        {
+          name: "Crossbow Bolt"
+        }
+      ],
+      inherits: {
+        namePrefix: "Dragonbreath ",
+        source: "GriffonsSaddlebag2",
+        page: 74,
+        tier: "minor",
+        rarity: "rare",
+        entries: [
+          "This metallic ammunition flies effortlessly on its own when fired. When you take the {@action Attack} action and make a ranged weapon attack, you can instead fire this ammunition at a point you can see within range. The arrow or bolt explodes when it reaches the point, destroying the ammunition and creating either a cone or 5-foot-wide line of dragon's breath in the direction it was fired. The created effect depends on the metal it was cast from. Each creature in that area must make a DC 15 Dexterity saving throw, taking {@damage 4d8} damage of the associated type on a failed save, or half as much damage on a successful one. Use the table below to determine the effect's area of effect and damage type:",
+          {
+            type: "table",
+            colLabels: [
+              "Ammunition Metal",
+              "Area",
+              "Damage Type"
+            ],
+            colStyles: [
+              "col-3-5 text-left",
+              "col-3-5 text-left",
+              "col-7 text-left"
+            ],
+            rows: [
+              [
+                "Brass",
+                "60-foot line",
+                "Fire"
+              ],
+              [
+                "Bronze",
+                "90-foot line",
+                "Lightning"
+              ],
+              [
+                "Copper",
+                "60-foot line",
+                "Acid"
+              ],
+              [
+                "Gold",
+                "60-foot cone",
+                "Fire"
+              ],
+              [
+                "Silver",
+                "60-foot cone",
+                "Cold"
+              ]
+            ]
+          }
+        ],
+        lootTables: [
+          "Magic Item Table C|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dragonbreath-Ammunition.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 74,
+      tier: "minor",
+      rarity: "rare",
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dragonbreath-Ammunition.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This metallic ammunition flies effortlessly on its own when fired. When you take the {@action Attack} action and make a ranged weapon attack, you can instead fire this ammunition at a point you can see within range. The arrow or bolt explodes when it reaches the point, destroying the ammunition and creating either a cone or 5-foot-wide line of dragon's breath in the direction it was fired. The created effect depends on the metal it was cast from. Each creature in that area must make a DC 15 Dexterity saving throw, taking {@damage 4d8} damage of the associated type on a failed save, or half as much damage on a successful one. Use the table below to determine the effect's area of effect and damage type:",
+        {
+          type: "table",
+          colLabels: [
+            "Ammunition Metal",
+            "Area",
+            "Damage Type"
+          ],
+          colStyles: [
+            "col-3-5 text-left",
+            "col-3-5 text-left",
+            "col-7 text-left"
+          ],
+          rows: [
+            [
+              "Brass",
+              "60-foot line",
+              "Fire"
+            ],
+            [
+              "Bronze",
+              "90-foot line",
+              "Lightning"
+            ],
+            [
+              "Copper",
+              "60-foot line",
+              "Acid"
+            ],
+            [
+              "Gold",
+              "60-foot cone",
+              "Fire"
+            ],
+            [
+              "Silver",
+              "60-foot cone",
+              "Cold"
+            ]
+          ]
+        }
+      ],
+      variants: [
+        {
+          base: {
+            name: "Arrow",
+            source: "XPHB",
+            page: 222,
+            srd52: true,
+            edition: "one",
+            type: "A|XPHB",
+            rarity: "none",
+            weight: 0.05,
+            value: 5,
+            arrow: true,
+            entries: [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ]
+          },
+          specificVariant: {
+            name: "Dragonbreath Arrow",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "A|XPHB",
+            rarity: "rare",
+            weight: 0.05,
+            arrow: true,
+            entries: [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ],
+            page: 74,
+            tier: "minor",
+            lootTables: [
+              "Magic Item Table C|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dragonbreath-Ammunition.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Dragonbreath Ammunition",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Dream Saber",
+      source: "GriffonsSaddlebag2",
+      page: 74,
+      baseItem: "scimitar|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "You gain a +1 bonus to attack and damage rolls made with this magic weapon, and any creature it hits takes an extra {@damage 1d4} psychic damage. When the damage you deal with this weapon would reduce a creature to 0 hit points, you can choose to magically cause it to fall asleep, instead of dealing the damage. The sleeping creature is {@condition unconscious} for 10 minutes or until it takes damage or someone uses an action to shake or slap it awake. When you cause a creature to fall asleep in this way, you can also force it to make a DC 15 Wisdom saving throw. On a failed save, you immediately learn its surface thoughts and can decide what dreams it has while asleep. Once a creature falls asleep in this way, it is immune to this effect for the next 24 hours."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dream-Saber.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dress of Defense",
+      source: "GriffonsSaddlebag2",
+      page: 74,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This dress has several decorative armor plates adorning it, but is otherwise made of layers of lush and sheer fabric. While wearing this dress, you gain a +1 bonus to AC if you are wearing no armor. You can use a {@item shield|PHB} and still gain this benefit. As a bonus action, you can speak the dress' command word to cause its armored plates to emit a protective magical force, causing the bonus to increase to +3 for 1 minute. Once this property of the dress has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dress-of-Defense.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dune Cowl",
+      source: "GriffonsSaddlebag2",
+      page: 75,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This tough leather hat and cowl help protect you against the extreme heat and sun of the desert. While wearing the cowl, you can withstand temperatures as hot as 200 degrees Fahrenheit, and if you have the Sunlight Sensitivity trait, you are unaffected by the trait while wearing the hat.",
+        "In addition, while wearing the hat, you can use an action to speak its command word and throw it on the ground within 10 feet of you. The hat becomes a {@creature giant scorpion|MM} under your control and acts on its own initiative count. By using a bonus action to speak the command word again, you return the hat to its normal form in a space formerly occupied by the scorpion.",
+        "On your turn, you can mentally command the scorpion if it is within 60 feet of you and you aren't incapacitated. You decide what action the scorpion takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location.",
+        "The hat remains in scorpion form for up to 8 hours. If the scorpion is reduced to 0 hit points, it dies and reverts to its hat form. Once this property of the hat has been used, it can't be used again until 7 days have passed."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dune-Cowl.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dusk Cleaver",
+      source: "GriffonsSaddlebag2",
+      page: 75,
+      baseItem: "handaxe|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 2,
+      weaponCategory: "simple",
+      property: [
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "This dark iron axe head is shaped like a crescent moon. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "You can use an action to swing the axe at an area of magical darkness within 5 feet of you, making an attack roll against the darkness (AC 10). If the magical darkness was created by a spell, add the spell's level to its AC. If you're inside the area of magical darkness, you ignore the disadvantage normally imposed on this attack roll as a result of not being able to see. On a hit, the darkness is dispelled. If the darkness fills a space that's larger than 60 feet on a side, the darkness in a 60-foot cube originating from you is dispelled instead. Once this property has been used, it can't be used again until the next dusk."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dusk-Cleaver.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dusk Dagger (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 76,
+      baseItem: "dagger|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 1,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      entries: [
+        "This delicately curved dagger is ornamented with several crescent moon designs. When you hit a creature who is completely in dim light or darkness with this magic weapon, that creature takes an extra {@damage 1d8} psychic damage."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dusk-Dagger.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Dwarven Boozehound's Backpack",
+      source: "GriffonsSaddlebag2",
+      page: 76,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      weight: 10,
+      entries: [
+        "This large, silver tank is nearly 3 feet tall and produces its own magical ale. It has several knobs alongside it and a tapered hose attached to the bottom. The tank holds 8 gallons of {@item ale (gallon)|PHB|ale} and completely refills daily at dawn. When you attune to the tank for the first time, it immediately fills with the magical ale. The tank is supported with several leather straps, allowing it to be easily carried. Regardless of how much ale is inside the tank, it always weighs 10 pounds.",
+        "You can dispense the magical ale as you would a normal keg, with the exception that this alcohol affects a creature twice as much as normal due to its magical nature. Alternatively, you can spend 10 minutes focusing on the tank and adjusting its various knobs to produce up to 4 special elixirs, expending 1 gallon of ale for each elixir you make. If you are a {@race dwarf|PHB} or are proficient with {@item brewer's supplies|PHB}, you can produce this elixir over the course of 1 minute instead. Each elixir contains one ounce of concentrated liquid. A creature can drink the elixir using an action, granting it advantage on saving throws against poison and resistance to poison damage for 8 hours. If the creature is a dwarf, it gains 10 temporary hit points instead. If an elixir isn't consumed before the next dawn, it becomes a nonmagical, albeit strongly alcoholic, beverage.",
+        "While carrying the tank, you can use an action to point its hose at a target you can see within 30 feet of you, provided you have a free hand. When you do, the tank expels 1 gallon of the ale in a powerful blast at the target. If the target is an object that isn't being worn or carried and weighs no more than 300 pounds, it is either knocked over or pushed up to 15 feet away from you. If the target is a creature, make a ranged spell attack against it, using an attack bonus of +7. On a hit, the creature takes {@damage 1d8} bludgeoning damage, is pushed 5 feet away from you, and must succeed on a DC 15 Constitution saving throw or be {@condition poisoned} until the start of your next turn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dwarven-Boozehounds-Backpack.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Elder Sequoia Scale Mail",
+      source: "GriffonsSaddlebag2",
+      page: 77,
+      baseItem: "scale mail|phb",
+      type: "MA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a druid",
+      reqAttuneTags: [
+        {
+          class: "druid"
+        }
+      ],
+      weight: 45,
+      ac: 14,
+      bonusAc: "+1",
+      stealth: true,
+      entries: [
+        "This hardy, natural mail is made with leather and protected with the large outer shell of an elder sequoia seed cone. You gain a +1 bonus to AC while wearing this armor. In addition, while wearing this armor, you can use your Wild Shape to transform into a mighty evergreen tree. The tree is 5 feet across at its base and can be up to 40 feet tall. Its branches extend up to 10 feet away from its trunk and must be at least 5 feet above its base.",
+        "The tree has hit points equal to 5 times your druid level, AC 20, and vulnerability to fire damage. While you're a tree, you magically retain your normal senses and gain {@sense tremorsense|MM} out to a range of 30 feet, but your speed becomes 0, and you can only use your actions to shuffle your limbs (as if by a breeze or rustling creature), revert to your normal form, or use your Wild Shape again."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Elder-Sequoia-Scale-Mail.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Eldritch Bident",
+      source: "GriffonsSaddlebag2",
+      page: 77,
+      baseItem: "trident|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 4,
+      weaponCategory: "martial",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      entries: [
+        "This two-pronged weapon has a sickly connection to another plane of existence. While holding the bident, you can use an action to release 2 simultaneous beams of eldritch force from it, with each beam originating from one of the weapon's prongs. Make a ranged spell attack for each beam, using a spell attack bonus of +7, against either one or two targets that you can see within 60 feet of you. On a hit, a target takes {@damage 1d8} force damage.",
+        "If you're a warlock, you are proficient with this weapon while you're attuned to it and gain the following benefits:",
+        {
+          type: "list",
+          items: [
+            "When you make an attack with the bident's eldritch beams, you can choose to use your warlock spell attack bonus instead of the weapon's normal one.",
+            "When you hit a target with one of the eldritch beams, you add your Charisma modifier to the damage dealt by each beam, which deal {@damage 1d12} force damage instead of {@dice 1d8}.",
+            "When you roll a 20 on an attack roll made with one of the eldritch beams against a creature, that creature must succeed on a DC 10 Charisma saving throw or be shunted to another plane of existence occupied by eldritch horrors. While there, the target is {@condition incapacitated}. At the start of your next turn, the creature takes {@damage 2d12} psychic damage and reappears in the space it left or in the nearest unoccupied space if that space is occupied."
+          ]
+        },
+        "Additionally, if you're a warlock, you can use an action to cast the {@spell plane shift|PHB} spell from the bident while holding it to transport yourself only to the plane of existence and location of your warlock patron. You remain there for up to 24 hours or until you use an action to return to your previous location on your original plane of existence. Once this property of the bident has been used, it can't be used again for one year."
+      ],
+      attachedSpells: [
+        "plane shift"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Eldritch-Bident.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Everglacier Prosthesis",
+      source: "GriffonsSaddlebag2",
+      page: 78,
+      type: "",
+      resist: [
+        "cold"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a creature missing a hand, arm, or leg",
+      wondrous: true,
+      entries: [
+        "When found, this item appears to be a roughly hewn length of ice with runes etched into its side. To attune to this item, you must attach it to the end of your missing arm or leg, at which point the ice magically attaches to you and forms an icy copy of the appendage it's replacing. The prosthetic is a fully capable part of your body and can't be removed against your will as long as you're attuned to it.",
+        "While the prosthetic is attached, you have resistance to cold damage, and your unarmed strikes with the limb deal cold damage instead of bludgeoning damage.",
+        "In addition, the prosthesis has 6 icy spikes protruding from its surface. You can use an action while the prosthetic is attached to launch up to 3 of the spikes at one or more targets within 30 feet of you. Make a ranged spell attack for each spike, using an attack bonus of +7. On a hit, the target takes {@damage 2d6} cold damage. {@dice 1d4 + 2} launched spikes regrow daily at dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Everglacier-Prosthesis.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Faeflame Torch",
+      source: "GriffonsSaddlebag2",
+      page: 79,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This magic torch was harvested from a tree in the Safire Wood, one of the most beautiful and deadly fey forests. While holding the torch, you can use a bonus action to speak its first command word, causing eerie blue flames to appear above the head of the torch. The flames shed bright light in a 20-foot radius and dim light for an additional 20 feet. The flames are not extinguished when immersed in water and last until you use a bonus action to speak the command word again or until you stow the torch.",
+        "You can use an action while holding the lit torch to speak its second or third command word. Speaking the second command word causes any illusion within the torch's bright light to be outlined in blue, green, or violet (your choice) for 1 minute. The torch can't be used this way again until the next dawn.",
+        "Speaking the third command word causes the flame to fly from the torch and erupt at a point you can see within 60 feet of you, creating an explosion of blue flames and duplicating the effect of the {@spell faerie fire|PHB} spell (save DC 15, no concentration required) in a 20-foot radius sphere centered on that point. A creature also takes {@damage 3d6} fire damage on a failed save, or half as much damage on a successful one. You can choose to end the effect early as a bonus action. When the effect ends, the flame reappears above the torch. The torch can't be used this way again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Faeflame-Torch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Failed Purity Spear",
+      source: "GriffonsSaddlebag2",
+      page: 80,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      curse: true,
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      recharge: "dusk",
+      rechargeAmount: "{@dice 1d6 + 4}",
+      charges: 10,
+      entries: [
+        "The grayed unicorn horn that rests at the top of this sickly spear is fractured and slowly leaks a silver, corrupting fluid. A {@i failed purity spear} is the rare version of a {@item purity spear|TGS1}, a legendary weapon, that was made by a creature other than an elder fey. Its magic is a sad reminder that while unicorns are paragons of good, even their magic can become toxic when mistreated.",
+        {
+          type: "entries",
+          name: "Corruption",
+          entries: [
+            "This magic spear has 10 charges and regains {@dice 1d6 + 4} expended charges daily at dusk. You can expend 1 charge when you hit a creature with the spear to cause it to inject the target with its corrupting fluid. When you do, the target must succeed on a DC 15 Constitution saving throw or gain 1 point of corruption, which last for 1 minute. A creature takes {@damage 1d4} poison damage at the start of each of its turns for each point of corruption it has, up to a maximum of {@damage 3d4} poison damage. This poison damage ignores resistance and immunity. A creature with at least 1 point of corruption can make another DC 15 Constitution saving throw at the end of each of its turns. On a success, it removes 1 point of corruption. A creature is {@condition poisoned} while it has 3 or more points of corruption.",
+            "If you expend the spear's last charge, roll a {@dice d20}. On a 1, the tip of the spear shatters, and the spear becomes a nonmagical {@item quarterstaff|PHB}."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Charge",
+          entries: [
+            "If you move at least 20 feet straight toward a target and then hit it with the spear on the same turn, the target takes an extra {@dice 1d6} piercing damage."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "This spear is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the spear, keeping it within reach at all times. You also have disadvantage on attack rolls with weapons other than this one, unless no foe is within 60 feet of you that you can see or hear. While you're cursed, you have disadvantage on any saving throw against poison. However, while you are poisoned, you gain a +2 bonus to attack and damage rolls made with this magic weapon."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Failed-Purity-Spear.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Focus Breaker",
+      source: "GriffonsSaddlebag2",
+      page: 82,
+      baseItem: "maul|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 10,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "2d6",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      entries: [
+        "Forged during the Upheaval, these brutish weapons were given to members of the guard to quell any arcanist uprising. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature concentrating on a spell with this weapon, runes start to glow on the weapon's head, and that creature makes the resulting Constitution saving throw to maintain its concentration with disadvantage.",
+        "As an action, you can speak the weapon's command word and hold it aloft, causing the metal book adorning the head of the maul to wildly turn its pages and shatter. When it does, any spell or magical effect within 60 feet of you is dispelled, as if affected by the {@spell dispel magic|PHB} spell (5th-level version). A spell or magical effect cast using a 6th-level spell slot or higher is unaffected in this way. Once this property has been used, it can't be used again and the book disappears from the head of the weapon."
+      ],
+      attachedSpells: [
+        "dispel magic"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Focus-Breaker.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Forgework Dragon Shield",
+      source: "GriffonsSaddlebag2",
+      page: 84,
+      baseItem: "shield|phb",
+      type: "S",
+      tier: "major",
+      rarity: "rare",
+      weight: 6,
+      ac: 2,
+      bonusAc: "+1",
+      entries: [
+        "While holding this plated brass shield, you gain a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC. The shield has a metallic maw in the visage of a dragon forged into the face of the shield, and small plumes of flame occasionally leap from openings in the shield's plates.",
+        "When a creature within 5 feet of you misses you with an attack, you can use your reaction to retaliate with the shield. When you do, a gout of flame erupts from the shield, forcing the attacker to make a DC 15 Dexterity saving throw. On a failed save, the target takes {@damage 3d10} fire damage and ignites. Until a creature takes an action to douse the fire, the target takes {@damage 1d10} fire damage at the start of each of its turns. On a successful save, the target takes half as much damage and doesn't ignite. Once this property has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Forgework-Dragon-Shield.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Fused Chimeric Hide",
+      source: "GriffonsSaddlebag2",
+      page: 86,
+      baseItem: "hide armor|phb",
+      type: "MA",
+      resist: [
+        "fire"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a barbarian or druid",
+      reqAttuneTags: [
+        {
+          class: "barbarian"
+        },
+        {
+          class: "druid"
+        }
+      ],
+      weight: 12,
+      ac: 12,
+      bonusAc: "+1",
+      entries: [
+        "This armor is made from the three unique hides of a fearsome chimera, creating an armor that's both imposing and practical. You have a +1 bonus to AC while wearing this armor.",
+        "In addition, when you enter a rage or use your Wild Shape to transform into a beast, you can take on a special aspect, choosing one of the options below.",
+        {
+          type: "entries",
+          name: "Aspect of the Dragon",
+          entries: [
+            "Your skin hardens into platelike scales, granting you 20 temporary hit points and resistance to fire damage."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Aspect of the Goat",
+          entries: [
+            "You grow a pair of ram's horns. If you already have horns, this aspect causes them to grow larger and more powerful. When you move at least 20 feet straight toward a target no more than one size larger than you and immediately make a melee weapon attack against it, it must succeed on a DC 15 Strength saving throw or be knocked {@condition prone}."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Aspect of the Lion",
+          entries: [
+            "You grow a shimmering mane that wreathes your head and neck, and your teeth become fangs. You have advantage on melee attack rolls against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        },
+        "Each aspect lasts for 1 minute. At the end of the duration, you revert to your normal form or beast shape. Once you take on the aspect of a creature in this way, you can't take on that aspect again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Fused-Chimeric-Hide.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Gauntlets of Eldritch Ferocity",
+      source: "GriffonsSaddlebag2",
+      page: 87,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a warlock",
+      reqAttuneTags: [
+        {
+          class: "warlock"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "These leather gloves are protected with ancient stone plates inscribed with indecipherable runes. When you hit a target with the {@spell eldritch blast} spell while wearing these gauntlets and roll damage, you can treat any 1 on a damage die as a 2.",
+        "Additionally, while wearing these gauntlets, you can choose to create an additional beam of energy and make an extra attack whenever you cast {@spell eldritch blast}. When you roll a 1 or 2 on an attack roll made with this extra beam, you take {@damage 3d12} necrotic damage, and until you finish a short or long rest, your hit point maximum is reduced by an amount equal to the necrotic damage you take. This necrotic damage ignores resistance and immunity, and if it reduces you to 0 hit points, you die."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gauntlets-of-Eldritch-Ferocity.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Gentleman's Saber",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Longsword"
+        },
+        {
+          name: "Scimitar"
+        }
+      ],
+      inherits: {
+        namePrefix: "Gentleman's Saber ",
+        source: "GriffonsSaddlebag2",
+        page: 87,
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        bonusWeapon: "+1",
+        recharge: "dawn",
+        rechargeAmount: "{@dice 1d3}",
+        charges: 3,
+        entries: [
+          "This elegant blade has a gently curved handle and a guard in the shape of a shield. Even if you aren't attuned to the sword, you gain a +1 bonus to attack and damage rolls made with this magic weapon, and if you make an opportunity attack with the weapon and hit, the target takes an extra {@damage 1d6} slashing damage from the attack.",
+          "If you're attuned to the weapon, the weapon's shieldlike guard changes its design to match your family crest. In addition, the sword has 3 charges, which you can use only if you're attuned to it. When you're hit by a ranged attack while holding the sword, you can use your reaction to expend 1 of its charges to hold the blade in front of you. Roll a {@dice d6}. A domed, spectral barrier appears from the blade's tip, granting you a bonus to AC against ranged attacks equal to the number rolled on the {@dice d6} until the start of your next turn, including against the triggering attack. The sword regains {@dice 1d3} expended charges daily at dawn."
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gentlemans-Saber.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 87,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      bonusWeapon: "+1",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gentlemans-Saber.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This elegant blade has a gently curved handle and a guard in the shape of a shield. Even if you aren't attuned to the sword, you gain a +1 bonus to attack and damage rolls made with this magic weapon, and if you make an opportunity attack with the weapon and hit, the target takes an extra {@damage 1d6} slashing damage from the attack.",
+        "If you're attuned to the weapon, the weapon's shieldlike guard changes its design to match your family crest. In addition, the sword has 3 charges, which you can use only if you're attuned to it. When you're hit by a ranged attack while holding the sword, you can use your reaction to expend 1 of its charges to hold the blade in front of you. Roll a {@dice d6}. A domed, spectral barrier appears from the blade's tip, granting you a bonus to AC against ranged attacks equal to the number rolled on the {@dice d6} until the start of your next turn, including against the triggering attack. The sword regains {@dice 1d3} expended charges daily at dawn."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Longsword",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 3,
+            value: 1500,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Gentleman's Saber Longsword",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 87,
+            tier: "major",
+            reqAttune: true,
+            bonusWeapon: "+1",
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d3}",
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gentlemans-Saber.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Gentleman's Saber",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Scimitar",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 3,
+            value: 2500,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Nick|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Gentleman's Saber Scimitar",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Nick|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 87,
+            tier: "major",
+            reqAttune: true,
+            bonusWeapon: "+1",
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d3}",
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gentlemans-Saber.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Gentleman's Saber",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Gi of Shifting Seasons",
+      source: "GriffonsSaddlebag2",
+      page: 88,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a monk",
+      reqAttuneTags: [
+        {
+          class: "monk"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "When found, this gi is gray with a large tree design at its bottom hem. When you attune to the gi, its color and tree design changes to resemble the current season: Winter (blue, leafless), Spring (green, pink blossoms), Summer (red, green leaves), or Autumn (Yellow, red leaves along the bottom hem). While the gi resembles a season, it gains the following respective benefits:",
+        {
+          type: "entries",
+          name: "Winter",
+          entries: [
+            "You are immune to the effects of extreme cold, and whenever you hit a creature with one of the attacks granted by your Flurry of Blows, that creature's speed is reduced by 5 feet (to a minimum speed of 15 feet) until the start of your next turn."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Spring",
+          entries: [
+            "When the gi changes to this season, you gain {@dice 1d4 + 4} temporary hit points. In addition, when you use your Step of the Wind, your jump distance is tripled, instead of doubled, and you ignore the effects of {@quickref difficult terrain||3} until the end of your turn."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Summer",
+          entries: [
+            "You are immune to the effects of extreme heat, and whenever you hit a target with an unarmed strike, the target takes an additional 2 fire damage. If you are outside during the day, the target takes an additional 3 fire damage, instead."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Autumn",
+          entries: [
+            "You have advantage on Constitution saving throws. When you use your Patient Defense, creatures provoke an opportunity attack from you when they move within 5 feet of you until the start of your next turn."
+          ]
+        },
+        "You can change the gi's season to another one of your choice by spending 1 minute in silent meditation. Alternatively, whenever you use an action, bonus action, or reaction to spend 1 or more ki points, you can choose to shift the gi's season by one, moving in chronological order. When you do, you choose whether to gain the season's benefits before or after the action. For example, if the gi is in Autumn and you spend 1 ki point to use Flurry of Blows, the gi can immediately change to represent Winter and grant the season's benefits to your Flurry of Blows."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gi-of-Shifting-Seasons.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Giantcraft Ambusher",
+      source: "GriffonsSaddlebag2",
+      page: 88,
+      baseItem: "greataxe|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 7,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "1d12",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "This dark metal axe contains the brute force of a fire giant inside and requires a Strength of 15 or higher in order to wield it. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "While holding the weapon, you can speak its command word using a bonus action to magically enlarge it. When you do, the weapon grows to three times its normal size until the start of your next turn. While enlarged, this axe has the reach property and deals an extra {@damage 2d12} slashing damage to any target it hits. The axe's weight doesn't change. While the axe is enlarged, it doesn't impose disadvantage on your attack rolls due to its larger size. Once this property of the axe has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Giantcraft-Ambusher.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Gloves of Healing",
+      source: "GriffonsSaddlebag2",
+      page: 90,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "These silken gloves enhance the rejuvenating power of healers and clerics. While wearing the gloves, whenever you cast a spell of 1st level or higher to restore hit points to one or more creatures, you can choose one target of the spell to regain additional hit points equal to your proficiency bonus.",
+        "Alternatively, a creature can regain these additional hit points if you use a {@item healer's kit|PHB} to stabilize or restore hit points to it. Once a creature regains extra hit points in this way, it can't do so again until it finishes a short or long rest."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Gloves-of-Healing.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Golem Sapper",
+      source: "GriffonsSaddlebag2",
+      page: 92,
+      type: "",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This octagonal device is roughly fist sized and weighs 1/2 pound. As an action, you can place the device on a construct within your reach. When you do, the creature must make a DC 18 Constitution saving throw. On a failed save, the creature takes {@damage 2d10} necrotic damage and is {@condition stunned} until the start of your next turn, at which point it can repeat the saving throw. Each time the creature makes this saving throw after the first, the DC is reduced by 2 (to a minimum DC of 10). On a successful save, the device falls from the creature and can't be used again for 1 hour.",
+        "The device's saving throw DC remains reduced after being used. The DC increases by 2 for every 24 hours it isn't in use, up to a maximum DC of 18."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Golem-Sapper.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Harbinger's Flail",
+      source: "GriffonsSaddlebag2",
+      page: 98,
+      baseItem: "flail|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "R"
+      ],
+      dmg1: "1d8",
+      dmgType: "B",
+      entries: [
+        "This whip-like chain flail's head is a sonorous bell from the Temple of Twin Fates, a holy site known for its grim foretellings. This weapon has the reach property and deals an extra {@damage 1d4} thunder damage to any target it hits. When it hits a target, the bell releases a deep sound that's audible out to 100 feet."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Harbingers-Flail.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Heavenly Chalice",
+      source: "GriffonsSaddlebag2",
+      page: 101,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This golden goblet is ornamented with 4 glimmering gems and stripes of jet and ivory. It weighs 2 pounds and can hold the contents of one potion. When a {@item Potion of Healing (*)|DMG|potion of healing} (of any rarity) is poured into the cup, a cleric, paladin, or other creature with a magical connection to a celestial can spend 1 minute reciting a prayer over it. At the end of the prayer, the potion becomes sanctified and begins to glow with a calming blue light. When a {@item Potion of Healing (*)|DMG|potion of healing} becomes sanctified, it creates a pool of hit points equal to the maximum number of potential regained hit points possible for that potion.",
+        "When a creature drinks from a sanctified {@item Potion of Healing (*)|DMG|potion of healing}, that creature can restore a number of hit points of its choice, up to the maximum amount remaining in the pool. When the pool is reduced to 0 hit points, the potion is gone.",
+        "A potion remains sanctified for 24 hours or until it's spilled or poured into another vessel. Once this property of the goblet has been used, it can't be used again for 24 hours."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Heavenly-Chalice.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Heavy Golem Armor",
+      source: "GriffonsSaddlebag2",
+      page: 101,
+      baseItem: "plate armor|phb",
+      type: "HA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a Small humanoid",
+      reqAttuneTags: [
+        {
+          creatureType: "humanoid",
+          size: "S"
+        }
+      ],
+      weight: 65,
+      ac: 18,
+      strength: "15",
+      ability: {
+        static: {
+          str: 19
+        }
+      },
+      stealth: true,
+      entries: [
+        "This heavy set of plate mail is 5½ feet tall, weighs 100 pounds, and is reconfigured from the pieces of an iron golem. Despite the armor's larger size, a series of clever harnesses inside its chest piece comfortably support you inside it. While wearing this armor, your Strength score is 19, unless it's already higher, and you are considered to be a Medium creature. Magic currents run through the inside of the armor and connect to you, allowing you to control the metal limbs as if they were your own. This magical connection causes you to still take any damage you receive while wearing the armor.",
+        "While wearing this armor, you can use a bonus action to speak its command word to force the armor to move more rapidly. When it does, you gain the effect of the {@spell haste} spell (no concentration required), and the armor's joints creak and groan from the increased strain. At the end of each of your turns while you're under this effect, there is a cumulative {@chance 20|20 percent} chance that the armor overheats. When it does, you take {@damage 1d10} fire damage from the armor, and the effect ends. Once this property of the armor has been used, it can't be used again until the next dawn."
+      ],
+      attachedSpells: [
+        "haste"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Heavy-Golem-Armor.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Hoarder's Haul (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 104,
+      type: "VEH",
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This magical cart is made from the large, hollow horn of a fallen dragon. While all {@i hoarder's hauls} are made from the horns of dragons, their true magic stems from the strength of the dragon's greed. Uncommon and rare carts have handles and a single wheel at their front and must be physically moved. Very rare versions have a flying speed of 10 feet, can hover up to 20 feet off the ground, and move according to your spoken directions, provided that you are within 30 feet of the cart.",
+        "The cart has two command words. The first command word can be spoken using an action and causes the cart to shrink or enlarge, becoming as small as 1 foot long and 7 inches across or as large as 5 feet long and 3 feet across. Regardless of its size, the cart always weighs 5 pounds without anything inside it. Anything contained by the cart does not resize to fit its new size, potentially spilling onto the ground if the cart becomes too small.",
+        "When you place a nonliving object in the cart, you can speak the cart's second command word as an action to cause the object to become locked in place. A locked object can't be removed or interacted with against your will, unless the cart becomes too small to contain it. A creature that attempts to remove an object locked in this way must succeed on a Wisdom saving throw or become {@condition frightened} of the cart for 1 minute. A {@condition frightened} creature is unwilling to move toward the cart or interact with it for the duration. If the cart is a rare or very rare version, the creature also takes psychic damage on a failed saving throw. A creature that succeeds on the saving throw is immune to this effect for 24 hours. You can speak the second command word as an action again to unlock any number of objects within the cart.",
+        "The cart's properties depend on the item's rarity. The uncommon variant has a carrying capacity of 500 lb., and a save DC of 15. Creatures that fail the saving throw take {@damage 3d6} psychic damage."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hoarders-Haul.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Homeroot",
+      source: "GriffonsSaddlebag2",
+      page: 105,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This piece of gnarled root has several bulbous openings along its twisted length. Enchanted by powerful druids, this root has a tiny door and a small, chimney-like protrusion from its larger end. While holding it, a tiny plume of illusory smoke emanates from the chimney.",
+        "You can bury and plant this root in soil over the course of 1 minute. If the root remains buried for 1 hour, it then immediately grows underground to create a comfortable, wooden dwelling (provided that there's enough room to grow), and a stump appears from the ground where the root was buried. The stump has a simple round door carved into it that is large enough for a Medium or smaller creature to enter. The door appears and opens only at your command, which you can speak as a bonus action. It is immune to the {@spell knock|PHB} spell and similar magic, such as that of a {@item chime of opening|DMG}. The door opens to reveal a tunnel 15 feet deep and lined with ladder-like rungs made of twisting roots. At the bottom of the tunnel is a large, circular room that's 30 feet in diameter with 10-foot-high ceilings. The room is brightly lit by bioluminescent fungi that grow along its wooden walls and ceiling. You can magically control the light in the room by touching the luminous fungi, allowing you to fill the room with total darkness, dim light, or bright light.",
+        "A single hallway leads away from the room. Four doors line the hallway, which each lead to a room that's 10 feet in diameter with a 10-foot-high ceiling. Every room is decorated with various pieces of wooden furniture made from coiled roots and other magically occurring plant growth, such as tables, chairs, or a bed, depending on the needs of the creature who planted the root.",
+        "At the end of the hallway hangs a single red root. You can use a bonus action to pull the root to cause the hallway to extend upward into a tunnel, complete with a root-like ladder, and create a second, temporary entrance to the dwelling in an unoccupied space 60 feet away from the entrance stump. The temporary entrance is well-hidden, noticeable only with a successful DC 15 Wisdom ({@skill Perception}) check, and remains until the start of your next turn.",
+        "A creature that casts the {@spell plant growth} spell as an action can redesign the appearance and furniture in one of the dwelling's rooms. If the spell is cast over the course of 8 hours, the creature can redesign the appearance and furniture of the entire dwelling instead, except for the location of the entrance stump. A conscious druid or ranger inside the dwelling is aware of any Small or larger creature that comes within 60 feet of the dwelling's entrance, and magically knows only the creature's size and gait, such as the gallop of a horse or walk of a humanoid.",
+        "The entrance stump has 100 hit points, immunity to damage from nonmagical weapons excluding siege weapons, and resistance to all other damage. Only a {@spell plant growth} spell cast on the stump can repair it, with each casting restoring 10 hit points to it, or all its hit points if cast over the course of 8 hours. If the stump is destroyed, the dwelling collapses and magically shunts anything inside it (other than the furniture) to the nearest unoccupied space next to where the root was buried. When this happens, the earth magically returns to the way it was before the root was buried."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Homeroot.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Homeward Boots",
+      source: "GriffonsSaddlebag2",
+      page: 106,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These well-worn boots have an ever-changing arcane circle ingrained into their heels. While wearing the boots, you can use an action to speak their first command word to create an arcane circle, as per the {@spell teleportation circle|PHB} spell, on the ground below you. The circle appears as a trail of dirt or similar muck from the bottom of the shoe, and is treated as a permanent one for the purposes of this spell. Speaking the first command word again destroys the first circle, magically cleaning the surface it was placed on, before creating a new one at your location.",
+        "You can speak the boots' second command word as an action while wearing them to cast the {@spell teleportation circle|PHB} spell, except that this circle is only 5 feet in diameter. This circle's sigil sequence matches the one created by the first command word and links to its location. When it's created, the circle appears under your feet, centered on your location, and you immediately teleport through it. Only a circle created in this way can connect to the permanent one created by the boots' first command word. If the permanent circle is washed away or otherwise cleaned or destroyed before you speak the second command word, the spell fails and the circle isn't created.",
+        "Once you use the boots to teleport in this way, they can't do so again until {@dice 1d3} days have passed. In the meantime, you can still speak the boots' first command word."
+      ],
+      attachedSpells: [
+        "teleportation circle"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Homeward-Boots.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Horatio's Impossible Ship in a Bottle",
+      source: "GriffonsSaddlebag2",
+      page: 106,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This sea-tumbled glass bottle has a miniature sailing ship assembled inside it. The bottle weighs 1 pound and is magically sealed with red wax. Despite there being no wind in the bottle, the vessel's sails seemingly billow and turn on their own.",
+        "You can speak the bottle's command word to cause the wax to come apart and open the bottle. When the open bottle is submerged in a large enough body of water, the ship inside it magically slips out, destroying the bottle, and becomes a {@item sailing ship|DMG} 50 feet long and 15 feet wide. A crew of 10 {@spell unseen servant|PHB|unseen servants} remain on the ship at all times and can be commanded by you or any creature that is friendly to you while on board to adjust the ship's sails and direction. The ship's reduced size halves the vessel's normal creature and cargo capacity, but is otherwise treated as if it were a normal sailing ship.",
+        "If you keep a similarly sized glass bottle aboard the vessel, the ship and its unseen crew magically reduce in size and appear inside the newly sealed bottle when the ship is run aground. The bottle must have been submerged in the ocean for at least 10 years, and anything onboard the ship when it is resealed falls to the water or ground below."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Horatios-Impossible-Ship-in-a-Bottle.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Hydra Flail",
+      source: "GriffonsSaddlebag2",
+      page: 108,
+      baseItem: "flail|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 2,
+      weaponCategory: "martial",
+      dmg1: "1d8",
+      dmgType: "B",
+      bonusWeaponDamage: "+2",
+      entries: [
+        "This flail's spiked head is held in the jaws of a metal hydra figurehead. Whenever you score a critical hit with this weapon against a hostile creature, the weapon magically grows another spiked head. You gain a +2 bonus to damage rolls made with this magic weapon for each head the flail has (to a maximum of +6). After 1 hour, any head the flail grows in this way falls off and disappears."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hydra-Flail.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Insatiable Tome",
+      source: "GriffonsSaddlebag2",
+      page: 110,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      weight: 12,
+      entries: [
+        "This large, ragged tome weighs 12 pounds and has up to one thousand blank vellum pages inside it. The tome is magical and devours any smaller nonmagical book or document placed next to it with rows of hidden teeth over the course of 1 minute. After the tome has eaten a book, you can use an action to speak the tome's command word, followed by the name of a book or document it's eaten, to cause the previously destroyed contents to appear on the blank pages of the book. The contents are magically printed on the tome's pages in the same language or cipher they were originally written in and remain until you speak the tome's command word again to erase them or replace them with another document's contents.",
+        "The tome dislikes the taste of magic. Any swallowed pages containing spells, magical sigils, or arcane scrolls are harmlessly spat back out by the tome. However, any notes, spells, or magical sigils that are written in the tome (instead of having been eaten by it) can be recalled if they're either dated, labeled, or titled. Written commentary, notes, and other such addenda to documents within the tome are saved by it and appear whenever the document is recalled again."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Insatiable-Tome.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Ironleaf Impaler",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Javelin"
+        },
+        {
+          name: "Spear"
+        }
+      ],
+      inherits: {
+        namePrefix: "Ironleaf Impaler ",
+        source: "GriffonsSaddlebag2",
+        page: 111,
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        bonusWeapon: "+1",
+        recharge: "dawn",
+        rechargeAmount: 5,
+        charges: 5,
+        entries: [
+          "This wooden weapon is sprouted from a roughly fistsized seed that's still attached to its base. A large, red thorn creates the weapon's pointed tip. Dense, thorny vines coil around the top and bottom of the haft, with small, glowing splits appearing in the wood beneath them. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+          "In addition, this weapon has 5 charges and regains all expended charges daily at dawn. When you make a ranged attack with the weapon, you can choose to expend 1 of its charges. Hit or miss, the weapon explodes into thorny shrapnel after it reaches the target. The target and each creature within 10 feet of it must make a DC 15 Dexterity saving throw. A creatures takes {@damage 1d8} piercing damage on a failed save, or half as much damage on a successful one. If the target was hit by the attack, it automatically fails the saving throw. Immediately after the weapon explodes, the seed reappears at your location and regrows the weapon into your hand."
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ironleaf-Impaler.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 111,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      bonusWeapon: "+1",
+      recharge: "dawn",
+      rechargeAmount: 5,
+      charges: 5,
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ironleaf-Impaler.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This wooden weapon is sprouted from a roughly fistsized seed that's still attached to its base. A large, red thorn creates the weapon's pointed tip. Dense, thorny vines coil around the top and bottom of the haft, with small, glowing splits appearing in the wood beneath them. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "In addition, this weapon has 5 charges and regains all expended charges daily at dawn. When you make a ranged attack with the weapon, you can choose to expend 1 of its charges. Hit or miss, the weapon explodes into thorny shrapnel after it reaches the target. The target and each creature within 10 feet of it must make a DC 15 Dexterity saving throw. A creatures takes {@damage 1d8} piercing damage on a failed save, or half as much damage on a successful one. If the target was hit by the attack, it automatically fails the saving throw. Immediately after the weapon explodes, the seed reappears at your location and regrows the weapon into your hand."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Javelin",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 50,
+            weaponCategory: "simple",
+            property: [
+              "T|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "30/120",
+            dmg1: "1d6",
+            dmgType: "P",
+            spear: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Ironleaf Impaler Javelin",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "simple",
+            property: [
+              "T|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "30/120",
+            dmg1: "1d6",
+            dmgType: "P",
+            spear: true,
+            weapon: true,
+            entries: [],
+            page: 111,
+            tier: "major",
+            reqAttune: true,
+            bonusWeapon: "+1",
+            recharge: "dawn",
+            rechargeAmount: 5,
+            charges: 5,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ironleaf-Impaler.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Ironleaf Impaler",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Spear",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 3,
+            value: 100,
+            weaponCategory: "simple",
+            property: [
+              "T|XPHB",
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            range: "20/60",
+            dmg1: "1d6",
+            dmgType: "P",
+            dmg2: "1d8",
+            spear: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Ironleaf Impaler Spear",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "simple",
+            property: [
+              "T|XPHB",
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            range: "20/60",
+            dmg1: "1d6",
+            dmgType: "P",
+            dmg2: "1d8",
+            spear: true,
+            weapon: true,
+            entries: [],
+            page: 111,
+            tier: "major",
+            reqAttune: true,
+            bonusWeapon: "+1",
+            recharge: "dawn",
+            rechargeAmount: 5,
+            charges: 5,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ironleaf-Impaler.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Ironleaf Impaler",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Kinetic Bowstring",
+      source: "GriffonsSaddlebag2",
+      page: 112,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This magic bowstring can be used to string a nonmagical bow or crossbow, turning any attack made with it into a magical one. A kinetic bowstring magically amplifies some of the stored kinetic force that it releases when it fires an arrow or bolt. The first ranged attack you make on each of your turns using a weapon strung with this item has twice its normal range, and on a hit, the attack deals one extra die of its damage."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Kinetic-Bowstring.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Lamian Facestealer",
+      source: "GriffonsSaddlebag2",
+      page: 113,
+      baseItem: "dagger|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 1,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      bonusWeapon: "+1",
+      recharge: "dusk",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This dagger once belonged to an infamous lamian assassin and features a sculpted metal face at the base of the blade. When you attune to this weapon, the metal face magically changes to match your appearance. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "The dagger has 3 charges and regains {@dice 1d3} expended charges daily at dusk. When you hit a humanoid with this weapon, you can expend 1 of its charges to immediately recreate the effect of the {@spell disguise self|PHB} spell (save DC 15), taking on the appearance of the target. When you do, the dagger's metal face changes to match the appearance. This version of the spell allows you to seem up to 3 feet shorter or taller when taking on the target's appearance.",
+        "When you take on a creature's appearance in this way, that creature must make a DC 15 Wisdom saving throw. On a failed save, that creature has disadvantage on Wisdom saving throws and all ability checks as long as it can see you while you share its appearance in this way."
+      ],
+      attachedSpells: [
+        "disguise self"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lamian-Facestealer.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Lash of the Spelldrinker",
+      source: "GriffonsSaddlebag2",
+      page: 113,
+      baseItem: "whip|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "R"
+      ],
+      dmg1: "1d4",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      focus: true,
+      entries: [
+        "You gain a +1 bonus to attack and damage rolls made with this magic weapon. While attuned to this whip, you are considered proficient with it and can use it as a spellcasting focus. In addition, you can use your spellcasting ability modifier for any attack or damage roll made with it, instead of Strength or Dexterity.",
+        "When a hostile creature within the whip's reach casts a spell, you can use your reaction to make a weapon attack against that creature with the whip. On a hit, the target must make a saving throw using its spellcasting ability against your spell save DC. On a failed save, you learn the level of the creature's highest remaining spell slot, and the creature takes extra force damage equal to that number.",
+        "When a creature takes force damage from the whip in this way, you can choose to recover an expended spell slot of a level equal to or less than the force damage dealt, up to 3rd level. Once the whip has been used to recover a spell slot in this way, it can't do so again until the next dusk."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lash-of-the-Spelldrinker.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Life's Flower Restorative",
+      source: "GriffonsSaddlebag2",
+      page: 114,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a creature missing a hand, arm, or leg",
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 4}",
+      charges: 10,
+      entries: [
+        "This vital branch pulses with life and resembles a crude limb. To attune to this item, you must attach it to the end of your missing arm or leg, at which point the branch magically forms an elegant copy of the appendage it's replacing. This prosthetic is a fully capable part of your body and can't be removed against your will as long as you're attuned to it.",
+        "The prosthetic branch has 10 flowers and regrows {@dice 1d6 + 4} missing flowers daily at dawn. While attached, the branch provides these benefits:",
+        {
+          type: "list",
+          items: [
+            "When you regain hit points as part of a spell or magical effect, you can choose to expend any number of flowers to regain an extra 5 hit points for each flower spent. This property can restore you to no more than half of your hit point maximum.",
+            "If you start your turn with 0 hit points while the prosthetic has 3 or more remaining flowers, you can choose to expend 3 flowers to regain 5 hit points. This property can't be used again until the next dawn."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lifes-Flower-Restorative.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Lightning Khopesh",
+      source: "GriffonsSaddlebag2",
+      page: 115,
+      baseItem: "scimitar|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "S",
+      entries: [
+        "This bolt-like blade crackles with electric energy. When you hit with an attack using this magic weapon, the target takes an extra {@damage 1d6} lightning damage. In addition, the first time you have advantage on an attack roll and miss using this weapon on each of your turns, the target takes {@damage 1d6} lightning damage as stray sparks leap from the blade to shock the target."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lightning-Khopesh.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Lightscreen Hover Boots",
+      source: "GriffonsSaddlebag2",
+      page: 115,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These hefty boots are miraculously light to walk in. As a bonus action, you can click your heels together while wearing the boots to hover 1 foot off the floor. You can move as normal while hovering in this way using your walking speed, skating above the ground on a plume of blue light. The light sheds bright light in a 5-foot radius and dim light for an additional 5 feet.",
+        "As an action, you can speak the boots' command word to cause their light to shine brighter, emitting bright light in a 40-foot radius and dim light for another 40 feet until the end of your turn. As part of this action, you can immediately move up to your walking speed across any horizontal or vertical surface, including walls or upside down along ceilings. This movement doesn't provoke opportunity attacks and leaves a trail of blue light behind you. At the end of this movement, the trail of light solidifies, becoming a radiant blue wall that extends perpendicularly from the surface on which you moved, excluding your current space. The wall is translucent, 1/4 inch thick, and up to 10 feet tall. If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice which side).",
+        "Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by {@spell dispel magic|PHB}. A {@spell disintegrate|PHB} spell destroys the wall instantly, however.",
+        "The wall lasts until the start of your next turn. Once you use this property, it can't be used again for {@dice 1d4} hours."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Lightscreen-Hover-Boots.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mace of the Priest",
+      source: "GriffonsSaddlebag2",
+      page: 117,
+      baseItem: "mace|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a cleric",
+      reqAttuneTags: [
+        {
+          class: "cleric"
+        }
+      ],
+      weight: 4,
+      weaponCategory: "simple",
+      dmg1: "1d6",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4}",
+      charges: 4,
+      entries: [
+        "This magic mace is carried by priests and is a symbol of their devotion to ridding the world of evil. While holding it, you can use a bonus action to adjust its telescoping haft, changing it from a {@item mace|PHB} to a {@item quarterstaff|PHB}, and vice versa. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "The weapon has 4 charges and regains {@dice 1d4} expended charges daily at dawn. While holding it, you can use an action to expend 1 of its charges to cast either {@spell cure wounds|PHB} (3rd-level version) or {@spell dispel magic|PHB} from it, using your spellcasting ability modifier.",
+        "Alternatively, you can use an action to speak the weapon's command word to cast the {@spell heal|PHB} spell from it. When you do, the weapon releases a flash of light and is destroyed."
+      ],
+      attachedSpells: [
+        "cure wounds",
+        "dispel magic",
+        "heal"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mace-of-the-Priest.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mageplate Ring",
+      source: "GriffonsSaddlebag2",
+      page: 118,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      ac: 16,
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      entries: [
+        "This thin iron ring has a helm-like visor at its top. The ring has 3 charges and regains all expended charges daily at dawn. While wearing this ring, you can use a bonus action to expend 1 or more charges from it to become magically protected by an illusory set of spectral armor. For 1 charge, your base AC becomes 16 (your Dexterity modifier doesn't affect this number). You can increase this base AC by 1 for each additional charge you expend. The illusory armor lasts for 1 minute and sheds bright light in a 20-foot radius and dim light for another 20 feet for the duration."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mageplate-Ring.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mantle of Security",
+      source: "GriffonsSaddlebag2",
+      page: 120,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This soft cloak was once a child's beloved blanket and has been miraculously enchanted by their hopes and dreams. While worn as a cloak, you can't be {@condition frightened}, and magic can't put you to sleep. When unclasped, it can still be used as a warm blanket. When used as a blanket while sleeping or over the course of a short or long rest, you can't be unwillingly targeted by the {@spell dream} spell, you gain a +3 bonus to your passive Wisdom ({@skill Perception}) score, and you can't be surprised as a result of being {@condition unconscious}. Regardless of how the cloak is used, you can tolerate temperatures as low as −50 degrees Fahrenheit without any additional protection."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mantle-of-Security.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Masks of the Sacred Beasts (Hawk)",
+      source: "GriffonsSaddlebag2",
+      page: 120,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These dark ceramic and gold masks are fashioned after animals that are sacred in certain cultures. Each mask's appearance and properties are based on the sacred beast it represents. While attuned to a mask, you can end your attunement to it and attune to a different one over the course of 1 minute, instead of over the course of one or more short rests.",
+        "While wearing a hawk mask, you have advantage on Wisdom ({@skill Perception}) checks that rely on sight, and attacking at long range doesn't impose disadvantage on your ranged attack rolls. In addition, you can cast the {@spell feather fall|PHB} spell at will, targeting only yourself."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Masks-of-the-Sacred-Beasts.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Medusan Lavalier",
+      source: "GriffonsSaddlebag2",
+      page: 121,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This pair of metallic snakes forms a twisting necklace that hangs around your neck. It coils and moves almost imperceptibly, keeping latched together at the nape of your neck where the snakes' tails intertwine. You can wear or remove the necklace using an action. While wearing this necklace, you can't become {@condition petrified} or otherwise turned to stone against your will. If you are already {@condition petrified} or turning to stone when you wear the necklace, the effect is suppressed until you remove it, provided that its duration has not expired in the meantime."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Medusan-Lavalier.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Medzo's Crossbow",
+      source: "GriffonsSaddlebag2",
+      page: 122,
+      baseItem: "hand crossbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "A",
+        "L",
+        "LD"
+      ],
+      range: "30/120",
+      dmg1: "3d4",
+      dmgType: "P",
+      entries: [
+        "This crossbow once belonged to a savage gambler. Scoring a critical hit with this magic weapon doesn't double the weapon's damage dice, and when you roll a 1 on an attack roll made with it, the weapon jams and can't be used again until the end of your next turn.",
+        "A target hit with a ranged attack from this crossbow takes {@damage 3d4} piercing damage, instead of its normal damage. When you hit with an attack using this weapon and roll three of the same number on its damage dice, use the matching number to determine what effect occurs using the table below. When this happens, the target takes an extra {@damage 1d6} piercing damage.",
+        {
+          type: "table",
+          colLabels: [
+            "Matching Number",
+            "Effect"
+          ],
+          colStyles: [
+            "col-3 text-center",
+            "col-9 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              "You can reroll one of the weapon's damage dice, even if it was a matching number. You must use the new roll."
+            ],
+            [
+              "2",
+              "The next attack roll made against the target before the end of your next turn has advantage."
+            ],
+            [
+              "3",
+              "The target has disadvantage on attack rolls it makes until the end of your next turn."
+            ],
+            [
+              "4",
+              "If the target is a hostile creature, 30gp magically appears at your feet."
+            ]
+          ]
+        }
+      ],
+      ammoType: "crossbow bolt|phb",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Medzos-Crossbow.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Meta Medallion",
+      source: "GriffonsSaddlebag2",
+      page: 122,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a sorcerer",
+      reqAttuneTags: [
+        {
+          class: "sorcerer"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "This small medallion is 1 inch tall and made of a strange metal that contains a mote of pure magic. While wearing the medallion, your understanding of Metamagic expands, granting you one additional Metamagic option of your choice. As long as you continue to wear the medallion, you can change this option when you finish a long rest."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Meta-Medallion.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mistwalker Armor",
+      source: "GriffonsSaddlebag2",
+      page: 123,
+      baseItem: "leather armor|phb",
+      type: "LA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 10,
+      ac: 11,
+      entries: [
+        "This dark leather armor releases thin wisps of fog from its seams. While wearing this armor, you can use an action to cast the {@spell fog cloud|PHB} spell (2nd-level version) from it. Once this property of the armor has been used, it can't be used again until the next dawn.",
+        "In addition, fog doesn't obscure your vision, and while you're in opaque fog, you can use your movement to teleport to an unoccupied space that you can see in the fog. Doing so costs an amount of movement equal to the distance you teleport."
+      ],
+      attachedSpells: [
+        "fog cloud"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mistwalker-Armor.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Monarch Mantle",
+      source: "GriffonsSaddlebag2",
+      page: 123,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "While wearing this silky, scalloped cloak, you can use a bonus action to gain a flying speed of 30 feet until the end of your turn. The cloak flaps behind you like butterfly wings while flying in this way.",
+        "In addition, the cloak has 3 charges and regains {@dice 1d3} expended charges daily at dawn. When a creature that you can see hits you with an attack while you're wearing this cloak, you can use your reaction to expend 1 of its charges to take half as much damage from the attack and teleport up to 15 feet to an unoccupied space that you can see. When you do, you reappear in a flourish of butterflies that remain in that space until the end of the current turn, imposing disadvantage on any attack roll against you while you remain in that space for the duration."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monarch-Mantle.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Monster Tamer's Shield",
+      source: "GriffonsSaddlebag2",
+      page: 124,
+      type: "S",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 6,
+      ac: 2,
+      entries: [
+        "This shield punishes certain creatures for their hostility and comes from a culture whose dominion is in direct competition with powerful beasts. While holding this shield, whenever you take damage from a melee attack made by a beast or monstrosity, that creature takes {@damage 1d4} psychic damage. In addition, you have advantage on Wisdom ({@skill Animal Handling}) checks.",
+        {
+          type: "entries",
+          name: "Tamer's Protection",
+          entries: [
+            "If you are also attuned to the {@item monster tamer's sword|GriffonsSaddlebag2} and are holding this shield, any creature captured by the sword gains a +1 bonus to its AC and can't be charmed."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Shield.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Monster Tamer's Sword",
+      type: "GV|DMG",
+      requires: [
+        {
+          sword: true
+        }
+      ],
+      inherits: {
+        namePrefix: "Monster Tamer's ",
+        nameRemove: " Sword",
+        source: "GriffonsSaddlebag2",
+        page: 124,
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        recharge: "dawn",
+        rechargeAmount: "{@dice 1d4 + 2}",
+        charges: 6,
+        entries: [
+          "This magic weapon exerts dominance over certain creatures and was crafted by a culture known for its hunting and battling of monsters.",
+          "This sword has 6 charges and regains {@dice 1d4 + 2} expended charges daily at dawn. As a reaction when you reduce a Large or smaller beast or monstrosity of challenge rating 3 or lower to 0 hit points with this weapon, you can expend 1 of its charges to try and capture it instead. The creature must make a DC 15 Charisma saving throw. On a failed save, it disappears and is contained within the sword with 1 hit point. On a success, it resists the effect and falls to 0 hit points. Shapechangers automatically succeed on the saving throw. Only one creature can be captured by the sword at any time.",
+          "As an action while holding the sword, you can speak its command phrase to release the stored creature. It reappears in an unoccupied space that you can see within 10 feet of you. The creature is friendly to you and your companions. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions. The GM has the creature's statistics. The creature returns to the sword after 1 minute if you're within 100 feet of it, or earlier if you touch the creature with the sword as an action. The creature ceases to be friendly to you and your companions if it's unable to return to the sword, or if you release control of it using a bonus action, or if it takes damage from you or an ally.",
+          "While you're holding the sword and the creature is stored within it or within 30 feet of you, you can use a bonus action to speak the weapon's command word and expend 1 or more of its charges to restore 10 hit points to that creature for each charge spent. A captured creature can only regain hit points in this way."
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+              }
+            }
+          ]
+        }
+      },
+      nameRemove: " Sword",
+      source: "GriffonsSaddlebag2",
+      page: 124,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4 + 2}",
+      charges: 6,
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This magic weapon exerts dominance over certain creatures and was crafted by a culture known for its hunting and battling of monsters.",
+        "This sword has 6 charges and regains {@dice 1d4 + 2} expended charges daily at dawn. As a reaction when you reduce a Large or smaller beast or monstrosity of challenge rating 3 or lower to 0 hit points with this weapon, you can expend 1 of its charges to try and capture it instead. The creature must make a DC 15 Charisma saving throw. On a failed save, it disappears and is contained within the sword with 1 hit point. On a success, it resists the effect and falls to 0 hit points. Shapechangers automatically succeed on the saving throw. Only one creature can be captured by the sword at any time.",
+        "As an action while holding the sword, you can speak its command phrase to release the stored creature. It reappears in an unoccupied space that you can see within 10 feet of you. The creature is friendly to you and your companions. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions. The GM has the creature's statistics. The creature returns to the sword after 1 minute if you're within 100 feet of it, or earlier if you touch the creature with the sword as an action. The creature ceases to be friendly to you and your companions if it's unable to return to the sword, or if you release control of it using a bonus action, or if it takes damage from you or an ally.",
+        "While you're holding the sword and the creature is stored within it or within 30 feet of you, you can use a bonus action to speak the weapon's command word and expend 1 or more of its charges to restore 10 hit points to that creature for each charge spent. A captured creature can only regain hit points in this way."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Double-Bladed Scimitar",
+            source: "ERLW",
+            page: 21,
+            type: "M",
+            rarity: "none",
+            weight: 6,
+            value: 10000,
+            weaponCategory: "martial",
+            property: [
+              "S",
+              "2H"
+            ],
+            dmg1: "2d4",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
+                ]
+              }
+            ],
+            hasFluff: true
+          },
+          specificVariant: {
+            name: "Monster Tamer's Double-Bladed Scimitar",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 6,
+            weaponCategory: "martial",
+            property: [
+              "S",
+              "2H"
+            ],
+            dmg1: "2d4",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
+                ]
+              }
+            ],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Greatsword",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 6,
+            value: 5000,
+            weaponCategory: "martial",
+            property: [
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Graze|XPHB"
+            ],
+            dmg1: "2d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Greatsword",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 6,
+            weaponCategory: "martial",
+            property: [
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Graze|XPHB"
+            ],
+            dmg1: "2d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Long Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 200,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Long",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Longsword",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 3,
+            value: 1500,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Longsword",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Sap|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Rapier",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 2500,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "P",
+            rapier: true,
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Rapier",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "P",
+            rapier: true,
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Scimitar",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 3,
+            value: 2500,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Nick|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Scimitar",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Nick|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Shortsword",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 1000,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "P",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's Shortsword",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "F|XPHB",
+              "L|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            dmg1: "1d6",
+            dmgType: "P",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 150,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Monster Tamer's",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 124,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: "{@dice 1d4 + 2}",
+            charges: 6,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Monster-Tamers-Sword.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Monster Tamer's Sword",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Moonstone Bracers",
+      source: "GriffonsSaddlebag2",
+      page: 124,
+      resist: [
+        "bludgeoning",
+        "piercing",
+        "slashing"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These leather bracers are adorned with moonstones and unique wolfen buckles made of silver. While wearing these bracers, you have immunity to damage from the {@spell moonbeam} spell, and have resistance to nonmagical bludgeoning, piercing, and slashing damage from silvered weapons.",
+        "While wearing the bracers in an area of dim light or darkness, you can use your action to cast {@spell polymorph} on yourself, transforming into a {@creature wolf|MM}. While you are in the form of the wolf, you retain your Intelligence, Wisdom, and Charisma scores. The bracers can't be used this way again until the next dusk."
+      ],
+      attachedSpells: [
+        "polymorph"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Moonstone-Bracers.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mosshide Troll Belt",
+      source: "GriffonsSaddlebag2",
+      page: 124,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      ability: {
+        con: 2
+      },
+      entries: [
+        "Magical, flowering vines have been fashioned around the remains of a troll's hide, preserving a fragment of its renowned regeneration ability. While wearing this belt, your Constitution score increases by 2, to a maximum of 20.",
+        "In addition, the belt's restorative magic activates when it senses danger. While in combat, you regain {@dice 1d4 + 1} hit points at the start of your turn if you have less than half your hit points left. This property ceases to function for 1 hour if you take acid or fire damage, or until the next dawn if you drop to 0 hit points."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mosshide-Troll-Belt.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Mourningsteel War Banner",
+      source: "GriffonsSaddlebag2",
+      page: 127,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      weight: 7,
+      entries: [
+        "This war standard is adorned with a tattered, bloodied banner of an army long lost to time. The standard is 6 feet tall and weighs 7 pounds, but can be collapsed down to 3 feet tall or extended up to its full length by using a bonus action. While the banner is on your person, you have advantage on saving throws against being {@condition frightened}.",
+        "The standard has 3 charges and regains {@dice 1d3} expended charges daily at dawn. While holding the extended standard, you can use an action to speak its command word and plant it on the ground in an unoccupied space within your reach. While the standard is within your reach, you can use an action to remove it. Alternatively, another creature that can reach the standard can use an action to make a DC 25 Strength ({@skill Athletics}) check, removing it on a success. While the standard remains there, the space becomes {@quickref difficult terrain||3}.",
+        "As part of the action to plant the standard, you can expend any number of its charges to magically summon one {@creature animated armor} for each expended charge. When you do, the armors each appear in an unoccupied space that you can see within 20 feet of the standard. A summoned armor remains for 1 hour, until it drops to 0 hit points, or until the standard is removed. The armor vanishes when the effect ends.",
+        "The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. The GM has the {@creature animated armor|MM|animated armors}' statistics."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Mourningsteel-War-Banner.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Myceliaweave Armor",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Leather Armor"
+        },
+        {
+          name: "Studded Leather Armor"
+        },
+        {
+          name: "Hide Armor"
+        }
+      ],
+      inherits: {
+        namePrefix: "Myceliaweave ",
+        source: "GriffonsSaddlebag2",
+        page: 128,
+        resist: [
+          "necrotic"
+        ],
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        curse: true,
+        entries: [
+          "This naturally-sourced armor is interwoven with fibers and caps from a resilient strain of violet fungus that grows when exposed to rejuvenating magic. While wearing this armor, your Constitution score increases by 2, to a maximum of 20, and whenever a spell or magical effect causes you to regain hit points, you also gain a number of temporary hit points equal to half the number of hit points you recover, up to a maximum of 15 temporary hit points. While you have temporary hit points in this way, you also have resistance to necrotic damage.",
+          {
+            type: "entries",
+            name: "Curse",
+            entries: [
+              "Once you don and attune to this magic armor, you can't doff it unless you die or are targeted by the {@spell remove curse} spell: a side effect of the violet fungus' magical and parasitic effects. When your attunement to the armor ends, your Constitution score is reduced by 2 (to a minimum score of 1) until {@dice 2d6 + 6} days have passed or until you attune to the armor again."
+            ]
+          }
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Myceliaweave-Armor.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 128,
+      resist: [
+        "necrotic"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      curse: true,
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Myceliaweave-Armor.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This naturally-sourced armor is interwoven with fibers and caps from a resilient strain of violet fungus that grows when exposed to rejuvenating magic. While wearing this armor, your Constitution score increases by 2, to a maximum of 20, and whenever a spell or magical effect causes you to regain hit points, you also gain a number of temporary hit points equal to half the number of hit points you recover, up to a maximum of 15 temporary hit points. While you have temporary hit points in this way, you also have resistance to necrotic damage.",
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "Once you don and attune to this magic armor, you can't doff it unless you die or are targeted by the {@spell remove curse} spell: a side effect of the violet fungus' magical and parasitic effects. When your attunement to the armor ends, your Constitution score is reduced by 2 (to a minimum score of 1) until {@dice 2d6 + 6} days have passed or until you attune to the armor again."
+          ]
+        }
+      ],
+      variants: [
+        {
+          base: {
+            name: "Hide Armor",
+            source: "XPHB",
+            page: 219,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "MA|XPHB",
+            rarity: "none",
+            weight: 12,
+            value: 1000,
+            ac: 12,
+            armor: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Myceliaweave Hide Armor",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "MA|XPHB",
+            rarity: "rare",
+            weight: 12,
+            ac: 12,
+            armor: true,
+            entries: [],
+            page: 128,
+            tier: "major",
+            reqAttune: true,
+            curse: true,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Myceliaweave-Armor.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "necrotic"
+            ],
+            genericVariant: {
+              name: "Myceliaweave Armor",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Leather Armor",
+            source: "XPHB",
+            page: 219,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "LA|XPHB",
+            rarity: "none",
+            weight: 10,
+            value: 1000,
+            ac: 11,
+            armor: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Myceliaweave Leather Armor",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "LA|XPHB",
+            rarity: "rare",
+            weight: 10,
+            ac: 11,
+            armor: true,
+            entries: [],
+            page: 128,
+            tier: "major",
+            reqAttune: true,
+            curse: true,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Myceliaweave-Armor.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "necrotic"
+            ],
+            genericVariant: {
+              name: "Myceliaweave Armor",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Studded Leather Armor",
+            source: "XPHB",
+            page: 219,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "LA|XPHB",
+            rarity: "none",
+            weight: 13,
+            value: 4500,
+            ac: 12,
+            armor: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Myceliaweave Studded Leather Armor",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "LA|XPHB",
+            rarity: "rare",
+            weight: 13,
+            ac: 12,
+            armor: true,
+            entries: [],
+            page: 128,
+            tier: "major",
+            reqAttune: true,
+            curse: true,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Myceliaweave-Armor.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "necrotic"
+            ],
+            genericVariant: {
+              name: "Myceliaweave Armor",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Nightmare Flask",
+      source: "GriffonsSaddlebag2",
+      page: 128,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This glass orb has a special funnel at its top that traps bad dreams. When you finish a long rest in which you sleep while the orb is on your person, there is a {@chance 25|25 percent} chance that the orb is filled with a small amount of dark, swirling smoke: a visual representation of a collected nightmare. The orb can collect 1 nightmare every 24 hours and can hold up to 10 nightmares in this way.",
+        "You can use an action to throw the flask at a point you can see within 30 feet of you, shattering and destroying it upon impact. When the flask shatters, each creature within 20 feet of the point must succeed on a DC 13 Wisdom saving throw or be magically put to sleep. If a creature has less than half its hit points left, it makes the saving throw with disadvantage. Each creature that falls asleep is {@condition unconscious} for up to 1 minute or until it takes any damage other than psychic damage or someone uses an action to shake or slap the sleeper awake. A creature that's asleep in this way takes {@damage 1d10} psychic damage at the start of each of its turns, up to a number of turns equal to the number of nightmares collected by the orb. This psychic damage can't reduce a creature's hit points below 1.",
+        "Alternatively, the orb can be used as a preventative measure against the {@spell dream} spell. When you're targeted by the {@spell dream} spell, the caster of the spell must make a DC 17 Wisdom saving throw. On a failed save, the caster takes {@damage 1d10} psychic damage for each collected nightmare in the flask. The flask then cracks and is destroyed, and the spell fails. On a successful "
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Nightmare-Flask.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Nightstalker's Armor of the Northeastern Wind",
+      source: "GriffonsSaddlebag2",
+      page: 129,
+      baseItem: "plate armor|phb",
+      type: "HA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 65,
+      ac: 18,
+      strength: "15",
+      stealth: true,
+      entries: [
+        "This unusual armor is composed of blue metal plates with a horned helm, and was tempered by the frigid breath of an oni.",
+        {
+          type: "entries",
+          name: "Retributive Cold",
+          entries: [
+            "When you take damage from a creature that is within 5 feet of you while wearing this armor, you can use your reaction to deal {@damage 1d6} cold damage to that creature."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Freezing Fog",
+          entries: [
+            "While wearing this armor, you can use a bonus action to speak its command word to cast the {@spell gaseous form} spell from it, targeting only yourself, with the following changes:",
+            {
+              type: "list",
+              items: [
+                "You take the form of a frigid cloud of fog, creating illusory frost on objects you touch.",
+                "You can take the {@action Attack} action while in this form. When you do, your attacks are unarmed strikes that deal {@damage 1d6} cold damage, instead of their normal damage.",
+                "You can use the armor's Retributive Cold property.",
+                "The spell has a duration of 1 minute."
+              ]
+            },
+            "Once this property has been used, it can't be used again until the next dusk."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "gaseous form"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Nightstalkers-Armor-of-the-Northeastern-Wind.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Nightstalker's Mask",
+      source: "GriffonsSaddlebag2",
+      page: 129,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      recharge: "dusk",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This demon-faced mask has 3 charges and regains {@dice 1d3} expended charges daily at dusk. While wearing the mask, you can expend 1 of its charges when you take the {@action Hide} action to become {@condition invisible} until the end of your next turn. Anything you wear or carry is invisible with you. The effect ends early if you attack or cast a spell. If you make an attack against a creature while invisible in this way and hit, the target takes an extra {@damage 1d10} psychic damage."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Nightstalkers-Mask.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Orelia's Tome of Beast Familiars",
+      source: "GriffonsSaddlebag2",
+      page: 132,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a wizard",
+      reqAttuneTags: [
+        {
+          class: "wizard"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "While attuned to this book, you always have the {@spell find familiar} spell prepared. This spell doesn't count against the number of spells you have prepared.",
+        "When you cast this spell using a spell slot of 2nd level or higher, your familiar can take on the form of stronger animals. The spell slot level determines what beasts your familiar can take the form of, as shown in the table below.",
+        {
+          type: "table",
+          colLabels: [
+            "Spell Slot Level",
+            "Max CR"
+          ],
+          colStyles: [
+            "col-3 text-left",
+            "col-9 text-left"
+          ],
+          rows: [
+            [
+              "2",
+              "{@filter 1/8|bestiary|challenge rating=[&0;&1/8]|type=beast}"
+            ],
+            [
+              "3–4",
+              "{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast}"
+            ],
+            [
+              "5–6",
+              "{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast}"
+            ],
+            [
+              "7–8",
+              "{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast}"
+            ],
+            [
+              "9",
+              "{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast}"
+            ]
+          ]
+        },
+        "In addition, when you cast this spell using a spell slot of 2nd level or higher, it requires an extra 10 gp worth of material components for each slot level above 1st. If your attunement to the book ends, any familiar you have disappears, leaving behind no physical form."
+      ],
+      attachedSpells: [
+        "find familiar"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orelias-Tome-of-Beast-Familiars.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Pack of Revisibility Bombs",
+      source: "GriffonsSaddlebag2",
+      page: 134,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "A pack of revisibility bombs typically includes {@dice 1d3 + 3} fist-sized bombs when found. You can use an action to throw a bomb at a point that you can see within 60 feet of you. The bomb explodes at the point where it impacts, destroying the bomb and releasing a dispelling vapor in a cloud around it. When the bomb explodes, each creature within 30 feet of it must make a DC 20 Dexterity saving throw. On a failed save, the creature becomes visible if it isn't already, and can't become {@condition invisible} for 1 minute. Objects within the area that aren't being worn or carried automatically become visible if they're {@condition invisible} and can't become {@condition invisible} for 1 minute."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pack-of-Revisibility-Bombs.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Pennypuncher Slingshot",
+      source: "GriffonsSaddlebag2",
+      page: 134,
+      baseItem: "sling|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      weaponCategory: "simple",
+      property: [
+        "A"
+      ],
+      range: "30/120",
+      dmg1: "1d4",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      entries: [
+        "This slingshot requires two hands to attack and is adorned with coin-like designs. You gain a +1 bonus to attack and damage rolls made with this magic weapon. In addition, when you make a ranged attack with this weapon and use a coin as its ammunition, it deals extra damage on a hit based on the value of the coin you use:",
+        {
+          type: "table",
+          colLabels: [
+            "Coin",
+            "Damage Bonus"
+          ],
+          colStyles: [
+            "col-2 text-left",
+            "col-10 text-left"
+          ],
+          rows: [
+            [
+              "{@item Copper (cp)|PHB|1cp}",
+              "+1"
+            ],
+            [
+              "{@item Silver (sp)|PHB|1sp}",
+              "+{@damage 1d4}"
+            ],
+            [
+              "{@item Electrum (ep)|PHB|1ep}",
+              "+{@damage 1d6}"
+            ],
+            [
+              "{@item Gold (gp)|PHB|1gp}",
+              "+{@damage 1d8}"
+            ],
+            [
+              "{@item Platinum (pp)|PHB|1pp}",
+              "+{@damage 1d12}"
+            ]
+          ]
+        },
+        "Recovering coins fired in this way follows the normal rules for recovering ammunition. Depending on the nature of the battlefield, you may recover more or fewer coins than normal as determined by the GM."
+      ],
+      ammoType: "sling bullet|phb",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pennypuncher-Slingshot.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Peregrine Spear",
+      source: "GriffonsSaddlebag2",
+      page: 134,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      bonusWeapon: "+1",
+      entries: [
+        "You gain a +1 bonus to attack and damage rolls made with this magic spear. When you make a ranged attack with this spear, you can speak its command word to cause the weapon to soar through the air straight toward the target and magically build momentum. Hit or miss, the spear flies back to your hand immediately after the attack. On a hit, the target takes an extra {@damage 1d4} piercing damage for every 5 feet the spear flew before hitting it, up to a maximum of {@damage 12d4} extra damage. This property can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Peregrine-Spear.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Pick and Pocket",
+      source: "GriffonsSaddlebag2",
+      page: 136,
+      baseItem: "dagger|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 1,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      bonusWeapon: "+1",
+      entries: [
+        "This brass and steel dagger can also be used as part of a set of {@item thieves' tools|PHB} when picking locks. You gain a +1 bonus to attack and damage rolls made with this magic weapon, as well as on any ability check you make using {@item thieves' tools|PHB} to pick open a lock, provided you use the dagger as part of the set of tools.",
+        "While holding the dagger in one hand and a small enough object in another, you can use an action to speak the dagger's command word and twist it in the air as if it were a key. When you do, the object is shunted into a special demiplane, where it remains until you either twist the dagger in the opposite direction on your turn (no action required) or until you're no longer holding the weapon. If you have a free hand, the stored object reappears in it when the object leaves the demiplane. Otherwise, it reappears at your feet. The demiplane can only store one object at a time, which must be no more than 1 foot on a side and weigh no more than 10 pounds."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Pick-and-Pocket.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Poison Armor of Amphibios",
+      type: "GV|DMG",
+      requires: [
+        {
+          type: "LA"
+        }
+      ],
+      inherits: {
+        namePrefix: "Poison ",
+        nameSuffix: " of Amphibios",
+        source: "GriffonsSaddlebag2",
+        page: 137,
+        resist: [
+          "poison"
+        ],
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        recharge: "dawn",
+        rechargeAmount: 3,
+        charges: 3,
+        entries: [
+          "This armor is enriched by poisonous frog toxins. While wearing this armor, you have advantage on saving throws against poison, and you have resistance to poison damage. In addition, the armor has 3 charges and regains all expended charges daily at dawn. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to expend 1 of the armor's charges to release a spray of poison from the armor at the attacker. The attacker must make a DC 15 Constitution saving throw. On a failed save, the target takes {@damage 2d6} poison damage and is {@condition poisoned} until the end of its next turn. On a successful save, the target takes half as much poison damage and isn't {@condition poisoned}."
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Poison-Armor-of-Amphibios.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 137,
+      resist: [
+        "poison"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Poison-Armor-of-Amphibios.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This armor is enriched by poisonous frog toxins. While wearing this armor, you have advantage on saving throws against poison, and you have resistance to poison damage. In addition, the armor has 3 charges and regains all expended charges daily at dawn. When a creature within 5 feet of you hits you with a melee attack, you can use your reaction to expend 1 of the armor's charges to release a spray of poison from the armor at the attacker. The attacker must make a DC 15 Constitution saving throw. On a failed save, the target takes {@damage 2d6} poison damage and is {@condition poisoned} until the end of its next turn. On a successful save, the target takes half as much poison damage and isn't {@condition poisoned}."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Leather Corslet",
+            source: "TLotRR",
+            page: 72,
+            type: "LA",
+            rarity: "none",
+            weight: 10,
+            value: 450,
+            currencyConversion: "M-E",
+            ac: 12,
+            dexterityMax: 3,
+            armor: true,
+            entries: [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ]
+          },
+          specificVariant: {
+            name: "Poison Leather Corslet of Amphibios",
+            source: "GriffonsSaddlebag2",
+            type: "LA",
+            rarity: "rare",
+            weight: 10,
+            currencyConversion: "M-E",
+            ac: 12,
+            dexterityMax: 3,
+            armor: true,
+            entries: [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ],
+            page: 137,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: 3,
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Poison-Armor-of-Amphibios.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "poison"
+            ],
+            genericVariant: {
+              name: "Poison Armor of Amphibios",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Leather Shirt",
+            source: "TLotRR",
+            page: 72,
+            type: "LA",
+            rarity: "none",
+            weight: 8,
+            value: 100,
+            currencyConversion: "M-E",
+            ac: 11,
+            dexterityMax: 4,
+            armor: true,
+            entries: [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ]
+          },
+          specificVariant: {
+            name: "Poison Leather Shirt of Amphibios",
+            source: "GriffonsSaddlebag2",
+            type: "LA",
+            rarity: "rare",
+            weight: 8,
+            currencyConversion: "M-E",
+            ac: 11,
+            dexterityMax: 4,
+            armor: true,
+            entries: [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ],
+            page: 137,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: 3,
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Poison-Armor-of-Amphibios.webp"
+                  }
+                }
+              ]
+            },
+            resist: [
+              "poison"
+            ],
+            genericVariant: {
+              name: "Poison Armor of Amphibios",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Power Collar",
+      source: "GriffonsSaddlebag2",
+      page: 139,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This spiked leather collar is adjustable in size and has a buckle on its side in the shape of a bear's head. You can place the collar on a willing Medium or smaller creature using an action. If the creature is a friendly beast companion or a familiar (such as one summoned by the {@spell find familiar} spell), you can speak the collar's command word as part of this action to create a magical bond between you and the creature. The bond remains until the collar is removed. While the bonded creature is wearing the collar, its hit point maximum increases by an amount equal to your character level.",
+        "In addition, you can use a bonus action to speak the collar's command word while you can see the bonded creature within 30 feet of you. When you do, the creature gains the effect of the Enlarge option from the {@spell enlarge/reduce} spell (no concentration required). Alternatively, if you drop to 0 hit points while the bonded creature is within 30 feet of you, it can use its reaction to gain the spell's effect instead. Once this property of the collar has been used, it can't be used again until 2 days have passed.",
+        "If the beast or familiar wearing the collar is a transformed humanoid or other creature, such as by the {@spell polymorph} spell or similar magic, the bond fails when you speak the command word and the collar has no effect. If the bonded creature is a familiar summoned by the {@spell find familiar} spell, the collar and familiar disappear into a pocket dimension together whenever you temporarily dismiss it. If the bonded familiar is dismissed forever or drops to 0 hit points, it leaves the collar behind. A creature can only gain the benefits of one magical collar at a time."
+      ],
+      attachedSpells: [
+        "enlarge/reduce"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Power-Collar.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Prototype Thunderberd",
+      source: "GriffonsSaddlebag2",
+      page: 140,
+      baseItem: "halberd|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 6,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "R",
+        "2H"
+      ],
+      dmg1: "1d10",
+      dmgType: "S",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 4}",
+      charges: 10,
+      entries: [
+        "This halberd is a long-lost prototype from a nowdissolved military research facility. Electricity magically courses through the weapon along specially channeled grooves in its hollow haft. When you hit with an attack using this halberd, the target takes an extra {@damage 1d6} lightning damage.",
+        "This halberd has 10 charges and regains {@dice 1d6 + 4} expended charges daily at dawn. While the weapon has at least 1 charge, you can use an action to load a {@item crossbow bolt|PHB} into its haft toward the bottom of the weapon. Powerful magnetic forces inside the hollow weapon stabilize the bolt and charge it with electricity. When you take the {@action Attack} action while holding this loaded weapon, you can expend 1 or more of its charges to make a special ranged attack with it by leveling and firing the halberd as if it were a crossbow. When you do, you don't make an attack roll for the attack, and the bolt is magically launched forward from the weapon in a 1-foot-wide line that's 10 feet long, plus an extra 10 feet for each charge you expend. Each creature in the line must succeed on a DC 15 Dexterity saving throw or take {@damage 1d6} piercing damage, plus {@damage 1d6} lightning damage for each charge you expend. On a successful save, a creature takes half as much piercing and lightning damage. After the attack, the bolt is destroyed.",
+        "If you expend the halberd's last charge, roll a {@dice d20}. On a 1, the weapon becomes overcharged and splinters into an explosion of shrapnel, destroying the halberd. Each creature within 10 feet of the weapon must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 10d6} piercing damage, or half as much damage on a successful one."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Prototype-Thunderberd.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Quick Change Ring",
+      source: "GriffonsSaddlebag2",
+      page: 140,
+      type: "RG|DMG",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "This ring grows and shrinks to fit its wearer, but always seems slightly large for the finger it's on. The ring has an extradimensional space inside it dedicated to carrying armor. You can magically bind one set of unworn light, medium, or heavy armor to this extradimensional space over the course of 1 hour by resting the ring on top of the armor. Only one suit of armor can be bound to the ring's extradimensional space. Binding a second suit breaks the bond with the first one, causing it to be forced from the extradimensional space and appear in an unoccupied space within 5 feet of the ring. While wearing the ring, you're considered to be within 100 feet of any armor stored inside its extradimensional space.",
+        "While wearing this ring, you can use an action to speak its command word and touch a suit of bound armor, even if you're wearing it, to shunt it into the ring's extradimensional space. Speaking the command word again while the armor is in this extradimensional space causes you to magically don the armor, adjusting to fit you as needed, or causes it to appear at your feet (your choice). If you're already wearing a suit of armor when you don one in this way, the bound armor appears at your feet instead. If the armor would magically prevent you from doffing it, this property of the ring has no effect.",
+        "You can create an instantaneous, harmless sensory effect when you don or doff a suit of armor with the ring in this way, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.",
+        "When found, the ring has a {@chance 50} chance to have a set of bound armor in its extradimensional space. The GM can choose a suit of bound armor from the following table or roll a {@dice d12} to determine it randomly.",
+        {
+          type: "table",
+          colLabels: [
+            "d12",
+            "Armor"
+          ],
+          colStyles: [
+            "col-1-5 text-center",
+            "col-10-5 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              "{@item Padded Armor|PHB|Padded}"
+            ],
+            [
+              "2",
+              "{@item Leather Armor|PHB|Leather}"
+            ],
+            [
+              "3",
+              "{@item Studded Leather Armor|PHB|Studded Leather}"
+            ],
+            [
+              "4",
+              "{@item Hide Armor|PHB|Hide}"
+            ],
+            [
+              "5",
+              "{@item Chain shirt|PHB}"
+            ],
+            [
+              "6",
+              "{@item Scale mail|PHB}"
+            ],
+            [
+              "7",
+              "{@item Breastplate|PHB}"
+            ],
+            [
+              "8",
+              "{@item Half Plate Armor|PHB|Half plate}"
+            ],
+            [
+              "9",
+              "{@item Ring mail|PHB}"
+            ],
+            [
+              "10",
+              "{@item Chain mail|PHB}"
+            ],
+            [
+              "11",
+              "{@item Splint Armor|PHB|Splint}"
+            ],
+            [
+              "12",
+              "{@item Plate Armor|PHB|Plate}"
+            ]
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Quick-Change-Ring.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Redeemer's Regards",
+      source: "GriffonsSaddlebag2",
+      page: 143,
+      baseItem: "longbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a paladin",
+      reqAttuneTags: [
+        {
+          class: "paladin"
+        }
+      ],
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "A",
+        "H",
+        "2H"
+      ],
+      range: "150/600",
+      dmg1: "1d8",
+      dmgType: "P",
+      entries: [
+        "A bow designed for holy warriors who prefer to keep evil at a distance. Any ranged attack you make with this weapon is considered to be a melee weapon attack for the purposes of using your Divine Smite feature and meeting the requirements of any paladin spell you cast with \"smite\" in its name.",
+        "In addition, when you expend a 1st-level spell slot to use your Divine Smite feature on an attack made with this bow, you can choose to not expend the spell slot instead. This property can't be used again until the next dawn."
+      ],
+      ammoType: "arrow|phb",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Redeemers-Regards.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rejuvenating Draft (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 144,
+      type: "P",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "When you drink this potion, you regain {@dice 1d4 + 3} spent Hit Dice."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rejuvenating-Draft.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Reliquary of Holy Memories (Rare)",
+      source: "GriffonsSaddlebag2",
+      page: 144,
+      baseItem: "mace|phb",
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a cleric or paladin",
+      reqAttuneTags: [
+        {
+          class: "cleric"
+        },
+        {
+          class: "paladin"
+        }
+      ],
+      weaponCategory: "simple",
+      dmg1: "1d6",
+      dmgType: "B",
+      entries: [
+        "This scepter holds the bones of a powerful martyred saint and are said to contain the echoes of their memories. The rod can also be used as a magic {@item mace|PHB}.",
+        "While attuned to this rod, you can prepare one additional spell for each bone held within the rod, up to a maximum of 5. The rarity of the reliquary is determined by the number of bones inside. The rare variant of this item contains 3 bones, and you can prepare 3 extra spells while attuned to it."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Reliquary-of-Holy-Memories.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rift Sheath",
+      source: "GriffonsSaddlebag2",
+      page: 144,
+      baseItem: "quarterstaff|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      bonusWeapon: "+1",
+      entries: [
+        "This dark, wooden staff is actually a two-sided sheath for a pair of equally dark {@item shortsword|PHB|shortswords}. While holding the staff with two hands, you can use a bonus action to twist the staff to sheath or unsheath the two swords from it. When unsheathing the swords, the wooden sheath is shunted into a special extradimensional space until you decide to sheath the swords again, at which point it magically reappears between the swords.",
+        "The weapon has the following properties depending on whether the swords are sheathed as a {@item quarterstaff|PHB} or unsheathed as a pair of {@item shortsword|PHB|shortswords}.",
+        {
+          type: "entries",
+          name: "Quarterstaff",
+          entries: [
+            "While wielded as a {@item quarterstaff|PHB}, you gain a +1 bonus to attack and damage rolls made with this magic weapon, which has the finesse property. While holding it, you can use a bonus action to speak the staff's command word to create a spatial rift around you that lasts as long as you concentrate (as if concentrating on a spell), up to 1 minute. For the duration of the rift, other creatures within 15 feet of you must spend 2 feet of movement for every 1 foot they move. Once this property has been used, it can't be used again until the next dawn."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Shortswords",
+          entries: [
+            "These magic {@item shortsword|PHB|shortswords} have the thrown property with a normal range of 15 feet and a long range of 30 feet. Hit or miss, the shortsword vanishes in a mirage-like distortion and immediately reappears in your hand after the attack. When you hit with a ranged attack using one of the swords, you can use your reaction to teleport to an unoccupied space that you can see within 5 feet of the target. When you do, you have advantage on the next attack roll you make against that target before the end of your next turn. Once this property has been used, it can't be used again until 1 hour has passed."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rift-Sheath.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Ring of Changing Shapes",
+      source: "GriffonsSaddlebag2",
+      page: 146,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a sorcerer",
+      reqAttuneTags: [
+        {
+          class: "sorcerer"
+        }
+      ],
+      entries: [
+        "This magic ring is made of solid mercury that bubbles and flows freely around your finger whenever you cast a spell. While wearing the ring, you gain the following benefits:",
+        {
+          type: "entries",
+          name: "Shift Spell",
+          entries: [
+            "When a spell you are casting fails because of a {@spell counterspell|PHB} cast by another creature, you can spend 3 sorcery points as a reaction to immediately cast a different spell of the same level or lower without expending another spell slot. This property can't be used again until the next dawn.",
+            "To be eligible, the new spell must have the same casting time as the first one and can't consume any material components."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Spell Surge",
+          entries: [
+            "As a bonus action, you can spend 5 sorcery points to cast a spell no higher than 5th level that has a casting time of 1 action, even if you've already used your action to cast a spell on this turn. When you do, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over you. This property can't be used again until the next dawn."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-Changing-Shapes.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Ring of Misdirection",
+      source: "GriffonsSaddlebag2",
+      page: 146,
+      type: "RG|DMG",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "This dark silver ring is covered in chiseled, dune-like swirls that seem to shift and change throughout the day. When found, this ring has {@dice 1d3 + 3} charges. While wearing the ring, you can use your reaction whenever you're hit by an opportunity attack to expend 1 of the ring's charges to cast the {@spell mislead} spell. When you do, your illusory double is hit by the attack, instead of you, and you and the double can immediately move up to your remaining speed without provoking opportunity attacks. This version of the spell doesn't require concentration, but lasts until the end of your next turn, instead of 1 hour. The ring becomes nonmagical when you use the last charge."
+      ],
+      attachedSpells: [
+        "mislead"
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-Misdirection.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Ring of Solar's Sight",
+      source: "GriffonsSaddlebag2",
+      page: 147,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3 + 1}",
+      charges: 4,
+      entries: [
+        "This gilded ring has 4 charges and regains 1d3 + 1 expended charges daily at dawn. While wearing the ring, you can use a bonus action to expend 1 of its charges to cast the {@spell hunter's mark} spell from it, which lasts for 1 minute. You gain a +2 bonus to weapon attack rolls made against any target you mark with the spell in this way, and on a hit, the attack deals radiant damage instead of the weapon's normal damage type."
+      ],
+      attachedSpells: [
+        "hunter's mark"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-Solars-Sight.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Ring of the Arcane Berserker",
+      source: "GriffonsSaddlebag2",
+      page: 147,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a barbarian",
+      reqAttuneTags: [
+        {
+          class: "barbarian"
+        }
+      ],
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This dark silver ring is decorated by a metallic skull with an amethyst gemstone embedded in its forehead. While wearing the ring, you can use an action to cast the {@spell chill touch} spell (+5 to hit with ranged spell attack) from it.",
+        "This ring has 3 charges and regains {@dice 1d3} expended charges daily at dawn. While wearing it, you can cast a spell even if you're raging by expending 1 of the ring's charges as part of casting the spell. If you do, your rage does not end at the end of your turn as a result of not attacking a hostile creature. In addition, you can concentrate on spells while raging, but have disadvantage on Constitution saving throws to maintain your concentration on them when you take damage."
+      ],
+      attachedSpells: [
+        "chill touch"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ring-of-the-Arcane-Berserker.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rings of the True Companions",
+      source: "GriffonsSaddlebag2",
+      page: 148,
+      type: "RG|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "These rings typically come in pairs but have been known to come in sets of up to four. Each ring is magically connected and can be attuned to by a different creature. While wearing one of the rings, you can use the following property even if you aren't attuned to it:",
+        "When another creature that you can see who is also wearing one of the rings drops to 0 hit points, you can use your reaction to cause that creature to drop to 1 hit point instead. Once this property of the rings has been used, it can't be used again until the next dawn.",
+        "If you find an additional {@i ring of the true companions}, you can add it to an existing set by holding all of the rings together for 1 minute. A ring can only be a part of one set at a time, and is removed from a set if it's more than 1 mile away from the other rings for 24 consecutive hours.",
+        "If you are the only creature attuned to one of the rings, it gains 3 charges and regains {@dice 1d3} expended charges daily at dawn. While wearing the ring, you can use an action expend 1 of its charges to cast the {@spell cure wounds} spell (spellcasting modifier +3). If the target of the spell is another creature wearing one of the rings, the spell's range increases to 30 feet.",
+        "If additional creatures are attuned to rings from the set, the rings' collective strength grows and they share a pool of charges instead. For each attuned creature after the first, the rings gain an extra 2 charges and regain another 2 expended charges daily at dawn. The rings can share a maximum of 9 charges in this way ({@dice 1d3 + 6}). The following properties are shared among all attuned creatures who are also wearing one of the rings from the set. The effects are cumulative and are determined by the number of attuned wearers:",
+        {
+          type: "list",
+          style: "list-no-bullets",
+          items: [
+            "{@b 2 attuned wearers:} When you use the rings to cast {@spell cure wounds} on another wearer, you can choose to cast it using a bonus action instead, but can only cast it once on the same turn.",
+            "{@b 3 attuned wearers:} When you use the rings to cast {@spell cure wounds} on another wearer, its range increases to 60 feet, and you can increase the spell slot level by one for each additional charge you expend, up to 4th level.",
+            "{@b 4 attuned wearers:} When you use the rings to cast {@spell cure wounds} on another wearer, you also gain {@dice 1d4 + 1} temporary hit points for each charge you spend."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "cure wounds"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rings-of-the-True-Companions.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Riptide Crossbow",
+      source: "GriffonsSaddlebag2",
+      page: 148,
+      baseItem: "heavy crossbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 18,
+      weaponCategory: "martial",
+      property: [
+        "A",
+        "H",
+        "LD",
+        "2H"
+      ],
+      range: "100/400",
+      dmg1: "1d10",
+      dmgType: "P",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This magic crossbow has 3 charges and regains {@dice 1d3} expended charges daily at dawn. As an action, you can expend 1 of the crossbow's charges to speak its command word and fire a bolt at a point on the ground you can see within the weapon's normal range. The bolt creates a magical vacuum in a 20-foot-radius circle centered on that point, causing strange, spectral tides to pull creatures toward it. Each creature in the area must make a DC 15 Strength saving throw. A creature is pulled up to 15 feet toward the point on a failed save, or only 5 feet on a successful one. Until the start of your next turn, the area becomes {@quickref difficult terrain||3}.",
+        "At the start of your next turn, the point erupts, sending out a powerful wave of water in a 20-foot radius that extinguishes all nonmagical flames within the area. The water then vanishes. Any creature in the area when the point erupts must make a DC 15 Strength saving throw. On a failure, a creature takes {@damage 3d10} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}."
+      ],
+      ammoType: "crossbow bolt|phb",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Riptide-Crossbow.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rod of Refstophobia",
+      source: "GriffonsSaddlebag2",
+      page: 149,
+      type: "RD|DMG",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "This heavy stake can magically repel liquids in contact with it and always feels uncomfortably dry. While holding the rod, you can use an action to speak its command word to cause any freestanding, nonliving liquids within 10 feet of the rod to be pushed away. You can use the rod in this way for up to 1 hour, all at once or in several shorter increments, each one using a minimum of 1 minute from the duration. The rod regains 15 minutes of use for every 12 hours it remains inactive."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Refstophobia.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rod of Reverberation",
+      source: "GriffonsSaddlebag2",
+      page: 149,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      entries: [
+        "This rod bears the embossed likeness of an ox at its top, where it splits into two horn-like prongs. When struck, the prongs reverberate with a magical force and electricity.",
+        "The rod has 3 charges and regains all expended charges daily at dawn. While holding the rod, you can use your reaction when another creature hits you with a melee attack to expend 1 of the rod's charges to increase your AC by {@dice 1d6} for that attack, potentially causing the attack to miss you. If the attack misses you as a result of using this property, the attacker must also make a DC 15 Constitution saving throw. On a failed save, the creature takes {@damage 1d10} lightning damage and {@damage 1d10} thunder damage and has disadvantage on the next attack roll it makes before the end of its next turn. On a successful save, the creature takes half as much damage and makes its next attack as normal."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Reverberation.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rod of Storms",
+      source: "GriffonsSaddlebag2",
+      page: 150,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      entries: [
+        "This silver rod crackles with energy and can redirect or release powerful electric surges. While holding it, if a creature you can see within 30 feet of you takes lightning damage, you can use your reaction to halve that lightning damage and choose another target you can see within 30 feet of you. When you do, that target must succeed on a DC 15 Dexterity saving throw or take lightning damage equal to the lightning damage taken by the creature.",
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "The rod has 3 charges and regains all expended charges daily at dawn. While holding the rod, you can use an action to expend 1 of its charges to cast the {@spell lightning bolt} spell (save DC 15) from it.",
+            "In addition, you can use an action to expend 1 of the rod's charges to cast the {@spell call lightning} spell (save DC 15) from it if the spell is on your spell list. If you take lightning damage from a bolt of lightning you call down in this way, the rod regains 1 expended charge."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "call lightning",
+        "lightning bolt"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Storms.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rod of the Magicycle",
+      source: "GriffonsSaddlebag2",
+      page: 151,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      entries: [
+        "This sturdy antler rod is capped on either end with a plush leather handle. You can twist the two handles in opposite directions as an action, releasing an unearthly roar audible out to 100 feet and causing the rod to magically split apart and form a powerful, two-wheeled vehicle made of wood, with the rod's handles at its front. You can twist the handles again as an action to return the vehicle to its rod form. The vehicle can appear underneath you, with you standing astride it, or in an empty space within 5 feet of you (your choice). The vehicle is a Medium magical object, called a magicycle, and has the following properties:",
+        {
+          type: "list",
+          items: [
+            "The vehicle has AC 14, 40 hit points, and a speed of 60 feet. While moving, its AC becomes 17. When underwater, it ceases to function and immediately reverts to its rod form.",
+            "The vehicle weighs 200 pounds. If it falls {@condition prone}, it can't right itself until a creature within reach pulls it upright as an action.",
+            "One Small or Medium creature drives and steers the vehicle. It can carry up to 300 pounds and comfortably fits either one Medium creature or two smaller ones.",
+            "If the vehicle moves in a straight line for 600 feet, its speed increases to 100 feet until the next time it makes a significant turn or until it slows down or comes to a stop.",
+            "For every uninterrupted period of 8 hours that the vehicle is in its rod form or goes unmoved, it regains {@dice 1d8} hit points. If it drops to 0 hit points, it reverts to its rod form and can't be used again until 5 days have passed.",
+            "When you make a Dexterity saving throw while riding the vehicle, you can use your reaction to gain advantage on the roll. On a successful save, you can drive the vehicle up to 20 feet as part of the reaction. If moving in this way causes you to no longer be in the triggering effect's area, such as an ancient red dragon's fiery breath or an {@spell ice storm} spell, you instead take no damage, instead of half damage, from the effect. On a failed save, you and the vehicle fall {@condition prone}."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-the-Magicycle.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Rod of Water Absorption",
+      source: "GriffonsSaddlebag2",
+      page: 150,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      entries: [
+        "This hollow rod has a hole at its end and four sections that each magically hold up to 10 gallons of water. Each hollow section is capped with a ring of glass, allowing you to see inside the rod and know how much water is stored within it. The rod weighs 3 pounds, regardless of how much water is stored inside.",
+        "While holding the open end of the rod underwater, you can speak its first command word as an action to cause it to begin absorbing water for the next minute. The rod can only absorb water. If the rod is submerged in this way for the full duration, it absorbs 10 gallons of water. The rod can hold up to 40 gallons at any time in this way, and can absorb up to 100 each day.",
+        "While holding the rod, you can use an action to speak its second or third command words. When you speak the second command word, you cast the {@spell create or destroy water} spell (Create Water only) from the rod. You can cast the spell at up to 4th level in this way. Each gallon of water you create as part of the spell is drawn from the pool of water within the rod. If you cast this spell from the rod and cause the water to fall as rain, the spell consumes 10 gallons of water for each of the spell's slot levels.",
+        "Speaking the third command word causes 10 or more gallons of water to erupt from the rod in a torrent of water, up to the maximum amount remaining within the rod. This water is drawn from the pool of water within the rod. The water is shot in a line 30 feet long and 1 foot wide. Any creature in the line must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 2d6} bludgeoning damage for every 10 gallons of water used from the rod and is pushed 10 feet away from you. On a successful save, a creature takes half as much bludgeoning damage and isn't pushed."
+      ],
+      attachedSpells: [
+        "create or destroy water"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Water-Absorption.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Salamander Flame Gauntlets",
+      source: "GriffonsSaddlebag2",
+      page: 153,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "These dark metal gauntlets were forged using fire from the heart of a salamander. While wearing them, your unarmed strikes with your hands deal an extra 1d4 fire damage to any target they hit. In addition, you can use a bonus action to cast the {@spell flame blade} spell (4th-level version, no concentration required) from the gauntlets, using either your spellcasting ability or your choice of Strength or Dexterity for the spellcasting ability of the spell when you do.",
+        "While holding the fiery blade, you can use an action to make a ranged spell attack with it instead. When you do, the blade becomes a fiery spear with a range of 30 feet. On a hit, the spear deals {@damage 4d6} fire damage. Immediately after the attack, the fiery blade reforms in your hand."
+      ],
+      attachedSpells: [
+        "flame blade"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Salamander-Flame-Gauntlets.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Sash of Sorcerous Synergy",
+      source: "GriffonsSaddlebag2",
+      page: 154,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a sorcerer",
+      reqAttuneTags: [
+        {
+          class: "sorcerer"
+        }
+      ],
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4 + 1}",
+      charges: 5,
+      entries: [
+        "This miraculous, one-shouldered robe is made from fine fabrics that have been steeped in powerful magic and fastened with an ornate buckle. The sash has 5 charges and regains {@dice 1d4 + 1} expended charges daily at dawn. When an ally that you can see within 60 feet of you casts a spell while you're wearing this robe, you can use your reaction to expend 1 or more of the sash's charges to twist the spell with one of your known Metamagic options, without spending any sorcery points. The number of charges you expend is equal to the number of sorcery points the Metamagic option would normally cost. If using the sash would cause the spell to target a second creature, you choose the new target.",
+        "In addition, when you use a Metamagic option on a spell while wearing this sash, you can change the style, color, and material of the garment and buckle. The sash's weight doesn't change. Regardless of its appearance, the sash can't be anything but a one-shouldered robe."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sash-of-Sorcerous-Synergy.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Scarlet Scourge",
+      source: "GriffonsSaddlebag2",
+      page: 154,
+      baseItem: "whip|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "R"
+      ],
+      dmg1: "1d4",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      charges: 10,
+      entries: [
+        "This whip is made from the severed vertebrae of a slain vampire's victims. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "The whip siphons blood from creatures that it hits. Whenever you hit a Small or larger living creature with the whip that is not a construct, ooze, plant, or undead, the bone blade at its end absorbs some of its blood and gains 1 charge. The whip can hold up to 10 charges and loses its charges whenever you finish a short or long rest. While holding the whip, you can use a bonus action to speak its command word to convert these charges into healing energy. When you do, the whip loses all its charges and you regain 2 hit points for each charge lost.",
+        "For every 5 charges the whip has, the muscle fibers that hold it together loosen and add 5 feet to the weapon's reach."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scarlet-Scourge.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Scorned Heart Breastplate",
+      source: "GriffonsSaddlebag2",
+      page: 155,
+      baseItem: "breastplate|phb",
+      type: "MA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      curse: true,
+      weight: 20,
+      ac: 14,
+      bonusAc: "+2",
+      entries: [
+        "This brass breastplate is torn apart in its center by a crimson gemstone. You gain a +1 bonus to AC for every two allies within 10 feet of you (up to a maximum of +2) while you wear this armor. In addition, while wearing this armor, you can cast {@spell hellish rebuke} (save DC 15) as a 3rd-level spell from it, using your reaction. Once the armor has been used to cast this spell, it can't do so again until the next dawn.",
+        {
+          type: "entries",
+          name: "Curse",
+          page: 0,
+          entries: [
+            "This armor is cursed. Attuning to the armor curses you until you are targeted by the {@spell remove curse} spell or similar magic; removing the armor fails to end the curse. While cursed, you have disadvantage on saving throws to resist becoming charmed, and you have disadvantage on Charisma checks to interact with any creature you find attractive."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "hellish rebuke"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scorned-Heart-Breastplate.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Scroll of Nightmares",
+      source: "GriffonsSaddlebag2",
+      page: 156,
+      type: "SC|DMG",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "Using an action to read this dark scroll causes horrifying memories, fears, and regrets to violently invade the minds of up to 10 creatures of your choice that you can see within 60 feet of you. Each creature must make a DC 15 Wisdom saving throw. On a failed save, a creature takes {@damage 5d10} psychic damage and becomes {@condition frightened} of you for 1 minute or until it takes damage. On a successful save, a creature takes half as much psychic damage and isn't {@condition frightened}. At the GM's discretion, non-sentient creatures, such as some constructs, oozes, plants, and undead, are immune to this effect.",
+        "Reading the scroll causes its script to flash and burn away as each word is spoken. Once the scroll has been used, it turns to ash and is destroyed, releasing a final wail as its magic is consumed."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scroll-of-Nightmares.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Scroll of the Jester",
+      source: "GriffonsSaddlebag2",
+      page: 156,
+      type: "SC|DMG",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "Using an action to read this scroll, your appearance magically changes to become a jester. At the same time, 8 perfect illusions of jesters that are identical to you appear in random unoccupied spaces within 30 feet of you. When the jesters appear, each creature of your choice within 60 feet of you must succeed on a DC 15 Wisdom saving throw or be charmed by you as if you had cast the {@spell enthrall} spell (no concentration required).",
+        "Each jester is indistinguishable from you and shares your AC, initiative, speed, and bonuses to saving throws. On your turn, you can mentally command each jester where to move (no action required). You can choose to see through a jester's eyes, hear what it hears, or speak through it in your own voice. A creature with {@sense truesight} can determine which jester is you.",
+        "The jesters remain as long as you concentrate (as if concentrating on a spell), to a maximum of 1 minute. A jester disappears early in a plume of confetti if it takes any damage, if it's more than 120 feet away from you, or if you choose to expend it in order to create one of the following effects:",
+        {
+          type: "list",
+          items: [
+            "As an action, you can expend 1 or more jesters to cast one of the following spells (save DC 15, no concentration required): {@spell charm person} (1 jester), {@spell color spray} (1 jester), {@spell confusion} (4 jesters), {@spell greater invisibility} (4 jesters), {@spell Tasha's Hideous Laughter|PHB|hideous laughter} (1 jester), {@spell hypnotic pattern} (3 jesters), {@spell levitate} (2 jesters), or {@spell major image} (3 jesters). When you cast a spell in this way, you can cause the spell to originate from you or from a jester that you can see.",
+            "As a bonus action or as a reaction when you take damage, you can expend 1 jester to immediately and imperceptibly teleport, swapping places with it. The jester disappears after it arrives in your original space."
+          ]
+        },
+        "When the last jester disappears, any effects or spells created by the scroll or its jesters end."
+      ],
+      attachedSpells: [
+        "charm person",
+        "color spray",
+        "confusion",
+        "enthrall",
+        "greater invisibility",
+        "hypnotic pattern",
+        "levitate",
+        "major image",
+        "tasha's hideous laughter"
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Scroll-of-the-Jester.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Seraphim's Stiletto",
+      source: "GriffonsSaddlebag2",
+      page: 158,
+      baseItem: "dagger|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a creature of good alignment",
+      reqAttuneTags: [
+        {
+          alignment: [
+            "G"
+          ]
+        }
+      ],
+      weight: 1,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "L",
+        "T"
+      ],
+      range: "20/60",
+      dmg1: "1d4",
+      dmgType: "P",
+      entries: [
+        "This magic dagger is made from elven gold and a fine sliver of unicorn horn. The dagger has a pool of 20 hit points that replenishes daily at dawn. As an action, you can touch this dagger to a creature you can see within 5 feet of you and speak its command word. When you do, you can restore a number of hit points to that creature from the pool, up to the maximum amount remaining in the pool.",
+        "When you hit an undead creature with a melee attack using this dagger, you can expend a number of hit points from the pool, up to the maximum amount remaining, as part of the attack. When you do, you deal extra radiant damage to that creature equal to twice the number of hit points you expend in this way."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Seraphim's-Stiletto.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Shadow Tag",
+      source: "GriffonsSaddlebag2",
+      page: 158,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This silver coin is embossed with the visage of a hooded, near-faceless figure with eyes that are always dark. While holding the coin, you can use an action to whisper its command word and toss it into a creature's shadow that you can see within 10 feet of you. When you do, the coin magically dissolves and tags the creature's shadow, causing a smoky, pitch-dark copy of the coin to appear in your hand instead.",
+        "While you're within 1000 feet of the tagged creature's shadow, small points of light appear within the dark coin's eyes that look in the shadow's direction. If the dark coin's eyes are looking toward the shadow, you can grasp the coin and use an action to speak its command word again, destroying the coin and immediately teleporting you to an unoccupied space within 5 feet of the tagged creature. Alternatively, when you destroy the coin, you can force the tagged creature to make a DC 15 Charisma saving throw. On a failed save, the creature teleports to an unoccupied space on solid ground that you can see within 15 feet of you. A creature can choose to fail the saving throw.",
+        "If the tagged creature doesn't have a shadow, such as if it becomes {@condition invisible}, the dark coin's eyes disappear until the creature's shadow reappears. The dark coin remains for 24 hours or until you destroy it. If the dark coin lasts for its full duration, there is a {@chance 50} chance that the normal coin reappears and replaces it. If the coin doesn't reappear at the end of the duration, it's destroyed."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shadow-Tag.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Shield of the Justicars",
+      source: "GriffonsSaddlebag2",
+      page: 158,
+      type: "S",
+      tier: "major",
+      rarity: "rare",
+      weight: 6,
+      ac: 2,
+      bonusAc: "+1",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d4}",
+      charges: 4,
+      entries: [
+        "One of the original arms from the Upheaval, this shield can be used to release a magically discordant pulse. While holding this shield, you have a +1 bonus to AC. This bonus is in addition to the shield's normal bonus to AC.",
+        "In addition, the shield has 4 charges and regains {@dice 1d4} expended charges daily at dawn. While holding it, when a creature that you can see within 30 feet of you casts a spell, you can use your reaction to expend 1 of the shield's charges and speak its command word. When you do, the target must make a DC 15 Constitution saving throw. On a failed save, the target takes a –2 penalty to its spell attack bonus and saving throw DC until the end of the turn, including against the triggering spell."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shield-of-the-Justicars.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Siege Staff",
+      source: "GriffonsSaddlebag2",
+      page: 161,
+      baseItem: "quarterstaff|phb",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a bard, cleric, druid, sorcerer, warlock, or wizard",
+      reqAttuneTags: [
+        {
+          class: "bard"
+        },
+        {
+          class: "cleric"
+        },
+        {
+          class: "druid"
+        },
+        {
+          class: "sorcerer"
+        },
+        {
+          class: "warlock"
+        },
+        {
+          class: "wizard"
+        }
+      ],
+      weight: 4,
+      weaponCategory: "simple",
+      property: [
+        "V"
+      ],
+      dmg1: "1d6",
+      dmgType: "B",
+      dmg2: "1d8",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d8 + 2}",
+      charges: 10,
+      staff: true,
+      entries: [
+        "This stony staff has been carved into the shape of a castle tower. The staff has 10 charges for the following properties, which use your spell save DC and spell attack bonus, and regains {@dice 1d8 + 2} expended charges daily at dawn. If you expend the last charge, roll a {@dice d20}. On a 1, a the staff crumbles into rubble and is destroyed.",
+        {
+          type: "entries",
+          name: "Battering Strike",
+          entries: [
+            "This staff can be wielded as a magic quarterstaff. When you hit with a melee attack using this staff, you can expend 1 of its charges to cause the target to take an extra {@damage 1d6} bludgeoning damage. If the target is a creature, it's also pushed 5 feet away from you. In addition, when you attack an object with the staff and hit, maximize your weapon damage dice against the target."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Fire Pot",
+          entries: [
+            "While holding the staff, you can use an action and expend 1 or more charges to cast the {@spell grease} spell from it. You can increase the size of the square covered by the spell by 5 feet for each additional charge you expend in this way (up to a 20-foot square). When you expend 2 or more charges to cast the spell in this way, creatures also take {@damage 2d6} fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Trebuchet",
+          entries: [
+            "While holding the staff, you can use an action and expend 3 charges to magically create and fling a boulder at a point you can see within 60 feet of you. Any target within 5 feet of the point must make a Dexterity saving throw. On a failed save, a target takes {@damage 4d8} bludgeoning damage, and if it's Medium or smaller, it is also pushed 10 feet away from the point. On a successful save, a target takes half as much bludgeoning damage and isn't pushed. Maximize the bludgeoning damage dice against any object or structure hit by the boulder. After it lands, the boulder disappears."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "grease"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Siege-Staff.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Sky Anchor",
+      source: "GriffonsSaddlebag2",
+      page: 162,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "40/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      bonusWeapon: "+1",
+      entries: [
+        "This barbed spear was designed to hunt and trap flying creatures. You gain a +1 bonus to attack and damage rolls made with this magic weapon, which has a normal throwing range of 40 feet. When you hit with a ranged attack using this weapon, you can speak its command word to create a magical chain that extends from the spear to a point on the ground within 5 feet of you. When you do, the spear remains lodged in the target. Until the spear is dislodged, that target can't move farther away from the point, and at the end of each of its turns, the target is pulled up to 10 feet closer to the point. An object that weighs more than 4,000 pounds can't be pulled in this way. The spear is dislodged from the target after 1 minute, or when a creature uses its action to make a DC 15 Strength check, dislodging the spear from itself or another target within its reach on a success. When the spear is dislodged, it deals {@damage 2d8} piercing damage to the target it was lodged in and is immediately pulled back to the point. The magical chain then disappears. You can dislodge the spear on your turn by speaking its command word again as a bonus action. Once this property has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sky-Anchor.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Skyglider Shield",
+      source: "GriffonsSaddlebag2",
+      page: 163,
+      type: "S",
+      resist: [
+        "poison"
+      ],
+      tier: "major",
+      rarity: "rare",
+      weight: 6,
+      ac: 2,
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      entries: [
+        "This rust-colored shield is made from the scales and leathery hide of a wyvern. While holding the shield, you have resistance to poison damage. In addition, the shield has 3 charges and regains all expended charges daily at dawn. When you fall while holding the shield, you can use your reaction to expend 1 of the shield's charges to cause a pair of wyvern wings to magically outstretch from the shield. While the wings remain outstretched, you fall at a rate of 10 feet per round and gain a flying speed of 30 feet, which you can use to glide horizontally as you descend so long as you hold onto the shield. If you land on the ground while falling in this way, you take no damage from falling. You can't {@action Dash} while using the shield to fly, and this flying speed can't be increased in any way. You can use the shield to gain altitude when flying in this way, but must spend 3 feet of movement for every 1 foot you fly upward. The wings refold immediately if you land or at the end of your turn if you didn't fly at least 15 feet on that turn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Skyglider-Shield.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Soul Pendant",
+      source: "GriffonsSaddlebag2",
+      page: 165,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3}",
+      charges: 3,
+      entries: [
+        "This mithral pendant holds a cleanly cut diamond at its center and hangs from a string of polished prayer beads. The pendant has 3 charges and regains {@dice 1d3} expended charges daily at dawn. When a creature that you can see within 60 feet of you dies while you're wearing this necklace, you can use your reaction to expend 1 of the pendant's charges and speak its command word. When you do, that creature's soul becomes trapped in the pendant for 24 hours or until you use this property of the pendant again as a reaction or you choose to release it as a bonus action on your turn. A nonliving creature or creature without a soul, such as a construct or undead, is immune to this effect. While a soul is trapped in the pendant, you gain a +2 bonus to Wisdom ability checks and Wisdom saving throws while you're wearing it.",
+        "In addition, you can use an action to telepathically ask the soul a question, as if by the {@spell speak with dead} spell, regardless of what the form of its physical body was. Once a soul has been asked 3 questions in this way, it's released from the pendant.",
+        "While a creature's soul is trapped in the pendant, its body is under the effect of the {@spell gentle repose} spell. If the creature is returned to life while you have its spirit trapped in this way, the spirit is released from the pendant and returned to its body."
+      ],
+      attachedSpells: [
+        "gentle repose",
+        "speak with dead"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Soul-Pendant.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Sovereignseed Satchel",
+      source: "GriffonsSaddlebag2",
+      page: 166,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      recharge: "dawn",
+      rechargeAmount: 4,
+      charges: 4,
+      entries: [
+        "This unassuming leather satchel is embroidered with a floral pattern and is connected to a strange garden on a special demiplane. The garden produces 4 magical seeds daily at dawn, which automatically appear at the bottom of the bag each day. When you open the bag to retrieve the seeds for the first time each day, roll {@dice 4d6} and consult the table below to determine the nature of each seed. Any unused seeds turn to dust and are destroyed daily at dawn when the bag produces a new batch of seeds.",
+        {
+          type: "table",
+          caption: "Optional Caption",
+          page: 0,
+          colLabels: [
+            "d6",
+            "Seed"
+          ],
+          colStyles: [
+            "col-1-5 text-center",
+            "col-10-5 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              {
+                type: "entries",
+                name: "Binding Bur",
+                entries: [
+                  "You can throw this jagged bur as if it were a {@item dart|PHB} or use it as a sling bullet. A Large or smaller creature hit by the bur must succeed on a DC 15 Strength saving throw or be {@condition restrained} by it for 1 minute, as the bur rapidly grows to form a series of entangling plants around it. A creature {@condition restrained} in this way can use its action to make a DC 15 Strength check, freeing itself on a success. The bur withers and is destroyed once a creature succeeds on the saving throw or is no longer {@condition restrained} by it."
+                ]
+              }
+            ],
+            [
+              "2",
+              {
+                type: "entries",
+                name: "Bouncing Bloom",
+                entries: [
+                  "You can use an action to plant this seed in the ground in an unoccupied space within your reach. When you do, a 5-foot-radius flower immediately grows in the space. A creature that jumps from the flower is propelled three times the normal distance, up to the creature's remaining movement, without the need for a running start. The flower withers away and is destroyed after 10 minutes or after it's been used to propel a creature in this way ten times."
+                ]
+              }
+            ],
+            [
+              "3",
+              {
+                type: "entries",
+                name: "Cloaking Cotton",
+                entries: [
+                  "You can use an action to hurl this boll into the air at a point within 5 feet of you. When you do, the boll erupts into an opaque cloud in a 20-foot-radius sphere, centered on that point. The sphere spreads around corners, and its area is heavily obscured. The sphere does not move with you. The cloud remains for 1 minute, until it's dispersed by a wind of moderate or greater speed (at least 10 miles per hour), or until 5 or more fire damage is dealt to a target within the area."
+                ]
+              }
+            ],
+            [
+              "4",
+              {
+                type: "entries",
+                name: "Fiddle-Ferry Fig",
+                entries: [
+                  "You can use an action to plant this seed in the ground or place it in a body of water in an unoccupied space within your reach. When you do, the seed immediately grows into a single, large leaf. A creature can break the leaf off its stem using an action. The leaf is 10 feet long and 5 feet across and can support up to 300 pounds. Creatures standing or sitting on the leaf while it's falling descend at a rate of 60 feet per round, or are supported by the leaf when floating in the water. If the leaf is carrying more than 300 pounds, it immediately falls or sinks as normal. After 1 hour, the leaf and stem wither away and are destroyed."
+                ]
+              }
+            ],
+            [
+              "5",
+              {
+                type: "entries",
+                name: "Rose of Radiance",
+                entries: [
+                  "While held, this seed emits a warm glow, shedding bright light in a 30-foot radius and dim light for an additional 30 feet. Alternatively, you can use an action to plant the seed in the ground at a point within your reach. When you do, a single, golden rose grows at the start of your next turn that sheds light twice as far as the seed. The effect lasts for 8 hours or until the flower is moved or destroyed."
+                ]
+              }
+            ],
+            [
+              "6",
+              {
+                type: "entries",
+                name: "Spanning Sprout",
+                entries: [
+                  "You can use an action to plant this seed in the ground in an unoccupied space within your reach. When you do, a bridge made of twisting vines grows horizontally in a line that's 5 feet wide and up to 30 feet long in a direction of your choice. The vines are sturdy and can support up to 500 pounds at a time, provided that both ends of the bridge connect to a solid surface, such as a point on the ground or a wall. The bridge withers away and is destroyed after 1 hour, or if it takes 15 slashing or fire damage (AC 10)."
+                ]
+              }
+            ]
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sovereignseed-Satchel.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Spellsword",
+      source: "GriffonsSaddlebag2",
+      page: 167,
+      baseItem: "shortsword|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "O",
+      focus: true,
+      entries: [
+        "This item appears to be a shortsword hilt. While grasping the hilt, you can use a bonus action to expend a spell slot of 1st level or higher to activate the sword, causing a blade of pure energy to spring into existence. The sword remains activated for 8 hours, or until you deactivate it early using an action. Once you activate the sword in this way, you can use it as a spellcasting focus, and you are proficient with the spellsword for the duration.",
+        "You can use your spellcasting ability, instead of Strength or Dexterity, for your attack and damage rolls using this weapon, which deals force damage instead of piercing damage. If you activate the sword using a 3rd- or 4th-level spell slot, its damage die becomes a {@damage d8}, and you gain a +1 bonus to attack and damage rolls made with it. If you use a 5th-level slot or higher, its damage die becomes a {@damage d10}, and the bonus increases to +2 instead.",
+        "When you deactivate the weapon early using an action, the remaining magic stored within the blade erupts into a wave of energy. Each creature in a 10-foot cone must make a DC 15 Dexterity saving throw. A creature takes {@damage 3d6} force damage on a failed save, or half as much damage on a successful one. If the sword was activated using a 3rd- or 4th-level spell slot, the force damage becomes {@damage 4d8}, or {@damage 5d10} if it was activated with a 5th-level slot or higher.",
+        "The blade emits bright light in a 20-foot radius and dim light for an additional 20 feet, and disappears if the sword is no longer activated or if you let go of the weapon. While holding the activated sword, you can use a bonus action to cause the blade to vanish or reappear."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spellsword.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Spellwriter's Brace",
+      source: "GriffonsSaddlebag2",
+      page: 167,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a wizard",
+      reqAttuneTags: [
+        {
+          class: "wizard"
+        }
+      ],
+      wondrous: true,
+      entries: [
+        "This writer's hand brace allows you to prepare four extra spells from your spellbook whenever you finish a long rest. The spells can be no higher than 5th level and must be of a level for which you have spell slots. When you do, the prepared spells appear on the skin of your arm as abstract spell tattoos that represent them. You can prepare the same spell multiple times in this way, taking the necessary time in order to do so, to create multiple copies of the same spell tattoo.",
+        "As an action, you can touch a willing creature and speak the brace's command word to transfer one of your spell tattoos to it, causing the spell tattoo to disappear from your arm and appear on the creature instead. You can only have one tattoo transferred in this way at a time. Transferring a second spell tattoo causes the first one to disappear.",
+        "A spellcaster with a spell tattoo can expend a spell slot of the tattooed spell's level or higher, using its spell save DC, spell attack bonus, and spellcasting ability to do so. Once the spell is cast, its tattoo disappears.",
+        "Any spell tattoos created by the brace disappear when you finish a long rest or remove the brace."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spellwriters-Brace.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Spirit Sheath",
+      source: "GriffonsSaddlebag2",
+      page: 168,
+      baseItem: "scimitar|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a creature with a Wisdom score of 13 or higher",
+      reqAttuneTags: [
+        {
+          wis: 13
+        }
+      ],
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "This scimitar and its sheath are bound by a spiritual force that resonates with you when you attune to it. The sheath collects and incubates spiritual energy before it's focused and radiated by its blade. You gain a +1 bonus to attack and damage rolls made with this magic weapon, and you are proficient with this scimitar while you're attuned to it. When you make an attack with this weapon, you can use your Wisdom modifier, instead of Strength or Dexterity, for the attack and damage rolls. You must use the same modifier for both rolls.",
+        "While holding the sword, you can use a bonus action to cast the {@spell spiritual weapon} spell from it (spell attack bonus +7, +4 spellcasting ability modifier), creating a spiritual duplicate of the scimitar in the air within range. Once this property of the scimitar has been used, it can't be used again until the next dawn."
+      ],
+      attachedSpells: [
+        "spiritual weapon"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spirit-Sheath.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Spiritwalker Breastplate",
+      source: "GriffonsSaddlebag2",
+      page: 168,
+      baseItem: "breastplate|phb",
+      type: "MA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 20,
+      ac: 14,
+      entries: [
+        "When you drop to 0 hit points while wearing this armor, your spirit leaves your body and appears as a floating, ghostly version of yourself. The spirit remains there for 1 minute or until you regain consciousness, at which point the spirit returns to your body. For the duration, you don't suffer a death saving throw failure as a result of taking damage, and you can only die from damage if the total damage you take on a turn equals or exceeds your hit point maximum. You still make death saving throws at the start of each of your turns while in this state; however, the number you must roll to succeed on a death saving throw increases by 1 for every 5 feet away from your physical body your spirit is at the start of each of your turns.",
+        "Your spirit is tethered to your physical body and can't be farther than 30 feet away from it at any time. The spirit has your senses, a flying speed of 30 feet, and can hover. On your turn, it can only move and take the {@action Help} action. The spirit is immune to all damage and is incorporeal, but an effect that turns undead will automatically send your spirit back to your physical body and end the effect early.",
+        "Once this property has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Spiritwalker-Breastplate.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Splinterguard",
+      source: "GriffonsSaddlebag2",
+      page: 168,
+      baseItem: "splint armor|phb",
+      type: "HA",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a druid or ranger",
+      reqAttuneTags: [
+        {
+          class: "druid"
+        },
+        {
+          class: "ranger"
+        }
+      ],
+      weight: 60,
+      ac: 17,
+      strength: "15",
+      stealth: true,
+      entries: [
+        "The protective panels that adorn this splint armor are made from carefully molded pieces of ironleaf lumber, a wood renowned for its remarkable durability. Even if you aren't attuned to the armor, you gain the following benefits:",
+        "While you're wearing this armor, any critical hit against you becomes a normal hit. In addition, the first time each day you're struck by a critical hit, the armor's panels splinter into countless shards of painful, wooden shrapnel. Other creatures within 10 feet of you must make a DC 15 Dexterity saving throw, taking {@damage 3d8} piercing damage on a failed save, or half as much damage on a successful one. Once this happens, the armor's wooden panels are cracked until the following dawn, at which point they magically regrow. Until the panels regrow, the armor can't be splintered again and suffers a –2 penalty to the AC it offers. The panels can't be repaired by magical or mundane means, but a {@spell plant growth} spell can cause the panels to regrow early once before each dawn.",
+        "If you're attuned to this armor, you're considered proficient with it, and you don't suffer disadvantage on Dexterity ({@skill Stealth}) checks you make as a result of wearing it. In addition, creatures hit by the armor's shrapnel when it splinters take {@damage 5d8} piercing damage, instead of {@damage 3d8}, and you can choose which creatures in the area are affected by it when it happens."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Splinterguard.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Sream's Stoppered Oasis",
+      source: "GriffonsSaddlebag2",
+      page: 168,
+      type: "P",
+      tier: "minor",
+      rarity: "rare",
+      entries: [
+        "This tall decanter is filled with water from a miraculous oasis in the H'rethi Desert and is stoppered with a small, overgrown planter. You can pour the water out of the bottle on top of the planter as an action to create a magical oasis that fills up to a 100-foot-square space over the course of 10 minutes.",
+        "The oasis has a pond filled with clean water and exotic, fruit-bearing trees that can nourish up to fifteen humanoids or five steeds for 24 hours. The area within the oasis is always under the effects of the {@spell alarm} spell. A {@creature swarm of poisonous snakes|MM} appears to defend the oasis for each creature that sets off the alarm (maximum of 3), whose rattling tails act as the audible alarm. The swarms are friendly to you and your companions, but don't obey verbal commands. Roll initiative for the summoned swarms as a group, which have their own turns. A swarm disappears when it drops to 0 hit points or when there are no more hostile creatures within the oasis.",
+        "The oasis remains for 24 hours or until dispelled by a {@spell dispel magic} spell cast at 5th level or higher. The atmosphere within the space is comfortable and dry, regardless of the weather outside the oasis. A friendly creature within the oasis can't be {@condition frightened} and regains an extra {@dice 1d4} Hit Dice when it finishes a long rest.",
+        "Drinking the water in the bottle has no effect, but tastes refreshing."
+      ],
+      attachedSpells: [
+        "alarm"
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sreams-Stoppered-Oasis.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Stalagmight Geode",
+      source: "GriffonsSaddlebag2",
+      page: 170,
+      baseItem: "greatclub|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 10,
+      weaponCategory: "simple",
+      property: [
+        "2H"
+      ],
+      dmg1: "1d8",
+      dmgType: "B",
+      bonusWeapon: "+1",
+      entries: [
+        "This snapped-off rock formation has a cache of magical, growing crystals inside it. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you hit a creature with this weapon and roll the maximum number possible on the weapon's damage die, the crystals rapidly grow and increase the weapon's damage die by one size, up to a {@damage d12}. For example, when you roll an 8 on the weapon's normal {@damage d8} damage die, its damage die magically becomes a {@damage d10} after the attack. Immediately after you roll a 12 on a d12 damage die in this way, each creature within 5 feet of the greatclub (other than yourself) must make a DC 15 Dexterity saving throw. A creature takes {@damage 1d12} piercing damage on a failed save, or half as much damage on a successful one, as the weapon's crystals explode into shrapnel. Once the crystal explodes, the weapon's damage die becomes a {@damage d8} again."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stalagmight-Geode.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Starmetal Shard Spear",
+      source: "GriffonsSaddlebag2",
+      page: 171,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      bonusWeapon: "+1",
+      entries: [
+        "This weapon's otherwise small blade is made larger by 3 sharp fragments of starmetal that remain magically connected to it. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Whenever you hit a creature with an attack using the head of this spear, you can choose to leave 1 of the fragments embedded in its body. As a bonus action, you can speak the spear's command word to cause all embedded shards to magically return to the blade of the spear, flying through the air and avoiding creatures and objects to do so. When you do, the target takes {@damage 1d6} slashing damage for each embedded shard as it leaves the body. If all 3 shards are embedded in the same creature when you speak the command word, the creature's speed is also halved until the end of your next turn. If the spear is ever more than 120 feet away from a shard, the shard magically returns to the spear without harming the creature it was embedded in.",
+        "Immediately after you make a ranged attack with the spear, the weapon flies back to your hand."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Starmetal-Shard-Spear.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Steam Harpoon",
+      source: "GriffonsSaddlebag2",
+      page: 172,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      bonusWeapon: "+1",
+      entries: [
+        "A curious mesh of magic and steam-powered mechanism, this spear's barbed head can be launched from its shaft and quickly retrieved using the attached chain. You gain a +1 bonus to attack and damage rolls made with this magic weapon. Once on each of your turns when you attack with the spear, you can choose to make a special ranged attack with it, firing the spear head toward a target within 20 feet of you. This ranged attack uses your Dexterity modifier for its attack and damage rolls. On a hit, the target must succeed on a DC 15 Strength saving throw or be pulled up to 15 feet toward you. A Huge or larger target automatically succeeds on the saving throw. Hit or miss, the spear's head then reels back and reattaches to the top of the weapon immediately after the attack."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Steam-Harpoon.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Storm's Eye Shield",
+      source: "GriffonsSaddlebag2",
+      page: 172,
+      type: "S",
+      resist: [
+        "lightning"
+      ],
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 6,
+      ac: 2,
+      entries: [
+        "Emblazoned on the face of this round shield is a cyclone design that magically swirls based on the likelihood and proximity of thunderstorms. While holding this shield, you have resistance to lightning damage. When you take lightning damage from a hostile source while holding this shield, you can use your reaction to cast the {@spell thunderwave} spell (save DC 15) from it. This property can't be used again until the next dawn.",
+        "In addition, while the shield is flat on the ground, you can perform a 1 minute ritual to cast the augury spell from it. When you do, the omens are represented by how the cyclone's design changes:",
+        {
+          type: "list",
+          items: [
+            "{@b Calm clouds,} for good results",
+            "{@b Roiling clouds,} for bad results",
+            "{@b A flash of lightning,} for both good and bad results",
+            "{@b Nothing,} for results that aren't especially good or bad"
+          ]
+        },
+        "Once this property of the shield has been used, it can't be used again until it's been in the presence of another thunderstorm for at least 1 hour."
+      ],
+      attachedSpells: [
+        "augury",
+        "thunderwave"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Storms-Eye-Shield.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Stormbrewer Bracers",
+      source: "GriffonsSaddlebag2",
+      page: 172,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      charges: 5,
+      entries: [
+        "This pair of electrum bracers are always covered in a thin layer of condensation. When you roll initiative while wearing the bracers, they begin to billow out wafting clouds around your wrists. The clouds surrounding your wrists grow darker with every charge the bracers have, becoming fierce storm clouds when fully charged. The bracers can hold up to 5 charges, which are lost after 1 minute. The bracers gain 1 charge after you hit a hostile creature with a melee weapon attack while wearing them. If the bracers have 5 charges when you hit a creature in this way, they unleash a burst of electricity and lose all their stored charges, dealing {@damage 1d8} lightning damage to the target of the attack and up to 2 other creatures of your choice that you can see within 10 feet of you.",
+        "In addition, while wearing the bracers, you can use your reaction when you take lightning damage to reduce that damage by {@dice 1d8 + 4} and cause the bracers to gain 1 charge."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stormbrewer-Bracers.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Tempest Griffon Bracers",
+      source: "GriffonsSaddlebag2",
+      page: 174,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "While wearing these oiled bracers lined with magic griffon feathers, your speed increases by 5 feet.",
+        "In addition, you can use an action to speak the bracers' command word to vanish into a plume of sparks and feathers. Choose up to 3 different creatures that you can see within 60 feet of you. Make a melee weapon attack against each target, briefly appearing next to each one before making the attack. A target takes an extra {@damage 2d8} lightning damage on a hit, or half as much lightning damage on a miss. You can then teleport to an unoccupied space you can see within 5 feet of one of the targets or return to your original space, reappearing in a flourish of electricity, feathers, and wind. Once this property of the bracers has been used, it can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tempest-Griffon-Bracers.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Thalamus Thread",
+      source: "GriffonsSaddlebag2",
+      page: 174,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This pale gray thread is made from the remains of a powerful mystic's brain. The overdeveloped organ creates a congealed fiber that, once spun, can be used as a functional bowstring. It's always oily to the touch and leaves a faint residue on your fingers when pulled. Ranged attacks made with a weapon strung with this thread are considered magical.",
+        "When you hit a creature with a ranged attack using a bow or crossbow that was strung with this thread, you can speak the thread's command word as part of the attack to charge the arrow or bolt with psychic power. When you do, the target of the attack takes an extra {@damage 1d8} psychic damage and must make a DC 15 Intelligence saving throw. On a failed save, the creature is {@condition stunned} until the end of your next turn. On a successful save, the creature is not {@condition stunned}. A construct or undead creature automatically succeeds on the saving throw. This property of the thread can't be used again until the next dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Thalamus-Thread.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Torrdok's Magnificent Forgery",
+      source: "GriffonsSaddlebag2",
+      page: 177,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This large, gilded mirror is 5 feet tall, 3 feet across, and weighs 20 pounds. While the mirror is against a wall or similar vertical surface, you can speak its first command word using an action to magically fasten the mirror to the wall. You can unfasten the mirror by speaking the command word again using another action.",
+        "While the mirror is fastened to a wall, its reflective surface becomes oily and moves ever so slightly. If the fastened mirror is facing a room that's no larger than 40 feet on a side for 24 hours, the reflection stiffens and becomes a beautiful painting of the room's reflection. The painting remains until the mirror is removed from the wall. While the painting remains, a creature can use an action to touch its surface and speak the mirror's second command word to be magically transported to a special demiplane identical to the room the mirror is facing, including any of its furniture and decorations. Doing so again from within the demiplane transports you back to the nearest unoccupied space to the mirror in the original room. Any furniture or decoration created by the demiplane can't be removed from it, and if a piece of furniture or decoration was magical in the original room, the copy of it is not. Further, any doors or windows found in the original room don't appear in the demiplane's version.",
+        "Anything brought into the demiplane is shunted back to the original room when the mirror is removed from the wall. While the painting remains, it is indistinguishable from a regular painting. A successful DC 15 Intelligence ({@skill Arcana}) or Intelligence ({@skill Investigation}) check can reveal the true nature of the painting, but not what command words are required to use it."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Torrdoks-Magnificent-Forgery.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Traitor's Gauntlet",
+      source: "GriffonsSaddlebag2",
+      page: 177,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      curse: true,
+      entries: [
+        "This pair of gloves is matched with one dark metal gauntlet, which once belonged to a traitorous knight who was burned for his treason. While wearing these gloves and gauntlet, your unarmed strikes with your hands are turned into magic weapons that deal {@damage 1d8} necrotic damage.",
+        "In addition, you can use a bonus action to speak the gauntlet's command word while holding a nonmagical melee weapon in the hand that's wearing it. When you do, the weapon becomes magical while you hold it in that hand. The weapon ceases to be magical if you throw, drop, or stow it. While the weapon is magical in this way, it's wreathed in dark flames that cause any target hit by it to take necrotic damage, instead of the weapon's normal damage, as well as an extra {@damage 1d8} fire damage.",
+        "While unworn, the gauntlet can be magically altered to fit over either hand by speaking its other command word as an action.",
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "This gauntlet is cursed, and becoming attuned to it extends the curse to you. As long as you remain cursed, you are unwilling to part with the gauntlet, keeping it within reach at all times, and you can't remove the gloves. In addition, while you're cursed, you gain the following flaw: \"Everyone has an ulterior motive, so I can only count on myself.\" While you have this flaw, you have disadvantage on Wisdom ({@skill Insight}) and Charisma ({@skill Persuasion}) checks made to interact with friendly creatures, and you can't take the Help action."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Traitors-Gauntlet.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Tremor Spike",
+      source: "GriffonsSaddlebag2",
+      page: 178,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      weight: 15,
+      entries: [
+        "This industrial, hollow rod is 3 feet long and weighs 15 pounds. The rod has a tapered spike on one end and an open, tower-like chimney on the other. Three hinged legs unfold from the sides of the rod, allowing it to stand upright with its spiked end pointed downward. Standing or collapsing the rod in this way requires an action.",
+        "The unfolded legs magically fasten the rod to the ground while it's standing, but a creature can use its action to try to push it over with a successful DC 20 Strength check. Once the rod is no longer standing, it magically deactivates and collapses itself again.",
+        "As a bonus action, you can press a button on the standing rod to cause its mechanisms to churn and whir, repeatedly sending its spike into the ground below it. Pressing the button again deactivates the rod. The spike sends out loud, drum-like shockwaves every 6 seconds. The waves are audible out to 300 feet, or 1200 feet if a creature has {@sense tremorsense|MM}. If a creature has {@sense tremorsense|MM}, its range is halved while it's within 300 feet of the active rod. A creature can't perceive anything within 30 feet of the active rod using its {@sense tremorsense|MM}, but is aware that the disrupting shockwaves originate from that location."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tremor-Spike.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Tyrannosaurus Rax",
+      source: "GriffonsSaddlebag2",
+      page: 178,
+      baseItem: "greataxe|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 7,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "1d12",
+      dmgType: "S",
+      bonusWeapon: "+1",
+      entries: [
+        "This bone-carved axe can channel the might of a rampaging tyrannosaurus rex. You gain a +1 bonus to attack and damage rolls made with this magic weapon. While holding the axe, you can use a bonus action to rampage. While rampaging, you can move through the space of any creature of your size or smaller. When you move through a creature's space in this way while rampaging, your movement doesn't provoke opportunity attacks from that creature for the rest of the turn. Once on each of your turns while rampaging, you can force a creature whose space you move through in this way to make a DC 15 Strength or Dexterity saving throw (its choice). On a failed save, that creature takes {@damage 1d6} bludgeoning damage and is knocked {@condition prone}. In addition, while you're rampaging, your weapon attacks with this weapon score a critical hit against objects, structures, and {@condition prone} creatures on a roll of 19 or 20.",
+        "Your rampage lasts for up to 1 minute. It ends early if you don't move through a hostile creature's space on your turn or if you drop to 0 hit points. This property of the axe can be used twice and regains all expended uses daily at dawn."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tyrannosaurus-Rax.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Urnblade",
+      source: "GriffonsSaddlebag2",
+      page: 179,
+      baseItem: "scimitar|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "N",
+      bonusWeapon: "+1",
+      entries: [
+        "This item appears to be a small cremation urn. While grasping the urn, you can use a bonus action to speak its first command word and cause its lid to unseal. When you do, a curved blade of dark smoke pours from the mouth of the urn. Speaking the command word again reseals the urn and causes the blade to disappear. If you are proficient with shortswords or longswords, you are proficient with the urnblade.",
+        "You gain a +1 bonus to attack and damage rolls made with this magic weapon, which deals necrotic damage instead of slashing damage.",
+        {
+          type: "entries",
+          name: "Shadow Ally",
+          entries: [
+            "While holding the urn, you can use an action to speak its second command word to animate your body's shadow, transforming it into an undead creature. When you do, your body's shadow detaches from you and becomes a {@creature shadow} in an unoccupied space that you can see within 10 feet of you.",
+            "On your turn, you can mentally command the shadow if you aren't {@condition incapacitated}. You decide what action the shadow takes and where it moves during its next turn, or you can issue it a general command, such as to attack your enemies or guard a location. The GM has the shadow's statistics. This shadow doesn't cause a new one to appear when a non-evil humanoid dies from its attacks.",
+            "The urnblade's bonus to attack and damage rolls becomes +2 while the summoned shadow exists. In addition, if you are the target of an attack and are within 5 feet of the shadow, you can use your reaction to command your shadow to become the target of the attack instead.",
+            "The shadow disappears when it drops to 0 hit points, when it's farther than 120 feet from you, or when you use an action to dismiss it. When it disappears, your cast shadow returns. If the shadow drops to 0 hit points, there is a cumulative {@chance 5} chance that the urn turns to dust and is destroyed."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Urnblade.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Verax Weapon",
+      type: "GV|DMG",
+      requires: [
+        {
+          type: "M"
+        }
+      ],
+      inherits: {
+        namePrefix: "Verax ",
+        source: "GriffonsSaddlebag2",
+        page: 180,
+        tier: "major",
+        rarity: "rare",
+        bonusWeapon: "+1",
+        entries: [
+          "A verax weapon has been made by quenching its metal in the blood of a particular creature while being forged, enchanting the weapon with a magic that hunts down creatures of the chosen type. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+          "Use the table below to choose or randomly determine what creature type's blood was used to enchant the weapon. When you use this weapon to attack a creature of the chosen type and are forced to make the attack roll with disadvantage, you make the attack roll as normal instead.",
+          {
+            type: "table",
+            colLabels: [
+              "d10",
+              "Creature Type"
+            ],
+            colStyles: [
+              "col-2 text-center",
+              "col-10 text-left"
+            ],
+            rows: [
+              [
+                "1",
+                "Aberration"
+              ],
+              [
+                "2",
+                "Beast"
+              ],
+              [
+                "3",
+                "Celestial"
+              ],
+              [
+                "4",
+                "Dragon"
+              ],
+              [
+                "5",
+                "Fey"
+              ],
+              [
+                "6",
+                "Fiend"
+              ],
+              [
+                "7",
+                "Giant"
+              ],
+              [
+                "8",
+                "Humanoid"
+              ],
+              [
+                "9",
+                "Monstrosity"
+              ],
+              [
+                "10",
+                "Undead"
+              ]
+            ]
+          }
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 180,
+      tier: "major",
+      rarity: "rare",
+      bonusWeapon: "+1",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "A verax weapon has been made by quenching its metal in the blood of a particular creature while being forged, enchanting the weapon with a magic that hunts down creatures of the chosen type. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        "Use the table below to choose or randomly determine what creature type's blood was used to enchant the weapon. When you use this weapon to attack a creature of the chosen type and are forced to make the attack roll with disadvantage, you make the attack roll as normal instead.",
+        {
+          type: "table",
+          colLabels: [
+            "d10",
+            "Creature Type"
+          ],
+          colStyles: [
+            "col-2 text-center",
+            "col-10 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              "Aberration"
+            ],
+            [
+              "2",
+              "Beast"
+            ],
+            [
+              "3",
+              "Celestial"
+            ],
+            [
+              "4",
+              "Dragon"
+            ],
+            [
+              "5",
+              "Fey"
+            ],
+            [
+              "6",
+              "Fiend"
+            ],
+            [
+              "7",
+              "Giant"
+            ],
+            [
+              "8",
+              "Humanoid"
+            ],
+            [
+              "9",
+              "Monstrosity"
+            ],
+            [
+              "10",
+              "Undead"
+            ]
+          ]
+        }
+      ],
+      variants: [
+        {
+          base: {
+            name: "Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 50,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Battle Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 4,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Battle Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 4,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Double-Bladed Scimitar",
+            source: "ERLW",
+            page: 21,
+            type: "M",
+            rarity: "none",
+            weight: 6,
+            value: 10000,
+            weaponCategory: "martial",
+            property: [
+              "S",
+              "2H"
+            ],
+            dmg1: "2d4",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
+                ]
+              }
+            ],
+            hasFluff: true
+          },
+          specificVariant: {
+            name: "Verax Double-Bladed Scimitar",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 6,
+            weaponCategory: "martial",
+            property: [
+              "S",
+              "2H"
+            ],
+            dmg1: "2d4",
+            dmgType: "S",
+            sword: true,
+            weapon: true,
+            entries: [
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "If you attack with a double-bladed scimitar as part of the {@action Attack} action on your turn, you can use a bonus action immediately after to make a melee attack with it. This attack deals {@damage 1d4} slashing damage on a hit, instead of {@damage 2d4}."
+                ]
+              }
+            ],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Hammer",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 20,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            dmg1: "1d6",
+            dmgType: "B",
+            hammer: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Hammer",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            dmg1: "1d6",
+            dmgType: "B",
+            hammer: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Heavy Hammer",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 4,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "B",
+            dmg2: "1d10",
+            hammer: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Heavy Hammer",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 4,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "B",
+            dmg2: "1d10",
+            hammer: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Hooked Shortspear",
+            source: "OotA",
+            page: 224,
+            type: "M",
+            rarity: "unknown",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "L"
+            ],
+            dmg1: "1d4",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus."
+            ]
+          },
+          specificVariant: {
+            name: "Verax Hooked Shortspear",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "L"
+            ],
+            dmg1: "1d4",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus."
+            ],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Hoopak",
+            source: "DSotDQ",
+            page: 188,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 10,
+            weaponCategory: "martial",
+            property: [
+              "A",
+              "F",
+              "S",
+              "2H"
+            ],
+            range: "40/160",
+            dmg1: "1d6",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+                ]
+              }
+            ],
+            ammoType: "sling bullet|phb",
+            hasFluffImages: true
+          },
+          specificVariant: {
+            name: "Verax Hoopak",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "A",
+              "F",
+              "S",
+              "2H"
+            ],
+            range: "40/160",
+            dmg1: "1d6",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A hoopak is a sturdy stick with a sling at one end and a pointed tip at the other.",
+              {
+                type: "entries",
+                name: "Special",
+                entries: [
+                  "When you make a melee attack with this weapon, you ignore its ammunition property. You can use the hoopak as a martial ranged weapon. If you do, it uses the ammunition property, uses sling bullets, and deals {@damage 1d4} bludgeoning damage on a hit."
+                ]
+              }
+            ],
+            ammoType: "sling bullet|phb",
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Long Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 200,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Long Sword",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Mattock",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 10,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "2H"
+            ],
+            dmg1: "1d12",
+            dmgType: "P",
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Mattock",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 10,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "2H"
+            ],
+            dmg1: "1d12",
+            dmgType: "P",
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Staff",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d4",
+            dmgType: "B",
+            dmg2: "1d6",
+            staff: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Staff",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d4",
+            dmgType: "B",
+            dmg2: "1d6",
+            staff: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 150,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Verax Sword",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Yklwa",
+            source: "ToA",
+            page: 32,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 100,
+            weaponCategory: "simple",
+            property: [
+              "T"
+            ],
+            range: "10/30",
+            dmg1: "1d8",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+            ]
+          },
+          specificVariant: {
+            name: "Verax Yklwa",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "simple",
+            property: [
+              "T"
+            ],
+            range: "10/30",
+            dmg1: "1d8",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+            ],
+            page: 180,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Verax-Weapon.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Verax Weapon",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Viper Khopesh",
+      source: "GriffonsSaddlebag2",
+      page: 181,
+      baseItem: "scimitar|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      value: 2500,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "L"
+      ],
+      dmg1: "1d6",
+      dmgType: "S",
+      entries: [
+        "This curved blade was carved from a large viper's fang. When you hit with an attack using this magic sword, the target takes an extra {@damage 1d6} poison damage. In addition, when you roll a 20 on an attack roll made with this weapon against a Large or smaller creature, that creature must make a DC 15 Constitution saving throw. On a failed save, a creature takes {@damage 2d6} poison damage and is {@condition poisoned} until the start of your next turn. The {@condition poisoned} creature is {@condition incapacitated}. On a successful save, a creature takes half as much poison damage and isn't {@condition poisoned}."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Viper-Khopesh.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Voyage Collar",
+      source: "GriffonsSaddlebag2",
+      page: 181,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This cushioned leather and rope collar is easily adjustable to fit the necks of all manner of creatures. You can place the collar on a willing Medium or smaller creature using an action. If the creature is a friendly beast companion or familiar (such as one summoned by the {@spell find familiar} spell), you can speak the collar's command word as part of this action to create a magical bond between you and the creature. The bond remains until the collar is removed.",
+        "You can use a bonus action to speak the collar's command word while you can see the bonded creature within 30 feet of you. When you do, the creature grows in size to become Large, provided there's enough space. The enlarged creature gains a +2 bonus to AC (provided it isn't wearing armor), its speed increases by 10 feet, and is magically equipped with a bridle, reins, and saddle. The enlarged creature can understand the directions of any friendly creature that's riding it, and its carrying capacity magically becomes the same as a {@item riding horse|PHB}. The creature remains enlarged for up to 8 hours, until it drops to 0 hit points, or until you end the effect using a bonus action. Once this property of the collar has been used, it can't be used again until the next dawn.",
+        "If the beast or familiar wearing the collar is a transformed humanoid or other creature, such as by the {@spell polymorph} spell or similar magic, the bond fails when you speak the command word and the collar has no effect. If the bonded creature is a familiar summoned by the {@spell find familiar} spell, the collar and familiar disappear into a pocket dimension together whenever you temporarily dismiss it. If the bonded familiar is dismissed forever or drops to 0 hit points, it leaves the collar behind. A creature can only gain the benefits of one magical collar at a time."
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Voyage-Collar.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wand of Gilding",
+      source: "GriffonsSaddlebag2",
+      page: 182,
+      type: "WD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a bard, sorcerer, or wizard",
+      reqAttuneTags: [
+        {
+          class: "bard"
+        },
+        {
+          class: "sorcerer"
+        },
+        {
+          class: "wizard"
+        }
+      ],
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 1}",
+      charges: 7,
+      entries: [
+        "This golden wand is a classic royal family heirloom and has a delicate lily at its end that flowers when held. While holding the wand, you can use the following properties:",
+        {
+          type: "entries",
+          name: "Enhance Beauty",
+          entries: [
+            "You can use an action to point the wand at a living target you can see within 30 feet of you and magically enhance its beauty for 1 hour. If the target is a creature, its eyelashes may become thicker, its skin more radiant, and its hair more luscious. If it's a plant, it may grow more vibrant, smell more fragrant, and look visibly healthier."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Gild",
+          entries: [
+            "As an action, you can touch the wand to a target no larger than 1 foot in any dimension to cause it to appear to be made of gold for 1 hour. Its appearance and texture change to reflect the new appearance, but its weight remains the same. A successful DC 15 Intelligence ({@skill Investigation}) check reveals that the effect is illusory. Once this property has been used, it can't be used again until the next dawn."
+          ]
+        },
+        "This wand has 7 charges for the following properties. It regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand crumbles into dirt and is destroyed.",
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "While holding this wand, you can use an action to expend 1 of its charges to cast one of the following spells from it (save DC 15): {@spell alter self} (Change Appearance only), {@spell charm person} (2nd-level version), {@spell enthrall}, or {@spell hypnotic pattern}."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Silver Tongue",
+          entries: [
+            "While holding this wand, when you make a Charisma check or saving throw, you can use your reaction and expend 1 of its charges to make the roll with advantage."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "alter self",
+        "charm person",
+        "enthrall",
+        "hypnotic pattern"
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wand-of-Gilding.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wand of Stars",
+      source: "GriffonsSaddlebag2",
+      page: 183,
+      type: "WD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 1}",
+      charges: 7,
+      entries: [
+        "This antiquated, dark blue wand is adorned with a glowing star at its tip. When it's swung, small specks of starlight drift from its end.",
+        "The wand has 7 charges for the following properties. It regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand scatters into glittering dust and is destroyed.",
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "While holding the wand, you can use an action to expend some of its charges to cast one of the following spells (save DC 15) from it: {@spell color spray} (1 charge per spell level, up to 3), {@spell daylight} (3 charges), {@spell hypnotic pattern} (3 charges), {@spell light} (no charges), {@spell magic missile} (1 charge per spell level, up to 3), or {@spell prestidigitation} (no charges)."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Starlight Wayfinder",
+          entries: [
+            "While you can see stars in the sky and are holding the wand, you can use an action to call out a cardinal direction and expend 1 of its charges. When you do, stars in that direction appear brighter to you for 1 hour or until you use the wand again to call out a new direction."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "color spray",
+        "daylight",
+        "hypnotic pattern",
+        "light",
+        "magic missile",
+        "prestidigitation"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Warding-Staff.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wand of the Frostrose",
+      source: "GriffonsSaddlebag2",
+      page: 184,
+      type: "WD|DMG",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      charges: 7,
+      entries: [
+        "This icy wand has a magical blue rose frozen at its center. The flower is a frostrose: a rare and delicate rose found only in the coldest parts of the Everglacier.",
+        "The wand has 7 charges. While holding it, you can use an action to expend up to 3 of its charges to create 1 or more Medium ice sculptures on the ground within 60 feet of you, creating 1 sculpture for each charge you expend. Each sculpture must appear in an unoccupied space on the ground you can see within range. Each sculpture is a delicate, thorned rose made of ice and is always a Medium object with 1 hit point and AC 12. A sculpture melts after 1 minute, or 8 hours if it's in an area of extreme cold. If a sculpture falls to 0 hit points, it erupts in an icy blast and is destroyed, causing all creatures within 20 feet of it to make a DC 15 Dexterity saving throw. An ice sculpture caught in this explosion erupts automatically, intensifying the blast. A creature takes {@damage 3d8} piercing damage and {@damage 3d6} cold damage on a failed save, plus an extra {@damage 1d8} piercing damage for each explosion it's affected by beyond the first. On a successful save, a creature takes half as much piercing damage and cold damage.",
+        "The sculptures softly groan and crackle from the pressure they contain within them. A creature can determine the explosive nature of the sculptures with a successful DC 15 Intelligence ({@skill Arcana}) or Intelligence ({@skill Investigation}) check. Spaces occupied by the icy sculptures are {@quickref difficult terrain||3}.",
+        "The wand regains {@dice 1d6 + 1} expended charges daily at dawn. If you expend the wand's last charge, roll a {@dice d20}. On a 1, the wand melts into a puddle of water, and the frostrose at its center crumbles into ashes and is destroyed."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wand-of-the-Frostrose.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wardancer's Spear",
+      source: "GriffonsSaddlebag2",
+      page: 185,
+      baseItem: "spear|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      weight: 3,
+      weaponCategory: "simple",
+      property: [
+        "F",
+        "T",
+        "V"
+      ],
+      range: "20/60",
+      dmg1: "1d6",
+      dmgType: "P",
+      dmg2: "1d8",
+      entries: [
+        "This double-bladed spear is extraordinarily light and perfectly balanced for use with one hand. While holding this magic spear with one hand, it has the finesse property. Whenever you take the {@action Attack} action and make a melee attack with the spear using only one hand, you can use a bonus action to make an additional attack with the spear. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative.",
+        "Immediately after you use your bonus action in this way, you can move up to 10 feet without provoking opportunity attacks, though you can't move farther than your remaining movement would allow."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wardancers-Spear.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Warhammer of Eruptions",
+      source: "GriffonsSaddlebag2",
+      page: 186,
+      baseItem: "warhammer|phb",
+      type: "M",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 2,
+      weaponCategory: "martial",
+      property: [
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "B",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "This sturdy warhammer has a core of magma at its center that heats up during combat. You gain a +1 bonus to attack and damage rolls made with this magic weapon.",
+        {
+          type: "entries",
+          name: "Eruption",
+          entries: [
+            "The first time that the warhammer hits a target in combat, it starts to release a steady stream of embers and smoke. When this happens, and while the hammer is smoldering in this way, it deals an extra {@damage 1d6} fire damage to any target it hits. At the end of each of your turns while the hammer is smoldering, its fire becomes increasingly unstable. At the end of the third turn, the hammer erupts, spraying lava and releasing a volcanic storm from it in a 30-foot cone in a direction of your choice (no action required). Each creature in the area must succeed on a DC 13 Dexterity saving throw, taking {@damage 3d6} fire damage and {@damage 3d6} lightning damage on a failed save, or half as much damage on a successful one. The lava then vanishes. The warhammer cools and doesn't erupt if combat ends or if you drop or stow the weapon before it erupts. Once the warhammer erupts, it loses this property until {@dice 2d6} hours have passed."
+          ]
+        }
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Warhammer-of-Eruptions.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Warp Anchor",
+      source: "GriffonsSaddlebag2",
+      page: 186,
+      type: "RD|DMG",
+      tier: "major",
+      rarity: "rare",
+      entries: [
+        "This pair of batons magically link together to form a complete rod, causing a purple mist to swirl between the two glass orbs on either of its ends. While holding the rod or its batons, you can use an action to speak the rod's first command word to split it into the batons or recombine them again.",
+        "While holding one of the split batons, you can use an action to speak the rod's second command word to cast the {@spell teleport} spell from it, teleporting only yourself to an unoccupied space within 5 feet of the other baton, even if it's on another plane of existence. Once this property has been used, it can't be used again until the batons have spent at least 12 hours recombined as the rod, at which point the swirling mist reappears within the orbs."
+      ],
+      attachedSpells: [
+        "teleport"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Warp-Anchor.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wavecutter",
+      type: "GV|DMG",
+      requires: [
+        {
+          axe: true
+        }
+      ],
+      inherits: {
+        namePrefix: "Wavecutter ",
+        source: "GriffonsSaddlebag2",
+        page: 186,
+        tier: "major",
+        rarity: "rare",
+        bonusWeapon: "+1",
+        entries: [
+          "This axe has a single pearl set at the center of its blade. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you take the {@action Attack} action using this axe, you can forgo one of your attacks to swing the axe in front of you and speak its command word. When you do, the axe emits a crashing wave of magical water. The wave is 10 feet tall and extends from you in a 30-foot cone, after which it spreads out across the ground in all directions, extinguishing unprotected flames in the area within 30 feet of it before the water vanishes. Each creature within the cone must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. This property can't be used again until the next dawn."
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 186,
+      tier: "major",
+      rarity: "rare",
+      bonusWeapon: "+1",
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This axe has a single pearl set at the center of its blade. You gain a +1 bonus to attack and damage rolls made with this magic weapon. When you take the {@action Attack} action using this axe, you can forgo one of your attacks to swing the axe in front of you and speak its command word. When you do, the axe emits a crashing wave of magical water. The wave is 10 feet tall and extends from you in a 30-foot cone, after which it spreads out across the ground in all directions, extinguishing unprotected flames in the area within 30 feet of it before the water vanishes. Each creature within the cone must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} bludgeoning damage and is knocked {@condition prone}. On a successful save, a creature takes half as much damage and isn't knocked {@condition prone}. This property can't be used again until the next dawn."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 50,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Wavecutter Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 186,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wavecutter",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Battle Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 4,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Wavecutter Battle Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 4,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 186,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wavecutter",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Battleaxe",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 4,
+            value: 1000,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Topple|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Wavecutter Battleaxe",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 4,
+            weaponCategory: "martial",
+            property: [
+              "V|XPHB"
+            ],
+            mastery: [
+              "Topple|XPHB"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 186,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wavecutter",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Greataxe",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 7,
+            value: 3000,
+            weaponCategory: "martial",
+            property: [
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Cleave|XPHB"
+            ],
+            dmg1: "1d12",
+            dmgType: "S",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Wavecutter Greataxe",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 7,
+            weaponCategory: "martial",
+            property: [
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Cleave|XPHB"
+            ],
+            dmg1: "1d12",
+            dmgType: "S",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 186,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wavecutter",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Handaxe",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 500,
+            weaponCategory: "simple",
+            property: [
+              "L|XPHB",
+              "T|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "20/60",
+            dmg1: "1d6",
+            dmgType: "S",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Wavecutter Handaxe",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "M|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "simple",
+            property: [
+              "L|XPHB",
+              "T|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "20/60",
+            dmg1: "1d6",
+            dmgType: "S",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 186,
+            tier: "major",
+            bonusWeapon: "+1",
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wavecutter.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wavecutter",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Wayfinder Sphere",
+      source: "GriffonsSaddlebag2",
+      page: 186,
+      tier: "minor",
+      rarity: "rare",
+      wondrous: true,
+      weight: 5,
+      entries: [
+        "This spinning metal sphere is 6 inches in diameter and weighs 5 pounds. You can tap the orb twice as an action to activate it. While activated, the orb records basic details about the space that it can see within 100 feet. The orb has {@sense darkvision} out to 100 feet, but can't see through heavily obscured areas or illusions. Tapping it twice again deactivates the orb.",
+        "The activated orb can display its recorded maps. If you are within 30 feet of it, you can speak its first command word, followed by a description of a location it's mapped. For example, you can command the orb to recall the entrance to a series of catacombs you explored 2 days ago, or the path you took to get through a twisting labyrinth. When you do, an illusory map appears in a 5-foot sphere centered on the orb that shows basic details about the recorded area, such as buildings, pathways, roads, signs, topography, and trees. While you're within 5 feet of the map, you can use a series of intuitive gestures to change the map's rotation, displayed location, or scale: showing as little of the recorded area as a 25-foot radius, or as much as a 1-mile radius. Speaking the command word again causes the map to vanish.",
+        "If you are within 30 feet of it, you can speak a second command word as an action to make the orb rise into the air and float no more than 5 feet off the ground. The orb hovers in this way until you or another creature grasps it. If you move more than 30 feet from the hovering orb, it follows you until it is within 30 feet of you. It takes the shortest route to do so. If prevented from moving, the orb sinks gently to the ground and becomes inactive.",
+        "You can speak a third command word as an action, followed by a location name, while within 30 feet of the floating orb to cause it to move on its own. If the named location has been recorded by the orb and is within 1 mile of you, the sphere moves on its own and floats up to 10 feet ahead of you, guiding you to the named location using any of its recorded maps of the area to guide you. Once you reach your destination or speak the command word again, the orb begins to follow you again."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wayfinder-Sphere.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Webgrip Bow",
+      type: "GV|DMG",
+      requires: [
+        {
+          bow: true
+        }
+      ],
+      inherits: {
+        namePrefix: "Webgrip ",
+        source: "GriffonsSaddlebag2",
+        page: 188,
+        tier: "major",
+        rarity: "rare",
+        reqAttune: true,
+        recharge: "dawn",
+        rechargeAmount: 3,
+        charges: 3,
+        entries: [
+          "This 8-armed bow uses the remains of a spindly spider's legs and maw. The bow has 3 charges and regains all expended charges daily at dawn. When you make a ranged attack with the bow, you can expend 1 of its charges to lace it with sticky spider silk. On a hit, the arrow magically sheds the silk and releases it as a netlike web. If the target is a Medium or smaller creature, it and each Medium or smaller creature within 5 feet of it must succeed on a DC 15 Dexterity saving throw or be {@condition restrained} until the end of your next turn. If the target is a Large creature, only it must succeed on the saving throw instead. Huge and larger creatures are unaffected by the web.",
+          {
+            type: "entries",
+            name: "Summon Spiders",
+            entries: [
+              "While holding the weapon, you can use an action to speak its command word to summon 2 {@creature swarm of insects|MM|swarms of insects} (spiders) or 1 {@creature giant spider|MM}, which appear in unoccupied spaces that you can see within 10 feet of you. The GM has the creatures' statistics. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. A summoned creature disappears when it drops to 0 hit points, after 1 hour, or when you end the effect early as a bonus action. Once this property of the bow has been used, it can't be used again until the next dawn."
+            ]
+          }
+        ],
+        lootTables: [
+          "Magic Item Table G1|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Webgrip-Bow.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 188,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      recharge: "dawn",
+      rechargeAmount: 3,
+      charges: 3,
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Webgrip-Bow.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This 8-armed bow uses the remains of a spindly spider's legs and maw. The bow has 3 charges and regains all expended charges daily at dawn. When you make a ranged attack with the bow, you can expend 1 of its charges to lace it with sticky spider silk. On a hit, the arrow magically sheds the silk and releases it as a netlike web. If the target is a Medium or smaller creature, it and each Medium or smaller creature within 5 feet of it must succeed on a DC 15 Dexterity saving throw or be {@condition restrained} until the end of your next turn. If the target is a Large creature, only it must succeed on the saving throw instead. Huge and larger creatures are unaffected by the web.",
+        {
+          type: "entries",
+          name: "Summon Spiders",
+          entries: [
+            "While holding the weapon, you can use an action to speak its command word to summon 2 {@creature swarm of insects|MM|swarms of insects} (spiders) or 1 {@creature giant spider|MM}, which appear in unoccupied spaces that you can see within 10 feet of you. The GM has the creatures' statistics. The summoned creatures are friendly to you and your companions. Roll initiative for the summoned creatures as a group, which have their own turns. They obey any verbal commands that you issue to them (no action required by you). If you don't issue any commands to them, they defend themselves from hostile creatures, but otherwise take no actions. A summoned creature disappears when it drops to 0 hit points, after 1 hour, or when you end the effect early as a bonus action. Once this property of the bow has been used, it can't be used again until the next dawn."
+          ]
+        }
+      ],
+      variants: [
+        {
+          base: {
+            name: "Longbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 5000,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Webgrip Longbow",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "A|XPHB",
+              "H|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Slow|XPHB"
+            ],
+            range: "150/600",
+            dmg1: "1d8",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 188,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: 3,
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Webgrip-Bow.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Webgrip Bow",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Shortbow",
+            source: "XPHB",
+            page: 215,
+            srd52: true,
+            basicRules2024: true,
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "none",
+            weight: 2,
+            value: 2500,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Webgrip Shortbow",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "R|XPHB",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "simple",
+            property: [
+              "A|XPHB",
+              "2H|XPHB"
+            ],
+            mastery: [
+              "Vex|XPHB"
+            ],
+            range: "80/320",
+            dmg1: "1d6",
+            dmgType: "P",
+            bow: true,
+            weapon: true,
+            ammoType: "arrow|xphb",
+            entries: [],
+            page: 188,
+            tier: "major",
+            reqAttune: true,
+            recharge: "dawn",
+            rechargeAmount: 3,
+            charges: 3,
+            lootTables: [
+              "Magic Item Table G1|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Webgrip-Bow.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Webgrip Bow",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Whirling Weapons",
+      type: "GV|DMG",
+      requires: [
+        {
+          type: "M"
+        }
+      ],
+      excludes: {
+        property: [
+          "2H",
+          "S"
+        ]
+      },
+      inherits: {
+        namePrefix: "Whirling ",
+        source: "GriffonsSaddlebag2",
+        page: 188,
+        tier: "major",
+        rarity: "rare",
+        entries: [
+          "These magic weapons were forged with lightweight metals and designed for speed rather than brute force. Whirling weapons have the finesse and light properties and whistle softly when swung through the air. When you take the {@action Attack} action and attack with a {@i whirling weapon} that you're holding in one hand, you can use a bonus action to make another attack with the same weapon. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. If you're holding a different {@i whirling weapon} in each hand and engage in two-weapon fighting, you can make one attack with each weapon when you use a bonus action in this way.",
+          "In addition, if you have the Two-Weapon Fighting fighting style, you can add your ability modifier to the damage of the bonus attacks."
+        ],
+        lootTables: [
+          "Magic Item Table G2|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 188,
+      tier: "major",
+      rarity: "rare",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "These magic weapons were forged with lightweight metals and designed for speed rather than brute force. Whirling weapons have the finesse and light properties and whistle softly when swung through the air. When you take the {@action Attack} action and attack with a {@i whirling weapon} that you're holding in one hand, you can use a bonus action to make another attack with the same weapon. You don't add your ability modifier to the damage of the bonus attack, unless that modifier is negative. If you're holding a different {@i whirling weapon} in each hand and engage in two-weapon fighting, you can make one attack with each weapon when you use a bonus action in this way.",
+        "In addition, if you have the Two-Weapon Fighting fighting style, you can add your ability modifier to the damage of the bonus attacks."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 50,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Battle Axe",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 4,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Battle Axe",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 4,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            axe: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Hammer",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 20,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            dmg1: "1d6",
+            dmgType: "B",
+            hammer: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Hammer",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            dmg1: "1d6",
+            dmgType: "B",
+            hammer: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Heavy Hammer",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 4,
+            value: 100,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "B",
+            dmg2: "1d10",
+            hammer: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Heavy Hammer",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 4,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "B",
+            dmg2: "1d10",
+            hammer: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Hooked Shortspear",
+            source: "OotA",
+            page: 224,
+            type: "M",
+            rarity: "unknown",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "L"
+            ],
+            dmg1: "1d4",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus."
+            ]
+          },
+          specificVariant: {
+            name: "Whirling Hooked Shortspear",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            weaponCategory: "martial",
+            property: [
+              "L"
+            ],
+            dmg1: "1d4",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "On a hit with this weapon, the wielder can forgo dealing damage and attempt to trip the target, in which case the target must succeed on a Strength saving throw or fall {@condition prone}. The DC is 8 + the wielder's Strength modifier + the wielder's proficiency bonus."
+            ],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Long Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 200,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Long Sword",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "H",
+              "V"
+            ],
+            dmg1: "1d8",
+            dmgType: "S",
+            dmg2: "1d10",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Staff",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d4",
+            dmgType: "B",
+            dmg2: "1d6",
+            staff: true,
+            weapon: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Staff",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "simple",
+            property: [
+              "V"
+            ],
+            dmg1: "1d4",
+            dmgType: "B",
+            dmg2: "1d6",
+            staff: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Sword",
+            source: "TLotRR",
+            page: 73,
+            type: "M",
+            rarity: "none",
+            weight: 2,
+            value: 150,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            hasFluffImages: true,
+            entries: []
+          },
+          specificVariant: {
+            name: "Whirling Sword",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 2,
+            currencyConversion: "M-E",
+            weaponCategory: "martial",
+            property: [
+              "F",
+              "V"
+            ],
+            dmg1: "1d6",
+            dmgType: "S",
+            dmg2: "1d8",
+            sword: true,
+            weapon: true,
+            entries: [],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          base: {
+            name: "Yklwa",
+            source: "ToA",
+            page: 32,
+            type: "M",
+            rarity: "none",
+            weight: 3,
+            value: 100,
+            weaponCategory: "simple",
+            property: [
+              "T"
+            ],
+            range: "10/30",
+            dmg1: "1d8",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+            ]
+          },
+          specificVariant: {
+            name: "Whirling Yklwa",
+            source: "GriffonsSaddlebag2",
+            type: "M",
+            rarity: "rare",
+            weight: 3,
+            weaponCategory: "simple",
+            property: [
+              "T"
+            ],
+            range: "10/30",
+            dmg1: "1d8",
+            dmgType: "P",
+            weapon: true,
+            entries: [
+              "A yklwa (pronounced YICK-ul-wah) is a simple melee weapon that is the traditional weapon of Chultan warriors. A yklwa consists of a 3-foot wooden shaft with a steel or stone blade up to 18 inches long. Although it has the thrown weapon property, the yklwa is not well balanced for throwing."
+            ],
+            page: 188,
+            tier: "major",
+            lootTables: [
+              "Magic Item Table G2|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whirling-Weapons.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Whirling Weapons",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Widow's Tea",
+      source: "GriffonsSaddlebag2",
+      page: 189,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "This dark ceramic tea set comes with a teapot and two matching teacups. The malignant spirit of a hag lives within the teapot and corrupts the first cup of tea that it pours into one of the matching teacups. The first creature that drinks this cup of tea must make a DC 15 Constitution saving throw as the hag's spirit assaults it from the inside. On a failed save, a creature takes {@damage 4d6} poison damage and is {@condition paralyzed} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition paralyzed}. At the end of each of its turns, a {@condition paralyzed} creature can make another DC 15 Constitution saving throw, ending the effect on a success.",
+        "Once this property has been used, it can't be used again until 5 days have passed."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Widows-Tea.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wildfire Ammunition",
+      type: "GV|DMG",
+      requires: [
+        {
+          name: "Arrow"
+        },
+        {
+          name: "Crossbow Bolt"
+        }
+      ],
+      inherits: {
+        namePrefix: "Wildfire ",
+        source: "GriffonsSaddlebag2",
+        page: 189,
+        tier: "minor",
+        rarity: "rare",
+        entries: [
+          "This ammunition smolders while you hold it, sparking softly with simmering embers. When you use this arrow or bolt to make a ranged weapon attack, it vanishes in a scattering of sparks immediately after it's fired: disappearing into a special extradimensional space without hitting a target. The ammunition's flames burn hotter the longer it remains in this space and can stay there for up to 3 rounds.",
+          "You can use a bonus action on your turn to speak the ammunition's command word and choose a point you can see within 120 feet of where you fired it from. When you do, the arrow or bolt reappears directly above the point and explodes, creating a 20-foot-radius, 40-foothigh cylinder of searing flames centered on that point. Each creature in the area must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} fire damage, plus an extra {@damage 2d8} fire damage for every round the ammunition remained in its pocket dimension. On a successful save, a creature takes half as much damage.",
+          "If the ammunition remains in its extradimensional space for the full duration without its command word being spoken, it reappears and explodes above a random point within 120 feet of where it was fired.",
+          "An arrow or bolt is destroyed when it explodes in this way."
+        ],
+        lootTables: [
+          "Magic Item Table C|GriffonsSaddlebag2"
+        ],
+        fluff: {
+          images: [
+            {
+              type: "image",
+              href: {
+                type: "external",
+                url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wildfire-Ammunition.webp"
+              }
+            }
+          ]
+        }
+      },
+      source: "GriffonsSaddlebag2",
+      page: 189,
+      tier: "minor",
+      rarity: "rare",
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wildfire-Ammunition.webp"
+            }
+          }
+        ]
+      },
+      entries: [
+        "This ammunition smolders while you hold it, sparking softly with simmering embers. When you use this arrow or bolt to make a ranged weapon attack, it vanishes in a scattering of sparks immediately after it's fired: disappearing into a special extradimensional space without hitting a target. The ammunition's flames burn hotter the longer it remains in this space and can stay there for up to 3 rounds.",
+        "You can use a bonus action on your turn to speak the ammunition's command word and choose a point you can see within 120 feet of where you fired it from. When you do, the arrow or bolt reappears directly above the point and explodes, creating a 20-foot-radius, 40-foothigh cylinder of searing flames centered on that point. Each creature in the area must make a DC 15 Dexterity saving throw. On a failed save, a creature takes {@damage 4d8} fire damage, plus an extra {@damage 2d8} fire damage for every round the ammunition remained in its pocket dimension. On a successful save, a creature takes half as much damage.",
+        "If the ammunition remains in its extradimensional space for the full duration without its command word being spoken, it reappears and explodes above a random point within 120 feet of where it was fired.",
+        "An arrow or bolt is destroyed when it explodes in this way."
+      ],
+      variants: [
+        {
+          base: {
+            name: "Arrow",
+            source: "XPHB",
+            page: 222,
+            srd52: true,
+            edition: "one",
+            type: "A|XPHB",
+            rarity: "none",
+            weight: 0.05,
+            value: 5,
+            arrow: true,
+            entries: [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ]
+          },
+          specificVariant: {
+            name: "Wildfire Arrow",
+            source: "GriffonsSaddlebag2",
+            edition: "one",
+            type: "A|XPHB",
+            rarity: "rare",
+            weight: 0.05,
+            arrow: true,
+            entries: [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ],
+            page: 189,
+            tier: "minor",
+            lootTables: [
+              "Magic Item Table C|GriffonsSaddlebag2"
+            ],
+            fluff: {
+              images: [
+                {
+                  type: "image",
+                  href: {
+                    type: "external",
+                    url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wildfire-Ammunition.webp"
+                  }
+                }
+              ]
+            },
+            genericVariant: {
+              name: "Wildfire Ammunition",
+              source: "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      name: "Wind Riders",
+      source: "GriffonsSaddlebag2",
+      page: 190,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      entries: [
+        "These boots look and feel like pale, dried leaves but are remarkably soft and quiet to walk in. While wearing these boots, you can move normally in {@quickref difficult terrain||3} caused by strong winds.",
+        "While wearing these boots, you can use an action to speak their command word to cast the {@spell gaseous form} spell, transforming yourself into a swirling cloud of vapor and leaves. This version of the spell lasts for up to 1 minute, but only allows you to float vertically using your movement speed. Your horizontal movement speed while in this form is decided by the direction and speed of the wind. A wind of light speed (between 5 and 10 miles per hour) propels you 10 feet per round, whereas a wind of moderate or greater speed (at least 10 miles per hour) pushes you 20 feet instead.",
+        "Traveling somewhere while in this form where the swirling leaves are unable to follow you ends the effect early. Once the boots have been used to cast this spell, they can't do so again until the next dawn."
+      ],
+      attachedSpells: [
+        "gaseous form"
+      ],
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wind-Riders.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wind-Up Merchant",
+      source: "GriffonsSaddlebag2",
+      page: 191,
+      tier: "major",
+      rarity: "rare",
+      wondrous: true,
+      weight: 1,
+      entries: [
+        "This soft toy figurine is 5 inches tall and weighs 1 pound. You can use an action to wind up the toy using a crank in the back, causing it to release a thin strip of parchment listing 3 magic items and their costs from the list below. The toy then whirs and animates slowly, walking and bowing slightly, and can't be wound up again until 24 hours have passed.",
+        "Roll {@dice 3d12}, recording each number rolled, to determine which of the following magic items are listed on the parchment. At the GM's discretion, reroll duplicate results.",
+        {
+          type: "table",
+          colLabels: [
+            "d12",
+            "Item Name"
+          ],
+          colStyles: [
+            "col-1-5 text-center",
+            "col-8-5 text-left",
+            "col-2 text-center"
+          ],
+          rows: [
+            [
+              "1",
+              "{@item potion of climbing|DMG}",
+              "25gp"
+            ],
+            [
+              "2",
+              "{@item potion of healing|DMG|potion of healing, common}",
+              "25gp"
+            ],
+            [
+              "3",
+              "{@item Spell Scroll (1st Level)|DMG|spell scroll, 1st level}: {@spell comprehend languages|PHB} ({@chance 25|25%}), {@spell detect magic} ({@chance 25|25%}), {@spell feather fall} ({@chance 25|25%}), or {@spell identify} ({@chance 25|25%})",
+              "25gp"
+            ],
+            [
+              "4",
+              "{@item broom of flying|DMG}",
+              "50gp"
+            ],
+            [
+              "5",
+              "{@item dust of disappearance|DMG}",
+              "50gp"
+            ],
+            [
+              "6",
+              "{@item eversmoking bottle|DMG}",
+              "50gp"
+            ],
+            [
+              "7",
+              "{@item goggles of night|DMG}",
+              "50gp"
+            ],
+            [
+              "8",
+              "{@item immovable rod|DMG}",
+              "50gp"
+            ],
+            [
+              "9",
+              "{@item potion of growth|DMG}",
+              "50gp"
+            ],
+            [
+              "10",
+              "{@item potion of resistance|DMG}",
+              "50gp"
+            ],
+            [
+              "11",
+              "{@item Keoghtom's ointment|DMG|restorative ointment}, 2 uses",
+              "50gp"
+            ],
+            [
+              "12",
+              "{@item ring of water walking|DMG}",
+              "50gp"
+            ]
+          ]
+        },
+        "While the toy is animated, you can use an action to deposit any number of coins into the slot on the toy's belly and speak the name of an item listed on the parchment. If the value of the coins deposited in the toy is equal to or greater than the cost of the named item, the item magically appears in your hand or at your feet (your choice) and is removed from the parchment. The spent coins are then lost.",
+        "The toy remains animated for 5 minutes or until each item has been purchased from the list. When the toy stops animating, any deposited coins that weren't spent on the listed items clatter to the ground below it, converting them into smaller denominations as needed, and the parchment turns to dust and is destroyed.",
+        "An item purchased from the wind-up merchant disappears after 24 hours, or early if you attempt to sell or trade it to another creature."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wind-Up-Merchant.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wyrmling Wristlet",
+      source: "GriffonsSaddlebag2",
+      page: 192,
+      tier: "minor",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This bracelet has {@dice 1d6 + 3} colorful, egg-shaped beads hanging from it. Ten types of beads exist. The GM decides the type of each bead on the bracelet or determines it randomly. A bracelet can have more than one bead of the same type. You can use an action to detach a bead and throw it into an unoccupied space that you can see up to 30 feet away from you. When it reaches the end of its trajectory, the bead cracks open, destroying the bead, and summons a dragon wyrmling in the space. The type of wyrmling is determined by the bead's color.",
+        {
+          type: "table",
+          colLabels: [
+            "1d10",
+            "Bead Color and Wyrmling Type"
+          ],
+          colStyles: [
+            "col-1-5 text-center",
+            "col-10-5 text-left"
+          ],
+          rows: [
+            [
+              "1",
+              "Black"
+            ],
+            [
+              "2",
+              "Blue"
+            ],
+            [
+              "3",
+              "Brass"
+            ],
+            [
+              "4",
+              "Bronze"
+            ],
+            [
+              "5",
+              "Copper"
+            ],
+            [
+              "6",
+              "Gold"
+            ],
+            [
+              "7",
+              "Green"
+            ],
+            [
+              "8",
+              "Red"
+            ],
+            [
+              "9",
+              "Silver"
+            ],
+            [
+              "10",
+              "White"
+            ]
+          ]
+        },
+        "A summoned wyrmling disappears after 1 hour, when it drops to 0 hit points, or when you summon another wyrmling. The wyrmling shares your initiative count, but it takes its turn immediately after yours. It is friendly to you and your companions until you threaten or harm it. The wyrmling obeys any verbal commands that you issue to it (no action required by you). If you don't issue any commands to it, it defends itself from hostile creatures, but otherwise takes no actions.",
+        "When the last bead has been used, the wristlet becomes nonmagical."
+      ],
+      lootTables: [
+        "Magic Item Table C|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wyrmling-Wristlet.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Wyrmshide Bow",
+      source: "GriffonsSaddlebag2",
+      page: 193,
+      baseItem: "shortbow|phb",
+      type: "R",
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      weight: 2,
+      weaponCategory: "simple",
+      property: [
+        "A",
+        "2H"
+      ],
+      range: "80/320",
+      dmg1: "1d6",
+      dmgType: "P",
+      entries: [
+        "This bow is crafted with delicate dragon scales and strung with a fiber from a dragon's heart. While holding the bow, you can use a bonus action to speak its command word and channel the energy of the dragon within. When you do, the bow forms a draconic cowl of elemental energy around you. For the duration of the cowl, you gain the following benefits:",
+        {
+          type: "list",
+          items: [
+            "You gain 25 temporary hit points, which last for 1 minute.",
+            "You have resistance to damage of the same type as the elemental energy of the cowl. The type of energy is determined by the kind of dragon that provided the bow's scales, as shown on the table below.",
+            "On a hit, the bow deals an extra {@damage 1d8} damage of the same type as the cowl's energy. If the target is a dragon, this extra damage ignores any resistance or immunity it has against that damage type."
+          ]
+        },
+        "The cowl remains until you lose all these temporary points. Once this property has been used, it can't be used again until the next dawn or until the bow is used to slay or help slay a Large or larger dragon. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns.",
+        {
+          type: "table",
+          colLabels: [
+            "Dragon",
+            "Resistance"
+          ],
+          colStyles: [
+            "col-3 text-left",
+            "col-9 text-left"
+          ],
+          rows: [
+            [
+              "Black",
+              "Acid"
+            ],
+            [
+              "Blue",
+              "Lightning"
+            ],
+            [
+              "Brass",
+              "Fire"
+            ],
+            [
+              "Bronze",
+              "Lightning"
+            ],
+            [
+              "Copper",
+              "Acid"
+            ],
+            [
+              "Gold",
+              "Fire"
+            ],
+            [
+              "Green",
+              "Poison"
+            ],
+            [
+              "Red",
+              "Fire"
+            ],
+            [
+              "Silver",
+              "Cold"
+            ],
+            [
+              "White",
+              "Cold"
+            ]
+          ]
+        }
+      ],
+      ammoType: "arrow|phb",
+      lootTables: [
+        "Magic Item Table G2|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wyrmshide-Bow.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Xorn-Sole Boots",
+      source: "GriffonsSaddlebag2",
+      page: 194,
+      tier: "major",
+      rarity: "rare",
+      reqAttune: true,
+      wondrous: true,
+      entries: [
+        "This pair of iron-toed boots is made with the rocky leather hide of a xorn. Each boot is secured with three golden buttons bearing the icon of an eye and has several claw-like spikes extending from its toe and heel. While wearing these boots, you can use a bonus action to speak their command word and click the boots' heels together. If you do, you gain {@sense tremorsense|MM} out to a range of 30 feet and a burrowing speed equal to your walking speed. If you click your heels together again, you end the effect.",
+        "You can use this property for up to 10 minutes, all at once or in several shorter bursts, each one using a minimum of 1 minute from the duration. During this time, you can pinpoint the location of precious metals and stones, such as coins and gems, within the range of your {@sense tremorsense|MM}.",
+        "When the boots' property has been used for a total of 10 minutes, the magic ceases to function until you finish a long rest."
+      ],
+      lootTables: [
+        "Magic Item Table G1|GriffonsSaddlebag2"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Xorn-Sole-Boots.webp"
+            }
+          }
+        ]
+      }
+    }
+  ] as any as Item[])
+}

@@ -6,6 +6,12 @@ import rare_object from './functions/rare_object.ts'
 import uncommon_object from './functions/uncommon_object.ts'
 import very_rare_object from './functions/very_rare_object.ts'
 import artifact_object from './functions/artifact_object.ts'
+import tgs_common_object from './functions/tgs/tgs_common_object.ts'
+import tgs_legendary_object from './functions/tgs/tgs_legendary_object.ts'
+import tgsRareObject from './functions/tgs/tgs_rare_object.ts'
+import tgs_uncommon_object from './functions/tgs/tgs_uncommon_object.ts'
+import tgs_very_rare_object from './functions/tgs/tgs_very_rare_object.ts'
+import tgs_artifact_object from './functions/tgs/tgs_artifact_object.ts'
 
 export default class Connector {
   static async get_common_object() {
@@ -31,5 +37,23 @@ export default class Connector {
   }
   static async get_artifact_object() {
     return artifact_object()
+  }
+  static async get_tgs_common_object() {
+    return tgs_common_object()
+  }
+  static async get_tgs_legendary_object() {
+    return tgs_legendary_object()
+  }
+  static async get_tgs_rare_object() {
+    return tgsRareObject()
+  }
+  static async get_tgs_uncommon_object() {
+    return tgs_uncommon_object()
+  }
+  static async get_tgs_very_rare_object() {
+    return tgs_very_rare_object()
+  }
+  static async get_tgs_artifact_object() {
+    return tgs_artifact_object()
   }
 }
