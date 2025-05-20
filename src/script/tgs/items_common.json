@@ -1,0 +1,2165 @@
+{
+  "item": [
+    {
+      "name": "Aurora Dust",
+      "source": "GriffonsSaddlebag2",
+      "page": 40,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This bag is filled with {@dice 1d6 + 4} pinches of iridescent blue dust. You can use an action to sprinkle a pinch of it over an open flame. The dust changes the flame's color and light to a mixture of blue, green, and purple, and creates a shimmering aurora the same color above it within the bright light. The dust's effect lasts for the flame's duration (up to 24 hours)."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Aurora-Dust.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bag of Bellstones",
+      "source": "GriffonsSaddlebag2",
+      "page": 41,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This cloth bag shines like brass and can hold up to 20 small stones. When found, the bag has {@dice 1d12 + 8} stones inside. When you remove a stone that's been in the bag for at least 1 minute, it becomes magical until the end of the turn, if it isn't already. While a stone is magical in this way, it emits a clear, bell-like ringing that's audible out to a range of 60 feet whenever it hits a target or touches an object or surface."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bag-of-Bellstones.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ball of Wild Earth",
+      "source": "GriffonsSaddlebag2",
+      "page": 41,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "sentient": true,
+      "entries": [
+        "This Tiny, sentient pebble is covered in dirt and is likely a remnant of a {@condition charmed} earth elemental. It rolls about on its own in search of new and unique sources of dirt. When it finds a patch of particularly rich soil, the ball rolls around in it to incorporate the dirt into its form. The ball carries captured moisture inside itself, allowing it to make its form either dusty or clay-like in texture, as well as hard or soft to the touch. A friendly ball of wild earth can magically reshape the dirt it's covered in to form a variety of shapes at will, such as a tiny figurine or a large die, provided that the dirt continues to cover the pebble at its center by doing so.",
+        "The ball of wild earth is considered a magical object and is not a creature. It has a speed of 10 feet and can only move by rolling across the ground. It has AC 10, 15 hit points, and has resistance to all damage. The ball regains all its hit points if it's left buried underground for at least 1 hour.",
+        {
+          "type": "entries",
+          "name": "Sentience",
+          "entries": [
+            "The ball of wild earth is a sentient neutral item with an Intelligence of 2, a Wisdom of 6, and a Charisma of 4. It has hearing and darkvision out to a range of 60 feet. It can't speak or read, but understands {@language Common|PHB} and {@language Primordial|PHB|Terran}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Personality",
+          "entries": [
+            "The ball of wild earth is most happy when rolling through rich, healthy soil. Most can be found, at least initially, in mountainous farmlands, but even urban ones can enjoy the dust and traces of weird, foreign dirt that are ever-present in well-traveled cities. The quickest way to make a ball of wild earth happy is to give it gemstone dust to roll in, whereas removing the dirt and mud that surround its central pebble is certain to upset it. By reforming the dirt covering its form, the ball can make vague facial expressions based on the emotions its seen other creatures make."
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Ball-of-Wild-Earth.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bell of Alarm",
+      "source": "GriffonsSaddlebag2",
+      "page": 44,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "recharge": "dawn",
+      "rechargeAmount": 4,
+      "charges": 4,
+      "entries": [
+        "This brass bell doesn't have a clapper inside it and has 4 charges. As an action, you can expend 1 of the bell's charges to shake it and speak its command word, followed by a total number of hours, minutes, or seconds equal to no more than 8 hours. After the specified amount of time has passed, the bell emits a loud ringing in your ears that's audible to only you, provided that you're within 1 mile of the bell and are on the same plane of existence. You can mentally end a timer at any time using a bonus action.",
+        "The bell regains all expended charges daily at dawn."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bell-of-Alarm.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bellhop Topper",
+      "source": "GriffonsSaddlebag2",
+      "page": 44,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "recharge": "dawn",
+      "rechargeAmount": "{@dice 1d3}",
+      "charges": 3,
+      "entries": [
+        "This deep purple top hat is ringed with a velvet ribbon and secured with leather straps and belts. The hat has 3 charges and regains {@dice 1d3} expended charges daily at dawn. You can use an action to expend 1 of the hat's charges and speak its command word, tossing it onto the ground in an unoccupied space within 5 feet of you. When you do, the hat magically flattens and expands into a purple, circular disk 3 feet in diameter and 1 inch thick. The disk duplicates the effect of the {@spell tenser's floating disk|PHB|floating disk} spell, except that the disk is opaque and remains within 10 feet of you, instead of 20. You can end the spell early using an action to speak the hat's command word again. When the spell ends, the disk transforms back into the hat."
+      ],
+      "attachedSpells": [
+        "tenser's floating disk"
+      ],
+      "lootTables": [
+        "Magic Item Table B2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bellhop-Topper.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bird's-Eye Bolt",
+      "type": "GV|DMG",
+      "requires": [
+        {
+          "name": "Arrow"
+        },
+        {
+          "name": "Crossbow Bolt"
+        }
+      ],
+      "inherits": {
+        "namePrefix": "Bird's-Eye ",
+        "source": "GriffonsSaddlebag2",
+        "page": 44,
+        "tier": "minor",
+        "rarity": "common",
+        "entries": [
+          "As an action, you can fire this piece of magic ammunition into the air above you, causing it to disappear into a dusting of feathers and be destroyed. The ammunition creates an invisible sensor in an unoccupied space that you can see up to 120 feet directly above you. The sensor remains for 1 minute or until you move more than 120 feet away from where you first fired the ammunition. For the duration, you can use an action to see and hear through the sensor as if you were in its space until the start of your next turn. If the ammunition hits a target, it's no longer magical.",
+          "A creature that can see the sensor (such as a creature benefiting from {@spell see invisibility|PHB} or {@sense truesight|PHB}) sees a luminous, intangible bird about the size of a fist fluttering in the air."
+        ],
+        "lootTables": [
+          "Magic Item Table A1|GriffonsSaddlebag2"
+        ],
+        "fluff": {
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Birds-Eye-Bolt.webp"
+              }
+            }
+          ]
+        }
+      },
+      "source": "GriffonsSaddlebag2",
+      "page": 44,
+      "tier": "minor",
+      "rarity": "common",
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Birds-Eye-Bolt.webp"
+            }
+          }
+        ]
+      },
+      "entries": [
+        "As an action, you can fire this piece of magic ammunition into the air above you, causing it to disappear into a dusting of feathers and be destroyed. The ammunition creates an invisible sensor in an unoccupied space that you can see up to 120 feet directly above you. The sensor remains for 1 minute or until you move more than 120 feet away from where you first fired the ammunition. For the duration, you can use an action to see and hear through the sensor as if you were in its space until the start of your next turn. If the ammunition hits a target, it's no longer magical.",
+        "A creature that can see the sensor (such as a creature benefiting from {@spell see invisibility|PHB} or {@sense truesight|PHB}) sees a luminous, intangible bird about the size of a fist fluttering in the air."
+      ],
+      "variants": [
+        {
+          "base": {
+            "name": "Arrow",
+            "source": "XPHB",
+            "page": 222,
+            "srd52": true,
+            "edition": "one",
+            "type": "A|XPHB",
+            "rarity": "none",
+            "weight": 0.05,
+            "value": 5,
+            "arrow": true,
+            "entries": [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ]
+          },
+          "specificVariant": {
+            "name": "Bird's-Eye Arrow",
+            "source": "GriffonsSaddlebag2",
+            "edition": "one",
+            "type": "A|XPHB",
+            "rarity": "common",
+            "weight": 0.05,
+            "arrow": true,
+            "entries": [
+              "Arrows are used with a weapon that has the ammunition property to make a ranged attack. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.",
+              "Arrows are typically stored in a {@item Quiver|XPHB} (bought separately)."
+            ],
+            "page": 44,
+            "tier": "minor",
+            "lootTables": [
+              "Magic Item Table A1|GriffonsSaddlebag2"
+            ],
+            "fluff": {
+              "images": [
+                {
+                  "type": "image",
+                  "href": {
+                    "type": "external",
+                    "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Birds-Eye-Bolt.webp"
+                  }
+                }
+              ]
+            },
+            "genericVariant": {
+              "name": "Bird's-Eye Bolt",
+              "source": "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Bloody Marilith (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 48,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item bloody marilith|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that fills your body with reactive energy. For 1 minute after drinking this potion, you can use a reaction even if you've already taken one since the end of your last turn. Once you take this reaction, the potion's effect ends. The potion is a deep crimson color with a thick consistency that vibrates softly within its bottle, sending ripples along its surface. It smells and tastes of freshly ground pepper, hot spices, and faintly sour tomato juice. Due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage.",
+        "Drinking additional {@item bloody marilith|GriffonsSaddlebag2|bloody mariliths} before you finish a long rest leaves your body feeling worn. When the potion's effect ends, you can't move or take actions until after your next turn, as a wave of lethargy sweeps over you."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bloody-Marilith.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bonfire Charm",
+      "source": "GriffonsSaddlebag2",
+      "page": 49,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This fiery glass sculpture is 4 inches tall and has a small, magical ember inside. When placed on a burning campfire or torch, the charm and ember enchant the fire with a faint, healing radiance. If you or any friendly creatures within the fire's light regain hit points at the end of a short rest by spending one or more Hit Dice, each of those creatures treats a Hit Die roll of 1 as a 2."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bonfire-Charm.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Book of Instant Copying",
+      "source": "GriffonsSaddlebag2",
+      "page": 49,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This book has a glass cover and is typically found with {@dice 2d10 + 30} blank pages. As an action, you can place a piece of paper or similar object (such as a leaf or patterned fabric) between the book's glass and the page below it and speak the book's command word. When you do, the book magically inscribes an image of the placed object in black ink as it appears pressed against the glass on the first blank page of the book.",
+        "Copied magic scrolls or spellbooks appear as nonsensical glyphs when copied in this way. When the last page of the book has been used, you can rebind it with 50 blank new pages using 50 gp of fine materials and 8 hours of work."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Book-of-Instant-Copying.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bullfrog Totem",
+      "source": "GriffonsSaddlebag2",
+      "page": 53,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "The magical fey spirit of a bullfrog inhabits this mosscovered stone statue. A creature that can see invisible objects can see this spirit swimming through the air around the statue. The statue is 9 inches tall and weighs 3 pounds. Harmless, mundane insects such as flies, gnats, and mosquitos are magically repelled from the statue in a 30-foot-radius sphere that remains centered on it."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Bullfrog-Totem.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Camper's Crutch",
+      "source": "GriffonsSaddlebag2",
+      "page": 55,
+      "baseItem": "mace|phb",
+      "type": "M",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 4,
+      "weaponCategory": "simple",
+      "dmg1": "1d6",
+      "dmgType": "B",
+      "entries": [
+        "This enchanted fire poker is a favorite among travelers. Attacks made with this magic weapon deal either bludgeoning or piercing damage (your choice). In addition, as an action, you can use the poker to touch a pile of dry wood or other flammable object that isn't being worn or carried and speak the weapon's command word. When you do, the object catches fire and slowly begins to burn. Once this property has been used, it can't be used again until the next dusk."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Campers-Crutch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Candleflame Helm",
+      "source": "GriffonsSaddlebag2",
+      "page": 56,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "While wearing this helm, you can use a bonus action to mentally create a tiny flame just above your head. The flame sheds bright light in a 15-foot radius and dim light for an additional 15 feet. While the flame persists, you can use an action to mentally expand or reduce its radius of bright and dim light by 5 feet each, to a maximum of 30 feet each or a minimum of 10 feet each. The flame remains until you use a bonus action to extinguish it, until you remove the helm, or you're {@condition incapacitated}."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Candleflame-Helm.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Candy Xorn",
+      "source": "GriffonsSaddlebag2",
+      "page": 56,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "Candy xorn is a round, waxy candy that typically comes in small bags of {@dice 2d6 + 3} pieces. Each piece is traditionally either orange or yellow, but always has a narrow, reptilian pupil drawn at its center. Eating a candy xorn causes your eyes to turn orange or yellow (your choice), and your pupils to match the ones found on the piece of candy. After 1 minute, the effect ends and your eyes return to normal.",
+        "In addition, each piece of candy xorn has a {@chance 5|5 percent} chance to not be candy at all, but actually a gemstone covered in the sugared coating. When you find a gemstone in this way, it can be either {@item eye agate|DMG} (40%, 10 gp), {@item tiger eye|DMG|tiger's eye} (40%, 10 gp), or {@item amber|DMG} (20%, 100 gp)."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Candy-Xorn.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Celestial Sunrise (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 57,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item celestial sunrise|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that causes light to pour from your mouth for 1 hour after you drink it. The light shines in a cone from your mouth, casting bright light for 20 feet and dim light for an additional 20 feet. The potion glows softly on its own, even if no light is shining through it. The beverage is rejuvenating and powerfully flavored with pineapple, orange, and honey, with just a hint of pomegranate as an aftertaste. Due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Celestial-Sunrise.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cleaning Cube",
+      "source": "GriffonsSaddlebag2",
+      "page": 61,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "sentient": true,
+      "entries": [
+        "This Tiny, sentient piece of an enchanted gelatinous cube is harmlessly soapy, instead of acidic, and enjoys cleaning the surfaces it travels across. When found, the {@i cleaning cube} is a dehydrated, 2-inch cube. While dehydrated, the cube is inanimate and its weight is negligible. You can place the dehydrated cube in 1 or more gallons of water as an action, causing it to animate and grow in size to become a 1-foot cube that weighs 6 pounds. The rehydrated cube moves slowly while animated in this way, methodically cleaning objects and surfaces it comes into contact with. The cube remains hydrated for up to 8 hours, but can be squeezed as an action (as if it were a sponge) to dehydrate it again early.",
+        "The {@i cleaning cube} is considered a magical object and is not a creature. It has a speed of 1 foot and can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. It has AC 10, 10 hit points, and resistance to all damage. The cube dehydrates when it drops to 0 hit points, but regains all its hit points when hydrated again.",
+        {
+          "type": "entries",
+          "name": "Sentience",
+          "entries": [
+            "The cleaning cube is a sentient unaligned item with an Intelligence of 1, a Wisdom of 6, and a Charisma of 1. It has hearing and {@sense blindsight} out to a range of 60 feet. It can't speak or read, but obeys your commands as best as it can understand them."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Personality",
+          "entries": [
+            "The cleaning cube is happiest finding and dissolving dirt and other grime, and enjoys the feeling of moving across clean, polished surfaces. It doesn't concern itself with combat, preferring to continue its cleaning instead of involving itself in confrontation. If the cube finds a stray coin, gemstone, or other similar small item out of place while it cleans, it will absorb and clean the item until it's removed by a creature as an action or until it becomes dehydrated once again."
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Cleaning-Cube.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Djinn and Tonic (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 71,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item djinn and tonic|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that causes a magical wind to tussle your hair, cloak, or other clothing dramatically for 1 hour after you drink it. A small mote of mist dances above the potion's liquid and gently stirs it. The beverage is smooth, bubbly, and very refreshing with notes of juniper, elderberries, white peach, and lavender. Due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Djinn-and-Tonic.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dress of Many Pockets",
+      "source": "GriffonsSaddlebag2",
+      "page": 74,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This dress has six pockets that can be magically shown or hidden. While wearing the dress, you can use a bonus action to cause any number of its pockets to appear or vanish from it. The pockets can be located anywhere on the dress, and needn't be in the same place each time they appear. Each pocket is large enough for a small parcel, measuring no more than 4 inches in any dimension and weighing no more than 2 pounds. While a pocket is hidden, its contents are magically moved to the inside of the dress and evenly distributed throughout it so as to not affect its delicate appearance."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Dress-of-Many-Pockets.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Drowner's Pearl",
+      "source": "GriffonsSaddlebag2",
+      "page": 75,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This magic, sickly pearl contains a fragment of life absorbed from a body that sank to the bottom of the sea. While holding this pearl in your mouth, you can survive for 1 additional minute before you suffocate when you run out of breath or begin to choke underwater. Once this property has been used, the pearl turns to dust and is destroyed."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Drowners-Pearl.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Forecaster's Cloak",
+      "source": "GriffonsSaddlebag2",
+      "page": 84,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This warm, fur-lined cloak creates illusory representations of the impending weather. While wearing this cloak, you can use an action to open it and speak its command word to create a harmless, sensory effect within the cloak that represents what the weather will be at your location for the next 8 hours. This effect persists for 1 minute or until you close the cloak."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Forecasters-Cloak.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fortune's Flower",
+      "source": "GriffonsSaddlebag2",
+      "page": 84,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "These magic flowers are said to bring good luck and are often given as gifts at weddings. You can use an action to pull off and drop one of the flower's five petals. When you do, there is a {@chance 5|5 percent} chance that the petal glimmers in a flash of light as a rune is burnt into it, recreating the effects of the {@spell augury|PHB} spell. When it does, {@dice 1d6} new fortune's flowers grow at that petal's location after 30 days if the ground is suited for growth.",
+        "The plant has no seeds and can't be repotted for travel. An unpicked fortune's flower regrows one flower every year. Once picked, the flower can survive up to 7 days before it withers and dies."
+      ],
+      "attachedSpells": [
+        "augury"
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Fortunes-Flower.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Foxfire Charm",
+      "source": "GriffonsSaddlebag2",
+      "page": 85,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This ebony charm is decoratively shaped into a fox's head and is always slightly warm to the touch. It measures 4 inches across and weighs 1/2 pound. If the charm is placed in a sufficiently hot fire, such as in a campfire, forge, or oven that fills up to a 10-foot cube, the charm begins to glow red-hot and creates a harmless, but comfortably warm, fire elemental in an unoccupied space within 5 feet of the fire. The elemental is in the form of a fox and can't move farther than 100 feet from the fire in which its charm is kept. The elemental's singular goal is to supply this fire with fuel. If the fire begins to burn out, the elemental will search the surrounding area for fuel that isn't being worn or carried.",
+        "The fox uses the statistics for a {@creature cat|MM}, except that it's an elemental instead of a beast, is immune to fire and poison damage, and understands {@language Common} and {@language Primordial||Ignan} but can't speak. The elemental has advantage on ability checks to find fuel for its source fire and sheds bright light in a 10-foot radius and dim light for an additional 10 feet. It can carry fuel back to the fire as normal, provided that it's appropriate to the elemental's size. If the elemental drops to 0 hit points, touches fire, or its source fire goes out, it vanishes and the charm grows cold and dark again until it's placed in a new fire."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Foxfire-Charm.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Freerunner's Armor",
+      "type": "GV|DMG",
+      "requires": [
+        {
+          "type": "LA"
+        }
+      ],
+      "inherits": {
+        "namePrefix": "Freerunner's ",
+        "source": "GriffonsSaddlebag2",
+        "page": 85,
+        "tier": "minor",
+        "rarity": "common",
+        "entries": [
+          "While wearing this armor, you feel light on your feet and agile. When you make a {@quickref long jump|PHB|4} onto or alongside a wall or similar surface that isn't slippery for the first time on your turn, you can move along that wall for the length of the jump during the move. While on that surface, you can make a second jump, provided you have the movement to do so."
+        ],
+        "lootTables": [
+          "Magic Item Table A2|GriffonsSaddlebag2"
+        ],
+        "fluff": {
+          "images": [
+            {
+              "type": "image",
+              "href": {
+                "type": "external",
+                "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Freerunners-Armor.webp"
+              }
+            }
+          ]
+        }
+      },
+      "source": "GriffonsSaddlebag2",
+      "page": 85,
+      "tier": "minor",
+      "rarity": "common",
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Freerunners-Armor.webp"
+            }
+          }
+        ]
+      },
+      "entries": [
+        "While wearing this armor, you feel light on your feet and agile. When you make a {@quickref long jump|PHB|4} onto or alongside a wall or similar surface that isn't slippery for the first time on your turn, you can move along that wall for the length of the jump during the move. While on that surface, you can make a second jump, provided you have the movement to do so."
+      ],
+      "variants": [
+        {
+          "base": {
+            "name": "Leather Corslet",
+            "source": "TLotRR",
+            "page": 72,
+            "type": "LA",
+            "rarity": "none",
+            "weight": 10,
+            "value": 450,
+            "currencyConversion": "M-E",
+            "ac": 12,
+            "dexterityMax": 3,
+            "armor": true,
+            "entries": [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ]
+          },
+          "specificVariant": {
+            "name": "Freerunner's Leather Corslet",
+            "source": "GriffonsSaddlebag2",
+            "type": "LA",
+            "rarity": "common",
+            "weight": 10,
+            "currencyConversion": "M-E",
+            "ac": 12,
+            "dexterityMax": 3,
+            "armor": true,
+            "entries": [
+              "A close-fitting shirt of hardened leather with long sleeves."
+            ],
+            "page": 85,
+            "tier": "minor",
+            "lootTables": [
+              "Magic Item Table A2|GriffonsSaddlebag2"
+            ],
+            "fluff": {
+              "images": [
+                {
+                  "type": "image",
+                  "href": {
+                    "type": "external",
+                    "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Freerunners-Armor.webp"
+                  }
+                }
+              ]
+            },
+            "genericVariant": {
+              "name": "Freerunner's Armor",
+              "source": "GriffonsSaddlebag2"
+            }
+          }
+        },
+        {
+          "base": {
+            "name": "Leather Shirt",
+            "source": "TLotRR",
+            "page": 72,
+            "type": "LA",
+            "rarity": "none",
+            "weight": 8,
+            "value": 100,
+            "currencyConversion": "M-E",
+            "ac": 11,
+            "dexterityMax": 4,
+            "armor": true,
+            "entries": [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ]
+          },
+          "specificVariant": {
+            "name": "Freerunner's Leather Shirt",
+            "source": "GriffonsSaddlebag2",
+            "type": "LA",
+            "rarity": "common",
+            "weight": 8,
+            "currencyConversion": "M-E",
+            "ac": 11,
+            "dexterityMax": 4,
+            "armor": true,
+            "entries": [
+              "A lightweight garment of hardened leather, providing some protection to its wearer while allowing for great freedom of movement."
+            ],
+            "page": 85,
+            "tier": "minor",
+            "lootTables": [
+              "Magic Item Table A2|GriffonsSaddlebag2"
+            ],
+            "fluff": {
+              "images": [
+                {
+                  "type": "image",
+                  "href": {
+                    "type": "external",
+                    "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Freerunners-Armor.webp"
+                  }
+                }
+              ]
+            },
+            "genericVariant": {
+              "name": "Freerunner's Armor",
+              "source": "GriffonsSaddlebag2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Griffon Coinpouch",
+      "source": "GriffonsSaddlebag2",
+      "page": 95,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "weight": 1,
+      "entries": [
+        "This stylized purse is sewn and stitched in the style of {@item the griffon's saddlebag|TGS1}, a classic treasure and character from children's stories and legends. The purse is 6 inches across and holds up to 1,000 coins. Coins taken from the purse are miraculously clean and shiny, as if freshly minted. The bag always weighs 1 pound, regardless of the number of coins within it.",
+        "At the GM's discretion, a small slip of parchment can be found folded among the coins inside. The parchment can have anything on it, although it usually carries enigmatic warnings or peculiar words of guidance. The GM can write their own notes, or you can roll a {@dice d8} and consult the table below to determine what the parchment says:",
+        {
+          "type": "table",
+          "colLabels": [
+            "d8",
+            "Message"
+          ],
+          "colStyles": [
+            "col-1-5 text-center",
+            "col-10-5 text-left"
+          ],
+          "rows": [
+            [
+              "1",
+              "Falling rocks play to the rhythm of catastrophe."
+            ],
+            [
+              "2",
+              "Whether or not you succeed, you can certainly try."
+            ],
+            [
+              "3",
+              "Draughts are meant to be drunk."
+            ],
+            [
+              "4",
+              "Strength in numbers."
+            ],
+            [
+              "5",
+              "Acid, fire, and diamonds can solve most problems."
+            ],
+            [
+              "6",
+              "Not all strangers are trustworthy."
+            ],
+            [
+              "7",
+              "Asking for directions is not a sign of weakness."
+            ],
+            [
+              "8",
+              "Keep on adventuring."
+            ]
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Griffon-Coinpouch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Griffon Key Loop",
+      "source": "GriffonsSaddlebag2",
+      "page": 95,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This leather key loop is stylized in the fashion of the legendary {@item the griffon's saddlebag|TGS1|griffon's saddlebag}, a classic motif in children's fiction. You can attach a key to the key loop by holding them together for 1 minute. When you do, the key is shunted into an extradimensional space. You can use an action to speak the key loop's command word, causing one or more of the attached keys to reappear on the loop (your choice). Speaking the command word again causes them to disappear once more. You can have up to 10 keys attached to the key loop in this way at a time, and can remove one by gently pulling on it for 1 minute.",
+        "While holding the key loop, you can touch it to a lock whose key has been attached to the loop. When you do, the lock becomes unlocked or locked (your choice), as if you had used its key. When you shake the key loop, you can faintly hear the sound of its keys jingling."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Griffon-Key-Loop.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hat of Osnomnosis",
+      "source": "GriffonsSaddlebag2",
+      "page": 98,
+      "type": "",
+      "scfType": "arcane",
+      "tier": "minor",
+      "rarity": "common",
+      "reqAttune": "by a wizard",
+      "reqAttuneTags": [
+        {
+          "class": "wizard"
+        }
+      ],
+      "wondrous": true,
+      "sentient": true,
+      "entries": [
+        "This colorful, frumpy hat contains the animated and sentient spirit of a wizard's old pet. While unworn and immobile, it is indistinguishable from a normal hat. When the hat is worn and spoken to or otherwise interacted with, it springs to life and pulls its seams apart to form a stitch-ridden mouth and toothless smile.",
+        "You can use the hat as an arcane focus for your wizard spells while you're wearing it. In addition, you can feed one piece of paper to the hat using an action, destroying the paper. The hat happily accepts any paper it's fed and wiggles about as the page is chewed and swallowed. If you're wearing the hat, you immediately know any information that was contained on the piece of paper as if you had read it. If the paper or its contents were magical, it's immediately spat back out by the hat. If the paper contained a spell, such as a spell scroll or page from another wizard's spellbook, you also take {@damage 1d6} psychic damage for each level of the spell that was transcribed on the paper when it's spat out.",
+        {
+          "type": "entries",
+          "name": "Sentience",
+          "entries": [
+            "The hat of osnomnosis is a sentient chaotic good item with an Intelligence of 4, a Wisdom of 8, and a Charisma of 6. It has hearing and darkvision out to a range of 30 feet. It can't speak or read, but can communicate with you telepathically while you're wearing it. When the hat communicates with you in this way, it can only transmit simple emotions and images. While you are attuned to it, the hat understands every language you know."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Personality",
+          "entries": [
+            "The hat loves nothing more than being worn and eating bits of paper and is easily befriended by creatures who pet it. The hat's button eyes can't move, but it uses its cloth folds to change its expression at will."
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hat-of-Osnomnosis.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Headband of the Sweatless",
+      "source": "GriffonsSaddlebag2",
+      "page": 98,
+      "type": "",
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "These vibrant silk headbands come in a variety of colors and patterns. While wearing the headband, you magically don't get wet when you perspire, but are still naturally cooled as if you had. In addition, the first time you make a Constitution saving throw to resist the effects of extreme heat, add {@dice 1d4} to the total of the roll. This property can't be used again until the next dawn."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Headband-of-the-Sweatless.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hedgewitch's Gardening Cane",
+      "source": "GriffonsSaddlebag2",
+      "page": 101,
+      "baseItem": "quarterstaff|phb",
+      "type": "SCF",
+      "scfType": "arcane",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 4,
+      "weaponCategory": "simple",
+      "property": [
+        "V"
+      ],
+      "dmg1": "1d6",
+      "dmgType": "B",
+      "dmg2": "1d8",
+      "staff": true,
+      "entries": [
+        "This wooden walking stick has a silver flower at either end. The flower is blooming on the handle, but merely a bud towards the bottom. While holding the cane, you can use an action to tap it against the ground and mentally command the bottom portion to magically transform into a broom, a hoe, a rake, a shovel, or back into a normal cane."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hedgewitchs-Gardening-Cane.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inker's Armband",
+      "source": "GriffonsSaddlebag2",
+      "page": 110,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This brushed metal bracelet is lined with a magical black ink. The ink only stains skin and slides harmlessly off of clothing. While wearing the bracelet, you can use a bonus action to cause magical tattoos to appear on the arm that's wearing it. The tattoos remain until you remove the bracelet or use a bonus action to end the effect or change their appearance. These tattoos can either be still or magically animated in a slow loop that repeats every 6 seconds. Regardless of the tattoo, the armband only produces black ink."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Inkers-Armband.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Inspector's Silverware",
+      "source": "GriffonsSaddlebag2",
+      "page": 110,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "charges": 3,
+      "entries": [
+        "This array of polished magic silverware typically comes in sets of three pieces of cutlery: a knife, a spoon, and a fork. Each piece of cutlery has 1 charge. When a piece of cutlery that has a charge comes into contact with a food or drink that's poisonous (either naturally or magically), it loses its charge and immediately begins to tarnish and corrode. A piece of tarnished cutlery regains its expended charge and becomes polished again when a creature holding it is targeted by a {@spell lesser restoration|PHB} spell or similar magic. If a creature is holding multiple pieces of this cutlery when targeted by the spell, only one of them regains an expended charge."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Inspectors-Silverware.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Leatherbeard",
+      "source": "GriffonsSaddlebag2",
+      "page": 114,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This leather mask sits over your mouth and chin and can be worn or removed using an action. While wearing the mask, you grow an illusory beard. You choose the color and style of the beard each time you wear the mask. The beard can be up to 2 feet long. A DC 10 Intelligence ({@skill Investigation}) check reveals the beard is an illusion.",
+        "For every 7 consecutive days that pass in which you do not remove the mask, there is a cumulative {@chance 25|25 percent} chance that the beard becomes real. When it does, the mask is destroyed. The real beard doesn't continue to grow unless you can already naturally grow a beard."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Leatherbeard.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Light Sling",
+      "source": "GriffonsSaddlebag2",
+      "page": 115,
+      "baseItem": "sling|phb",
+      "type": "R",
+      "tier": "minor",
+      "rarity": "common",
+      "weaponCategory": "simple",
+      "property": [
+        "A"
+      ],
+      "range": "30/120",
+      "dmg1": "1d4",
+      "dmgType": "B",
+      "entries": [
+        "As an action, you can speak this magic sling's command word and hurl a tiny ball of light at a point or target you can see within 30 feet of you. The ball of light sheds bright light in a 20-foot radius and dim light for an additional 20 feet. On a hit, the ball deals no damage and sticks to the target for up to 1 minute, until the sling is used to hurl another ball of light, or until a creature within reach of the light uses its action to snuff it out (as if snuffing out a candle). If the target is an unwilling creature or an object being worn or carried by one, the creature must also make a DC 10 Dexterity saving throw. On a failed save, the ball sticks to the target for the duration. On a successful save, the ball of light winks out.m"
+      ],
+      "ammoType": "sling bullet|phb",
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Light-Sling.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Magnificent Pocket Vanity",
+      "source": "GriffonsSaddlebag2",
+      "page": 118,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "charges": 3,
+      "entries": [
+        "This palm-sized brass device contains enough magical makeup for 3 uses. A creature holding the vanity can use an action to expend 1 of its uses to apply the makeup to itself or another willing creature within reach, at which point the creature's appearance magically changes to one of the following forms, as if by the {@spell disguise self|PHB} spell (save DC 13). This version of the spell can visually alter a creature's height by up to 5 feet, although the creature's size does not change, and you roll on the table below to determine which random appearance the creature assumes:",
+        {
+          "type": "table",
+          "colLabels": [
+            "d6",
+            "Random Appearance"
+          ],
+          "colStyles": [
+            "col-2 text-center",
+            "col-10 text-left"
+          ],
+          "rows": [
+            [
+              "1",
+              "A hunched-over elderly gnomish woman with graying hair, missing teeth, and wearing a ragged, faded dress."
+            ],
+            [
+              "2",
+              "An intimidating half-orc man with deep green skin, black hair pulled back in a bun, and battle-worn hide armor."
+            ],
+            [
+              "3",
+              "A regal and androgynous elf with a tan complexion and golden hair wearing fine leathers and a shimmering cape of red and silver."
+            ],
+            [
+              "4",
+              "A dust-covered human boy of no more than 13 years with messy blonde hair wearing a flimsy cap and half-torn overalls."
+            ],
+            [
+              "5",
+              "A strikingly red tiefling woman with white hair wearing silver plate armor and wielding a polished longsword."
+            ],
+            [
+              "6",
+              "A bald, dwarven man with a peg leg and scarcovered face wearing the garb of a well-traveled sailor."
+            ]
+          ]
+        },
+        "When the last use of the makeup has been used, the vanity and its makeup become nonmagical."
+      ],
+      "attachedSpells": [
+        "disguise self"
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Magnificent-Pocket-Vanity.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Masks of the Sacred Beasts (Crocodile)",
+      "source": "GriffonsSaddlebag2",
+      "page": 120,
+      "tier": "major",
+      "rarity": "common",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "These dark ceramic and gold masks are fashioned after animals that are sacred in certain cultures. Each mask's appearance and properties are based on the sacred beast it represents. While attuned to a mask, you can end your attunement to it and attune to a different one over the course of 1 minute, instead of over the course of one or more short rests.",
+        "While wearing a crocodile mask, you gain a swimming speed of 30 feet and can hold your breath for up to 10 minutes at a time."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Masks-of-the-Sacred-Beasts.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oaken Candle",
+      "source": "GriffonsSaddlebag2",
+      "page": 130,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This magic, bark-like candle emits a green flame when burned, which sheds bright light in a 5-foot radius and dim light for an additional 5 feet. You can light the candle as an action. After burning for {@dice 1d8 + 4} hours, the candle is destroyed and an oak tree no more than 30 feet tall grows in its place over the course of 10 minutes. If there isn't enough room for a tree to grow or the candle isn't placed on solid ground, the candle is destroyed without creating a tree."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Oaken-Candle.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Orb of Remembrance",
+      "source": "GriffonsSaddlebag2",
+      "page": 132,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "weight": 0.5,
+      "entries": [
+        "This glassy orb is 3 inches in diameter, weighs 1/2 pound, and is wrapped in a golden wire cage. Strange, wispy smoke drifts around inside the orb, creating cloud-like shapes that are almost recognizable as reallife objects.",
+        "While holding the orb, you can use an action to speak its command word, priming the orb and causing the smoke inside to restlessly billow and swirl. You can gently squeeze the primed orb (no action required) to cause it to record that moment in time around you. When you do, the glassy sphere becomes perfectly clear over the course of 1 minute and reveals an exact duplicate of the area around you in up to a 30-foot radius as a miniature, illusory diorama inside it. While holding the orb, the scene inside soundlessly replays the next 6 seconds following the diorama's capture.",
+        "An orb remains primed for 1 minute or until used to capture a diorama. Touching a primed orb of remembrance to one that already has a diorama creates a duplicate of the diorama in the primed orb. Speaking the command word again while shaking the orb causes the diorama inside to disappear into smoke, allowing it to be primed once more."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orb-of-Remembrance.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Orostead Iced Tea (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 133,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item Orostead iced tea|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that creates harmless sensory effects with each sip. When made, a tea has enough for {@dice 6 + 1d4} sips before it's used up, instead of a single use. You can take a sip as an action. When you drink this potion, roll on the table below to determine which one of the following effects occur:",
+        {
+          "type": "table",
+          "colLabels": [
+            "d8",
+            "Common Effect"
+          ],
+          "colStyles": [
+            "col-1-5 text-center",
+            "col-10-5 text-left"
+          ],
+          "rows": [
+            [
+              "1",
+              "You suddenly become drenched with illusory salt water. After 1 minute, it dries."
+            ],
+            [
+              "2",
+              "You're suddenly overwhelmingly warm ({@chance 50|50%}) or cold ({@chance 50|50%}) for 1 minute."
+            ],
+            [
+              "3",
+              "You remain frozen in place for 1 second, as if briefly removed from time."
+            ],
+            [
+              "4",
+              "You gain the effect of the {@spell speak with animals} spell for 1 minute."
+            ],
+            [
+              "5",
+              "You suddenly teleport 5 feet into an unoccupied space next to you."
+            ],
+            [
+              "6",
+              "Any clothing you wear becomes various shades of gray for 1 minute."
+            ],
+            [
+              "7",
+              "Static charge builds up on you. Touching or being touched by anything for the next minute causes a sharp shock of electricity to leap between you."
+            ],
+            [
+              "8",
+              "Your skin, hair, and eye colors are inverted. In addition, roll a {@dice d12}. You grow or shrink a number of inches equal to the result of the die, shrinking by odd numbers or growing by even ones. After 1 minute, your appearance returns to normal."
+            ]
+          ]
+        },
+        "The drink is incredibly refreshing with notes of lemon, tea, and cherry, and has virtually no alcoholic bite to it. Regardless, due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage."
+      ],
+      "attachedSpells": [
+        "speak with animals"
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Orostead-Iced-Tea.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Performer's Puppet",
+      "source": "GriffonsSaddlebag2",
+      "page": 135,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This simple puppet is a favorite among street performers and traveling thespians. While wearing the puppet on your hand, you can use a bonus action to change the style, color, and shape of the puppet's clothing and face. The material is always made of a colored canvas, but its eyes, stitching, and other descriptive details can change when using this property. In addition, while wearing the puppet on your hand and holding it aloft, your voice originates from the puppet instead of you."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Performers-Puppet.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Periscope Rod",
+      "source": "GriffonsSaddlebag2",
+      "page": 135,
+      "type": "RD|DMG",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "This silver rod is 1 foot long and is polished to a mirror finish. Its two ends are bent in different directions and are emblazoned with the symbol of an eye. While holding the rod, you can speak its command word as either an action or as part of making a Wisdom ({@skill Perception}) check, placing your eye against one of the rod's ends. When you do, you can magically see through the rod and outside the far end as if the rod were a spyglass. While looking through the rod in this way, you can use a bonus action to mentally control the angle of the rod's ends, as well as its length. The rod can grow up to 5 feet long in this way, and returns to its normal size when your remove your eye from it."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Periscope-Rod.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Poltergeist Candle Holder",
+      "source": "GriffonsSaddlebag2",
+      "page": 139,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This pewter candle holder makes your hand feel slightly numb while holding it. While holding it, you can use a bonus action to speak its command word to cause the candle holder to magically hover just above your shoulder. The holder floats back to the ground if anything other than a candle is placed on it. In addition, any candle in the holder releases a thin wisp of smoke while lit. The smoke hangs motionless in the air, regardless of wind, and dissipates after 6 seconds."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Poltergeist-Candle-Holder.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Prism Glasses",
+      "source": "GriffonsSaddlebag2",
+      "page": 139,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This pair of magical glasses fits snugly against your face without needing to rest over your ears. The lenses are made using miniscule prisms that amplify color in dim conditions. If you have {@sense darkvision} while wearing these glasses, you perceive color for the first 15 feet you see in darkness, instead of shades of gray. In addition, a colorblind creature wearing these glasses can perceive color normally."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Prism-Glasses.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redsmith Crucible Set",
+      "source": "GriffonsSaddlebag2",
+      "page": 144,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This set of magic {@item smith's tools|PHB} from the dwarven Redsmith family includes a stone crucible that's been enchanted with minor transmutation magic. If you are proficient with {@item smith's tools|PHB} or are a dwarf, you can use an action to speak the tools' command word and lower a nonmagical weapon made of metal into the crucible and hold it there for 10 minutes. At the end of that time, make a DC 10 Strength check using the {@item smith's tools|PHB}. On a success, the weapon is magically reforged. A reforged weapon counts as magical, and when you pull the reforged weapon from the crucible, you can change it into another type of weapon that shares the same properties as the original one. For example, a {@item light hammer|PHB} could become a {@item handaxe|PHB}, or a {@item longsword|PHB} could become a {@item warhammer|PHB}. These benefits last for 24 hours, at which point the weapon becomes nonmagical once more and returns to its original form.",
+        "Once this property of the tools has been used, it can't be used again for 24 hours. In the meantime, the tools can still be used as magic {@item smith's tools|PHB}."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Redsmith-Crucible-Set.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Redsmith Hammer",
+      "source": "GriffonsSaddlebag2",
+      "page": 144,
+      "baseItem": "light hammer|phb",
+      "type": "M",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 2,
+      "weaponCategory": "simple",
+      "property": [
+        "L",
+        "T"
+      ],
+      "range": "20/60",
+      "dmg1": "1d4",
+      "dmgType": "B",
+      "entries": [
+        "This dwarven smithing hammer has runes running from end to end. When beaten against an anvil, the runes around the hammer glow a bright red and emanate heat, allowing a blacksmith to use the hammer to mold weapons and armor using only the hammer and anvil."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Redsmith-Hammer.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rod of Endless Light",
+      "source": "GriffonsSaddlebag2",
+      "page": 149,
+      "type": "RD|DMG",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "While holding this rod, you can use an action to speak its command word. When you do, the rod sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light remains for 1 hour or until you use an action speak the rod's command word again while holding it. For the duration, you can use a bonus action to mentally change the color of the light while holding the rod."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rod-of-Endless-Light.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rope Caster",
+      "source": "GriffonsSaddlebag2",
+      "page": 152,
+      "baseItem": "hand crossbow|phb",
+      "type": "R",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 3,
+      "weaponCategory": "martial",
+      "property": [
+        "A",
+        "L",
+        "LD"
+      ],
+      "range": "30/120",
+      "entries": [
+        "This magic weapon is a favorite among infiltrators. Its firing mechanism has no string, unlike other crossbows. Instead, this weapon can only be loaded with {@item hempen rope (50 feet)|PHB|rope}. As a bonus action, you can load a length of rope into the crossbow. When you do, individual strands from the rope magically latch onto the weapon's limbs and pull the mechanism taut. You can make a ranged attack with the crossbow to fire the rope at a willing creature or an object within range that isn't being worn or carried. If it hits, the target takes no damage from the attack but is bound by the rope. If the rope is long enough, it magically wraps around the target in a single loop and securely ties itself, leaving the remaining rope to hang from the knot. If the target is a willing creature, the rope ties itself around the creature's chest or waist as a harness but does not restrain them. If the attack hits an unwilling creature, the rope falls harmlessly to the ground without being tied.",
+        "A creature can use its action to make a DC 10 Strength or Dexterity check, releasing a bound object within its reach on a success."
+      ],
+      "ammoType": "hempen rope (50 feet)|phb|rope",
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rope-Caster.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rose Quartz Koi",
+      "source": "GriffonsSaddlebag2",
+      "page": 152,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This Tiny crystalline sculpture of a fish weighs 2 pounds and looks miraculously lifelike. When you place or release the sculpture at a point underwater, it comes to life and swims around in a 5-foot-cube centered on that point. If placed in a container of salt water that's no larger than 5 feet on a side, the water inside becomes fresh after 10 minutes. You can use an Action to recapture the swimming sculpture."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Rose-Quartz-Koi.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shifter's Shine (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 160,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item shifter's shine|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that causes your face to appear more glamorous. For 1 hour after drinking this potion, your skin's complexion clears, appears healthier, and grows more taut. Your face, while largely unchanged, is distinctly more attractive and exudes a weak aura of enchantment magic. When you make a Charisma check while under the effects of this potion, you can choose to forgo rolling the {@dice d20} to get a 10 on the die. Once you use this property, you can't use it again for the remainder of the potion's duration. The potion is a rich honey color and swirls lazily around, regardless of how it's handled. It can be found in any sort of vessel, though it is usually found in glass jars. The eye of a shapeshifter drifts along the potion's bottom, making it a daunting beverage for the average taverngoer to order. It has an extremely strong alcoholic taste with a hint of caramel. Due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shifters-Shine.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shimmering Spectacles",
+      "source": "GriffonsSaddlebag2",
+      "page": 160,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "While wearing these glasses, you can use a bonus action to cause them to briefly shine. When you do, the glasses cast bright light in a 5-foot radius and obscure your eyes until the end of your turn."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shimmering-Spectacles.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shipwright's Watch",
+      "source": "GriffonsSaddlebag2",
+      "page": 160,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This glimmering spyglass is actually coated in a fine layer of fool's gold. While peering through the spyglass, you can rotate a ring at the front of the telescope to toggle between looking directly ahead of you or directly behind you, as if you were turned around."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Shipwrights-Watch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silver Coin of Duvra",
+      "source": "GriffonsSaddlebag2",
+      "page": 161,
+      "tier": "minor",
+      "rarity": "common",
+      "reqAttune": true,
+      "wondrous": true,
+      "entries": [
+        "This silver coin is embossed with the trickster dragon Duvra on one side (heads), and a sailing ship on the other (tails). Whenever you or another creature you can see flips this coin, you can control whether it lands heads, tails, or on its side."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Silver-Coin-of-Duvra.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Silver Star Cane",
+      "source": "GriffonsSaddlebag2",
+      "page": 161,
+      "baseItem": "rapier|phb",
+      "type": "M",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 2,
+      "weaponCategory": "martial",
+      "property": [
+        "F"
+      ],
+      "dmg1": "1d8",
+      "dmgType": "P",
+      "entries": [
+        "This magic rapier is indistinguishable from a cane while stowed in its leather-wrapped wooden sheath. You can press a button on top of the cane to extend its handle upward (no action required), revealing a more comfortable grip with which to wield it. The rapier is adorned with eight pearls in the form of a heavenly constellation. When you draw the weapon, the pearls shed bright light in a line 5 feet long and 1 inch wide until the end of your turn. The line always points north."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Silver-Star-Cane.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Sleepytime Sheep Stuffy",
+      "source": "GriffonsSaddlebag2",
+      "page": 164,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This small, soft stuffed sheep toy is 6 inches from head to tail and smells like lavender. A willing creature holding the stuffy can use an action to speak its command word to immediately fall asleep. This property can't be used again for 8 hours."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Sleepytime-Sheep-Stuffy.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Snow Rider's Sleigh",
+      "source": "GriffonsSaddlebag2",
+      "page": 164,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This magic sled moves effortlessly over land as if it were covered in fresh snow and sends small flurries of illusory snowflakes behind it as it travels."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Snow-Riders-Sleigh.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stalwart Staff",
+      "source": "GriffonsSaddlebag2",
+      "page": 170,
+      "baseItem": "quarterstaff|phb",
+      "tier": "minor",
+      "rarity": "common",
+      "weight": 4,
+      "weaponCategory": "simple",
+      "property": [
+        "V"
+      ],
+      "dmg1": "1d6",
+      "dmgType": "B",
+      "dmg2": "1d8",
+      "staff": true,
+      "entries": [
+        "A carved walking stick with a handle wrapped in worn leather, this magic staff gives you better endurance. While you use this staff as a walking stick while traveling on foot, you have advantage on the first save you make to endure a forced march."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stalwart-Staff.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Status Signets",
+      "source": "GriffonsSaddlebag2",
+      "page": 171,
+      "type": "RG|DMG",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "These silver rings often come in pairs and indicate the well-being of its wearer. If you and another friendly creature you can see are wearing these rings within 100 feet of each other, you are magically aware of the other creature's current number of hit points and condition."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Status-Signets.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Storm Seer Lamp",
+      "source": "GriffonsSaddlebag2",
+      "page": 172,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This crystal lantern gives off a faint, refreshing smell that reminds you of being near the ocean. As a bonus action, you can touch the crystal to cause it to glow, casting bright light in a 5- to 20-foot radius and dim light for an additional number of feet equal to the chosen radius. You can alter the radius or cause the light to fade using a bonus action to touch the crystal again. Once the lamp has glowed for a total of 8 hours, it can't be used again in this way until the next dusk.",
+        "In addition, the lamp can detect incoming storms up to 3 hours before they arrive. If an approaching storm would affect the area within 1 mile of the lamp, the crystal's light becomes an eerie, cold gray."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Storm-Seer-Lamp.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Storyteller's Stein",
+      "source": "GriffonsSaddlebag2",
+      "page": 173,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "These steins are enchanted with a clever version of the {@spell prestidigitation} spell that reacts when in the company of a good story. Whenever you tell a story while holding this stein, its lid opens and closes like a mouth to emit sounds and other harmless sensory effects that accompany the tale. For example, if you're telling the story of a thunderstorm at sea, the stein can create the sounds of rumbling thunder and creaking floorboards, or allow you to spew illusory flames after taking a drink from the stein when you tell the story of an ancient red dragon's deadly breath."
+      ],
+      "attachedSpells": [
+        "prestidigitation"
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Storytellers-Stein.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stylist's Circlet",
+      "source": "GriffonsSaddlebag2",
+      "page": 173,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "While wearing this leather circlet, you can use a bonus action to change your hair's length, color, and styling. When you remove the circlet, your hair returns to its natural appearance. Your hair can grow up to 5 feet long in this way, and any hair you cut off immediately vanishes."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Stylists-Circlet.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tea Weird",
+      "source": "GriffonsSaddlebag2",
+      "page": 174,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "sentient": true,
+      "entries": [
+        "This Tiny, sentient fragment of a charmed water elemental has an endless desire to create tea. When given a leaf or other potential tea ingredient, its watery form gurgles happily as it begins to steep it, magically heating the water surrounding the ingredient to its ideal brewing temperature. It only picks up materials it chooses to and can control whether or not it's wet to the touch. The tea weird can inhabit up to 1 gallon of water, or as little as 1 ounce. Any water controlled by the tea weird is magical for the duration.",
+        "The tea weird is considered a magical object and is not a creature. It has a speed of 5 feet and can hover up to 5 feet off the ground. It has AC 10, 10 hit points, and has resistance to all damage. The tea weird regains all its hit points if given at least 1 ounce of water. Drinking the entire tea weird is harmless to you, but destroys the item.",
+        {
+          "type": "entries",
+          "name": "Sentience",
+          "entries": [
+            "The tea weird is a sentient chaotic good item with an Intelligence of 3, a Wisdom of 8, and a Charisma of 6. It has hearing and {@sense darkvision} out to a range of 60 feet. It can't speak or read, but understands {@language Primordial||Aquan} and {@language Common}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Personality",
+          "entries": [
+            "The tea weird is dedicated to making tea. It will happily collect moisture, steep it with fresh ingredients, and then separate itself from the freshly brewed tea by pouring it into a cup or similar vessel. It avoids combat at all costs and enjoys resting in cups, kettles, or the pockets of friendly creatures."
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tea-Weird.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tide Turner",
+      "source": "GriffonsSaddlebag2",
+      "page": 175,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This magical brass timepiece has a pearl from the Lunar Sea at its top and tells you the phase of the moon, time between dawn and dusk, and time between high and low tides while on the Material Plane. Other planes may cause the device's various dials to behave differently. For example, on the Elemental Plane of Water, the tide's dial may spin chaotically, whereas the daytime dial may only move based on your location while on the home plane of fey creatures."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Tide-Turner.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Turtle Brooch",
+      "source": "GriffonsSaddlebag2",
+      "page": 178,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This gold and amber brooch resembles a turtle that's been flipped on its back. While you're wearing it, standing up from being {@condition prone} costs 5 feet less of your movement (to a minimum of 5 feet)."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Turtle-Brooch.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Whispergust Mote",
+      "source": "GriffonsSaddlebag2",
+      "page": 188,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "sentient": true,
+      "entries": [
+        "A whispergust mote is a sentient breath of air typically separated from a larger air elemental. When not {@condition invisible}, its form resembles a dollop of blue whipped cream but is weightless and fluid to the touch. The mote can use an action to become {@condition invisible}, but it typically only does so when it senses danger. When left to its own devices, the mote will gently tousle the hair of passing creatures or flip a fallen leaf. While it is a form that is defined by its wanderlust, it nevertheless enjoys the company and experiences of adventuring parties that travel to new and unique locations. Most owners of a whispergust mote are rarely so bold as to claim ownership of it at all.",
+        "The mote is considered a magical object and is not a creature. It has a flying speed of 20 feet and can hover. It has AC 10, 5 hit points, and has resistance to all damage. The whispergust mote regains all its hit points if affected by a {@spell gust of wind} spell or similar magic.",
+        {
+          "type": "entries",
+          "name": "Sentience",
+          "entries": [
+            "The whispergust mote is a sentient chaotic good item with an Intelligence of 1, a Wisdom of 8, and a Charisma of 7. It has hearing and darkvision out to a range of 60 feet. It can't speak or read, but understands {@language Primordial||Auran} and {@language Common}."
+          ]
+        },
+        {
+          "type": "entries",
+          "name": "Personality",
+          "entries": [
+            "The whispergust mote ultimately travels where it wants to go, but knows that companionship is often worth the limitations that come with it. In even the most dull of places, the mote will find ways to entertain itself—often to the panic or frustration of the creatures it travels with."
+          ]
+        }
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Whispergust-Mote.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Widemouth Bucket",
+      "source": "GriffonsSaddlebag2",
+      "page": 189,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "weight": 3,
+      "entries": [
+        "This brass bucket in the shape of a fish's open mouth is 12-inches across and tall and weighs 3 pounds while it isn't filled. The bucket can hold up to 10 gallons of liquid, even though it appears to hold only 1. Regardless of how much liquid is inside, the bucket's weight is only increased by the weight of up to 1 gallon of the liquid."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Widemouth-Bucket.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Williwig's Time Stopper",
+      "source": "GriffonsSaddlebag2",
+      "page": 190,
+      "tier": "minor",
+      "rarity": "common",
+      "wondrous": true,
+      "entries": [
+        "This magic bottle stopper's base is made of a mixture of cork and metal, but a stony, gargoyle figurine with a bored expression rests atop it. You can seal or unseal a bottle, flask, jar, waterskin, or similar container with the stopper as an action. When you do, the stopper magically resizes to fit the container's opening (up to 6 inches in diameter). While a container is stoppered in this way, any nonliving liquid inside it doesn't age, decay, rot, or spoil. If the container has a tap or similar means of dispensing the liquid without unstoppering it (such as a keg), the effect on the liquid ends once it leaves the vessel."
+      ],
+      "lootTables": [
+        "Magic Item Table A2|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Williwigs-Time-Stopper.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "Wispy Sour (Common)",
+      "source": "GriffonsSaddlebag2",
+      "page": 192,
+      "type": "P",
+      "tier": "minor",
+      "rarity": "common",
+      "entries": [
+        "The typical {@item wispy sour|GriffonsSaddlebag2}, a common potion, is a specialty alcoholic beverage that causes you to float harmlessly off the floor. When you drink this potion, you gain a flying speed of 10 feet for 1 minute, but can only hover 1 foot above the ground when doing so. The drink is smooth, sweet, and has a slight aftertaste of ash. A tiny, single light from the dancing lights spell is often cast within the drink when served. Due to its magical nature, the alcohol within this potion affects a creature twice as much as the alcohol within a nonmagical beverage."
+      ],
+      "lootTables": [
+        "Magic Item Table A1|GriffonsSaddlebag2"
+      ],
+      "fluff": {
+        "images": [
+          {
+            "type": "image",
+            "href": {
+              "type": "external",
+              "url": "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Wispy-Sour.webp"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

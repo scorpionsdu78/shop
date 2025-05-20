@@ -1,0 +1,579 @@
+{
+  item: [
+    {
+      name: "Arista, Wand of the Spire",
+      source: "GriffonsSaddlebag2",
+      page: 196,
+      type: "WD|DMG",
+      tier: "major",
+      rarity: "artifact",
+      reqAttune: "by a spellcaster",
+      reqAttuneTags: [
+        {
+          spellcasting: true
+        }
+      ],
+      bonusSpellAttack: "+3",
+      bonusSavingThrow: "+3",
+      recharge: "dawn",
+      rechargeAmount: 7,
+      charges: 7,
+      entries: [
+        "This elegant silver and gold wand was crafted by the archmages that first arrived in Orostead centuries ago, well before the magical fallout of the Upheaval. It has been carefully used by only the extremely powerful or clever for generations. The wand has 7 charges for some of the following properties. It regains all expended charges daily at dawn. If you expend the wand's last charge and are not a wizard, roll a {@dice d20}. On a 1, the wand vanishes and returns to a secret vault within The Spire of Aristaeus, the legendary wizarding tower in Orostead.",
+        {
+          type: "entries",
+          name: "Variant Properties",
+          entries: [
+            "Some properties of this artifact are locked behind layers of dormant magic. As you grow stronger and reach certain milestones, these properties may become available to you. This wand can have up to 3 of the following properties active at a time. When you attune to {@i Arista}, you can choose to activate up to 3 of its variant properties whose prerequisites you meet. Whenever you finish a long rest, you can replace any of the activated properties with another one.",
+            {
+              type: "list",
+              items: [
+                "While holding the wand, you can use an action to cast one of the following spells from it, using your spell save DC: {@spell create or destroy water|PHB}, {@spell tenser's floating disk|PHB|floating disk}, {@spell fog cloud|PHB}, {@spell gaseous form|PHB}, {@spell identify|PHB}, or {@spell sanctuary|PHB}. Once the wand has been used to cast a spell, it can't be used to cast that spell again until the next dawn.",
+                "While holding the wand, you can use an action to expend 1 of its charges to cast the {@spell magic missile|PHB} spell. When you reach 9th level, this spell is cast at 2nd level instead, and is cast at 3rd level once you reach 13th.",
+                "{@i (Prerequisite: 5th level)} You gain a +1 bonus to spell attack rolls and spell save DC. This bonus increases to +2 when you reach 9th level, and +3 when you each 17th.",
+                "{@i (Prerequisite: 5th-level wizard)} While holding the wand, you can use an action to cast the {@spell unseen servant} spell.",
+                "{@i (Prerequisite: 9th level)} While holding the wand, you can use an action to expend 2 of its charges to create one of the following effects, using your spell save DC:",
+                {
+                  type: "list",
+                  style: "list-no-bullets",
+                  items: [
+                    {
+                      type: "entries",
+                      name: "Drilling Gust",
+                      entries: [
+                        "You harness the ever-present winds of Lake Ils and tighten them into a magic, twisting spear. The spear flies from the wand and forms a line 60 feet long and 5 feet wide, piercing through any creature in the area. Each creature in the line must make a Constitution saving throw. On a failed save, a creature takes {@damage 3d6} piercing damage and {@damage 3d6} cold damage and is pushed 15 feet away from you. If a creature fails the saving throw by 5 or more, it is also knocked {@condition prone}. On a successful save, a creature takes half as much damage from the effect and isn't pushed."
+                      ]
+                    },
+                    {
+                      type: "entries",
+                      name: "Siphoning Vortex",
+                      entries: [
+                        "You conjure the strange undercurrents of Lake Ils and create a magical whirlpool in a 15-foot-radius circle at a point on the ground you can see within 60 feet of you. Each creature in the area must succeed on a Strength saving throw. On a failed save, a creature takes {@damage 4d6} bludgeoning damage and is pulled up to 10 feet toward the point. If a creature fails the saving throw by 5 or more, it is also knocked {@condition prone} and spends its action on its next turn coughing and sputtering water. On a successful save, a creature takes half as much bludgeoning damage and isn't pulled. The water spreads out across the ground, extinguishing unprotected flames in its area, and then it vanishes."
+                      ]
+                    }
+                  ]
+                },
+                "{@i (Prerequisite: 9th-level wizard)} While holding the wand, you can expend 3 of its charges to cast the {@spell banishment|PHB} spell, using your spell save DC. In addition, you are always under the effects of the see {@spell invisibility|PHB} spell.",
+                "{@i (Prerequisite: 13th level)} While holding the wand, you gain {@sense truesight} out to a range of 10 feet.",
+                "{@i (Prerequisite: 13th-level wizard)} While holding the wand, you can use an action to expend 1 or more of its charges to cast one of the following spells, using your spell save DC: {@spell nystul's magic aura|PHB|arcanist's magic aura} (1 charge), {@spell dimension door|PHB} (2 charges), {@spell etherealness|PHB} (5 charges), {@spell fog cloud|PHB} (4 charges; 1 mile-radius sphere that remains for the duration of the spell), {@spell guards and wards|PHB} (4 charges), {@spell Mordenkainen's Private Sanctum|PHB|private sanctum} (2 charges), {@spell teleport|PHB} (5 charges).",
+                "{@i (Prerequisite: 20th-level wizard)} You gain the benefits of all of this wand's variant properties."
+              ]
+            }
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying Arista",
+          entries: [
+            "The only way to destroy {@i Arista, Wand of the Spire} is to leave it in an {@spell antimagic field|PHB} on the Ethereal Plane for 100 years, at which point it finally succumbs and becomes nonmagical, allowing it to be easily snapped in two."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "banishment",
+        "create or destroy water",
+        "dimension door",
+        "etherealness",
+        "fog cloud",
+        "gaseous form",
+        "identify",
+        "invisibility",
+        "magic missile",
+        "mordenkainen's private sanctum",
+        "nystul's magic aura",
+        "sanctuary",
+        "tenser's floating disk",
+        "teleport",
+        "unseen servant"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Arista-Wand-of-the-Spire.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Hatred, the Wrathful Edge",
+      source: "GriffonsSaddlebag2",
+      page: 197,
+      baseItem: "greataxe|phb",
+      type: "M",
+      tier: "major",
+      rarity: "artifact",
+      reqAttune: "by a creature the axe deems worthy",
+      sentient: true,
+      weight: 7,
+      weaponCategory: "martial",
+      property: [
+        "H",
+        "2H"
+      ],
+      dmg1: "1d12",
+      dmgType: "S",
+      bonusWeapon: "+3",
+      entries: [
+        "This black iron axe was forged in the scorching fires of the Magmarath Caldera and has been the decisive end for countless mortal souls. Used as the mark of a Tribunal in the caldera's city, the weapon is an embodiment of anger and spite, and has been enchanted with blood magic that bubbles to the surface each time it's used to end a life. Glimmering veins of lava flicker from its dark metal surface, and roiling, volcanic sparks trail behind it in its wake when swung.",
+        "You gain a +3 bonus to attack and damage rolls made with this magic weapon, which deals an extra {@damage 2d6} fire or lightning damage (your choice) to any target it hits. When you reduce a living creature to 0 hit points using this weapon, you gain a number of temporary hit points equal to the fire or lightning damage dealt as part of the attack.",
+        {
+          type: "entries",
+          name: "Explosive Rage",
+          entries: [
+            "If you're a barbarian, the first time you enter a rage after finishing a short or long rest, up to 6 creatures of your choice within 10 feet of you take {@damage 4d6} fire or lightning damage (your choice). In addition, while raging, any creature that touches you or hits you with a melee attack while within 5 feet of you takes {@damage 1d6} fire or lightning damage (your choice)."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Fiendish Mind",
+          entries: [
+            "You can speak, read, and write {@language Abyssal} and {@language Infernal} while attuned to this weapon."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Random Properties",
+          entries: [
+            "Hatred, the Wrathful Edge has the following random properties:",
+            {
+              type: "list",
+              items: [
+                "1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+                "1 {@table Artifact Properties; Major Beneficial Properties|dmg|major beneficial property}",
+                "1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}",
+                "1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+              ]
+            }
+          ]
+        },
+        {
+          type: "entries",
+          name: "Volcanic Immunity",
+          entries: [
+            "You are immune to fire damage while attuned to this weapon. In addition, you can stand on and walk across molten rock as if it were solid ground."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Sentience",
+          entries: [
+            "Hatred, the Wrathful Edge is a sentient chaotic evil weapon with an Intelligence of 14, a Wisdom of 13, and a Charisma of 17. It has hearing and {@sense darkvision} out to a range of 120 feet.",
+            "The weapon communicates telepathically with its wielder and can speak, read, and understand {@language Abyssal}, {@language Common} and {@language Infernal}."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Personality",
+          entries: [
+            "The weapon enjoys the sensation of anger. It sees all conflict eventually reaching the same violent conclusion, and encourages its wielder to seek out such hasty and bloody resolutions."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying the Axe",
+          entries: [
+            "The only way to destroy the axe is to dispel the malevolent spirit within it over time from the Upper Planes. Casting {@spell dispel evil and good} on the weapon every day for 5 years while on an Upper Plane causes the wrathful spirit within it to eventually succumb and perish. When the spirit leaves the axe, it loses all of its properties except for its bonus to attack and damage rolls, but becomes no harder to destroy than a normal magic weapon."
+          ]
+        }
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Hatred-The-Wrathful-Edge.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Morath, Scepter of the Soul Vortex",
+      source: "GriffonsSaddlebag2",
+      page: 198,
+      type: "RD|DMG",
+      scfType: "arcane",
+      resist: [
+        "necrotic"
+      ],
+      tier: "major",
+      rarity: "artifact",
+      reqAttune: "by a sorcerer, warlock, or wizard",
+      reqAttuneTags: [
+        {
+          class: "sorcerer"
+        },
+        {
+          class: "warlock"
+        },
+        {
+          class: "wizard"
+        }
+      ],
+      sentient: true,
+      bonusSpellAttack: "+3",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d3 + 1}",
+      charges: 8,
+      entries: [
+        "This torch-like scepter almost hums with necrotic energy and appeared when the first soul was returned to the Material Plane after its death. Since then, it has been lost and found throughout its gruesome, storied history.",
+        "While attuned to the rod, you have resistance to necrotic damage, and you know the {@spell chill touch|PHB} cantrip as if it were from your class's spell list. If you are a warlock, you also gain a +3 bonus to your spell attack rolls and saving throw DCs of your warlock spells while holding the rod.",
+        "An eerie, green flame erupts from the head of this rod when you hold it, shedding bright light in a 20-foot radius and dim light for an additional 20 feet. While holding the rod, you can use a bonus action to mentally snuff out or relight the flames. While the flames are lit, you can use an action to make a ranged spell attack with it, using your spell attack bonus, out to a range of 30 feet. When you do, the flaming rod emits a phantasmal skull that flies out to attack the target. On a hit, the target takes {@damage 3d8} necrotic damage, and if the target is a creature, you regain hit points equal to half the amount of necrotic damage dealt. The skull disappears immediately after the attack.",
+        {
+          type: "entries",
+          name: "Random Properties",
+          entries: [
+            "Morath, the Scepter of the Soul Vertex has the following random properties:",
+            {
+              type: "list",
+              items: [
+                "1 {@table Artifact Properties; Minor Beneficial Properties|dmg|minor beneficial property}",
+                "1 {@table Artifact Properties; Minor Detrimental Properties|dmg|minor detrimental property}",
+                "1 {@table Artifact Properties; Major Detrimental Properties|dmg|major detrimental property}"
+              ]
+            }
+          ]
+        },
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "The rod has 8 charges and regains {@dice 1d3 + 1} expended charges daily at dawn. When you reduce a humanoid to 0 hit points, the rod regains 1 expended charge. While holding the rod, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell attack bonus and spell save DC: {@spell bestow curse|PHB} (1 charge), {@spell circle of death|PHB} (4 charges), {@spell confusion|PHB} (2 charges), {@spell insect plague|PHB} (3 charges), {@spell ray of enfeeblement|PHB} (1 charge), or {@spell speak with dead|PHB} (1 charge)."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Bestow Greater Curse",
+          entries: [
+            "When you cast the {@spell bestow curse|PHB} spell while holding the rod using either the rod or a spell slot, you can choose to force the creature to make the saving throw with disadvantage. On a failed save, the target is simultaneously cursed by all four of the spell's listed options. Once this property has been used, it can't be used again until the next dawn."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Death Grip",
+          entries: [
+            "While holding the rod, you can use an action to cast the {@spell finger of death|PHB} spell from it, using your spell save DC. Once the rod has been used to cast this spell, it can't do so again until the next dawn."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Sentience",
+          entries: [
+            "Morath, Scepter of the Soul Vortex is a sentient chaotic evil rod with an Intelligence of 17, a Wisdom of 13, and Charisma of 14. It has hearing and {@sense darkvision} out to a range of 120 feet. The rod communicates telepathically with its wielder and can speak, read, and understand {@language Common}. While you are attuned to it, it also understands every language you know. It can choose to communicate with other creatures by manifesting the phantasmal skull above the rod and using it to speak."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Personality",
+          entries: [
+            "The rod is possessed by Morath, the first human to ever die, and is an independent spirit from within the Thousand Voices, the largest collection of discordant lost souls found within the multiverse. Morath's time on the Material Plane was short, but filled with pain and confusion. As a result, Morath seeks to experience humankind's most base desires vicariously through the actions of the rod's wielder, often attempting to compel the wielder to give in to such urges in moments of weakness."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Curse",
+          entries: [
+            "The rod bears a curse that affects any non-human that becomes attuned to it. Even if the attunement ends, the curse remains. When you die while cursed in this way, you must make a Charisma saving throw against your own spell save DC. On a failed save, or if the rod is more than 100 feet away from you when you die, your soul is immediately siphoned into and becomes a part of the Thousand Voices, leaving your body a vacant husk and unable to return to life by any means short of a wish spell. On a successful save, your soul leaves your body and enters the rod, as if you had cast the magic jar spell, using the rod as a container. You can only return to your body if it's holding the rod, but can otherwise gain the benefits of the spell as normal. If your soul returns to your body, you return to life with 1 hit point. While your soul is detached from your body in this way, your attunement to the rod is carried over to any other creature you possess for the duration."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying the Scepter",
+          entries: [
+            "The only way to destroy the rod is to destroy Morath while your soul is contained within the rod. When you do, use your original body's statistics and abilities for your soul, with the exception that your hit point maximum is halved. Use the {@creature archmage|MM} stat block for Morath's soul. From outside the rod, this combat resolves instantaneously, regardless of how much time passed within the rod during the battle. If you die while within the rod in this way, your soul is lost to the Thousand Voices. If Morath dies, the rod is destroyed and you return to your body with 1 hit point, regardless of where your body is at the time."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "bestow curse",
+        "chill touch",
+        "circle of death",
+        "finger of death",
+        "confusion",
+        "insect plague",
+        "ray of enfeeblement",
+        "speak with dead"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Morath-Scepter-of-the-Soul-Vortex.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Nimbus, First Staff of the Thunderbirds",
+      source: "GriffonsSaddlebag2",
+      page: 199,
+      baseItem: "quarterstaff|phb",
+      type: "SCF",
+      scfType: "druid",
+      resist: [
+        "cold",
+        "lightning",
+        "thunder"
+      ],
+      tier: "major",
+      rarity: "artifact",
+      reqAttune: true,
+      weight: 4,
+      weaponCategory: "simple",
+      property: [
+        "V"
+      ],
+      dmg1: "1d6",
+      dmgType: "B",
+      dmg2: "1d8",
+      bonusWeapon: "+1",
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 2}",
+      charges: 8,
+      staff: true,
+      entries: [
+        "This ancient staff was created when a piece of driftwood was struck by lightning, fusing it to a twisted length of glass made from the sand on which it laid. Revered by the Rocborne nomads and other worldly travelers, this one-of-a-kind crook carries with it the power of storms, tempests, and the wind spirits that control them. When it appears, it falls from the sky in the eye of a storm or a flash of lightning.",
+        "This staff can be wielded as a magic quarterstaff that grants a +1 bonus to attack and damage rolls made with it. In addition, when you attack with the staff, you can choose to make a special ranged attack with it instead. This attack is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Wisdom modifier to its attack and damage rolls. On a hit, it deals 1d6 bludgeoning damage as a gust of magical wind batters the target.",
+        {
+          type: "entries",
+          name: "Variant Properties",
+          entries: [
+            "Some properties of this artifact are locked behind layers of dormant magic. As you grow stronger and reach certain milestones, these properties may become available to you. This staff can have up to 3 of the following properties active at a time. When you attune to {@i Nimbus}, you can choose to activate up to 3 of its variant properties whose prerequisites you meet. Whenever you finish a long rest, you can replace any of the activated properties with another one.",
+            {
+              type: "list",
+              items: [
+                "The staff can be used as a {@item broom of flying|DMG}.",
+                "{@i (Prerequisite: 5th level)} While holding the staff, you can use a bonus action to cast the {@spell shillelagh|PHB} spell with it.",
+                "{@i (Prerequisite: 5th level druid or ranger)} The staff gains 8 charges and regains {@dice 1d6 + 2} expended charges daily at dawn. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: {@spell create or destroy water} (1 charge), {@spell fog cloud} (1 charge), {@spell misty step} (2 charges), {@spell sleet storm} (3 charges), or {@spell thunderwave} (2nd-level version, 2 charges). If you activate another property that causes the staff to gain charges, the total number of charges and regained charges are cumulative.",
+                "{@i (Prerequisite: 9th level)} Your bonus to attack and damage rolls with this weapon increases to +2, and the special ranged attack's damage die becomes a {@damage d8}. When you reach 17th level, the bonus increases to +3, and the ranged attack's damage die becomes a {@damage d10}.",
+                "{@i (Prerequisite: 9th level)} The first target hit by the staff on each of your turns takes an extra {@damage 1d6} cold, lightning, or thunder damage (your choice).",
+                "{@i (Prerequisite: 13th level druid or ranger)} The staff gains 8 charges and regains {@dice 1d6 + 2} expended charges daily at dawn. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: {@spell lightning bolt} (3 charges), {@spell shatter} (2 charges), {@spell spirit guardians} (3 charges), or {@spell wind wall} (3 charges). If you activate another property that causes the staff to gain charges, the total number of charges and regained charges are cumulative.",
+                "{@i (Prerequisite: 13th level)} While holding the staff, you have resistance to cold, lightning, or thunder damage (your choice). When you finish a long rest, you can change this resistance to a different one.",
+                "{@i (Prerequisite: 17th level)} While holding the staff, you can take the {@action Dash} action as a bonus action on your turn, as wind spirits help usher you forward.",
+                "{@i (Prerequisite: 17th level druid or ranger)} The staff gains 8 charges and regains {@dice 1d6 + 2} expended charges daily at dawn. While holding it, you can use an action to expend 1 or more of its charges to cast one of the following spells from it, using your spell save DC: {@spell chain lightning} (6 charges), {@spell cloudkill} (5 charges), {@spell cone of cold} (5 charges), {@spell control weather} (8 charges), or {@spell fly} (3 charges, or 6 charges to cast at 6th level). If you activate another property that causes the staff to gain charges, the total number of charges and regained charges are cumulative.",
+                "{@i (Prerequisite: 20th level druid or ranger)} You gain the benefits of all of this staff's variant properties. In addition, if you are a ranger, you can summon a {@creature roc|MM} to your location by spending 8 hours performing an ancient Rocborne ritual. The roc is friendly toward you and your companions, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak. Once this property of the staff has been used, it can't be used again until you dismiss the roc using an action or until the roc dies. If the roc dies, this property can't be used again for 30 days."
+              ]
+            }
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying Nimbus",
+          entries: [
+            "The only way to destroy Nimbus, First Staff of the Thunderbirds is to keep it in a vacuum for 10 years, depriving it of any air, at which point the staff cracks open to release the swirling storm inside it. If the force of the released storm causes the vacuum to end, the storm escapes and continues to rage above that location for 1 year."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "chain lightning",
+        "cloudkill",
+        "cone of cold",
+        "control weather",
+        "create or destroy water",
+        "fog cloud",
+        "fly",
+        "lightning bolt",
+        "misty step",
+        "shatter",
+        "shillelagh",
+        "sleet storm",
+        "spirit guardians",
+        "thunderwave",
+        "wind wall"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Nimbus-First-Staff-of-the-Thunderbirds.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "Silverwind, the Cleansing Breeze",
+      source: "GriffonsSaddlebag2",
+      page: 200,
+      baseItem: "longsword|phb",
+      type: "M",
+      tier: "major",
+      rarity: "artifact",
+      weight: 3,
+      weaponCategory: "martial",
+      property: [
+        "F",
+        "V"
+      ],
+      dmg1: "1d8",
+      dmgType: "S",
+      dmg2: "1d10",
+      bonusWeapon: "+1",
+      entries: [
+        "This mighty longsword once belonged to Syre, the fey lord of the now fallen Syre Wood. This ancient blade was used to lead the charge against a legion of invading fiends, and still holds a power over such creatures. You gain a +1 bonus to attack and damage rolls made with this magic weapon, which has the finesse property. When you hit a fiend with an attack using this sword, that creature takes an extra {@damage 1d6} radiant damage.",
+        {
+          type: "entries",
+          name: "Instant Attunement",
+          entries: [
+            "If you pull Silverwind, the Cleansing Breeze from the body of Malfuriel the Betrayer, you are immediately attuned to it. When this happens, you can choose to immediately end your attunement to one of your other magical items, even if it's cursed (as if by the {@spell remove curse} spell or similar magic). If you are already attuned to your maximum number of magic items, you must end your attunement to one of them in this way."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Variant Properties",
+          entries: [
+            "Some properties of this artifact are locked behind layers of dormant magic. As you grow stronger and reach certain milestones, these properties may become available to you. This weapon can have up to 3 of the following properties active at a time. When you attune to {@i Silverwind}, up to the first 3 properties available to you are activated. Whenever you finish a long rest, you can replace any of the activated properties with another one.",
+            {
+              type: "list",
+              items: [
+                "While holding this sword, you can use an action to cast the {@spell dancing lights}, {@spell druidcraft}, or {@spell minor illusion} spell (save DC 13) from the weapon. In addition, when you reach 5th level, you can use a bonus action to cast the {@spell true strike} spell from it.",
+                "{@i (Prerequisite: Fey Ancestry trait or the fey creature type)} You are immune to disease.",
+                "{@i (Prerequisite: 8th level)} Your bonus to attack and damage rolls with this weapon becomes +2, and any fiend hit by it takes an extra {@damage 2d6} radiant damage, instead of {@damage 1d6}. When you reach 14th level, the bonus increases to +3, and any fiend hit by it takes an extra {@damage 3d6} radiant damage instead.",
+                "{@i (Prerequisite: 8th level, Fey Ancestry trait or the fey creature type)} You can use an action to touch a creature and magically know its current emotional state. If the target fails a DC 16 Charisma saving throw, you also know its alignment. Celestials, fiends, and undead automatically fail the saving throw.",
+                "{@i (Prerequisite: 14th level)} While holding this sword, you can use a bonus action to create an illusory copy of yourself in an unoccupied space you can see within 30 feet of you. You choose what direction your copy is facing. The copy mimics your movements and attacks with this sword until the end of your turn, moving forward, turning, and attacking to match your actions relative to its position. The copy can't walk through walls or other solid surfaces. The copy uses your attack and damage rolls for any attack you make with this sword, dealing force damage instead of slashing on a hit. The copy vanishes at the end of your turn. If the copy is in an unoccupied space when it vanishes, you can choose to teleport to its space. Once this property of the sword has been used, it can't be used again until the next dawn.",
+                "{@i (Prerequisite: 14th level, Fey Ancestry trait or the fey creature type)} While this sword is on your person, you can use an action to cast the {@spell disguise self} spell (save DC 16). If you drop the sword, the spell ends.",
+                "{@i (Prerequisite: Slay or help slay Malfuriel the Betrayer or similarly powerful fiend)} When you attack a creature with this weapon and roll a 20 on the attack roll, that target must succeed on a DC 16 Constitution saving throw or be magically {@condition restrained} until the end of your next turn. If the target is a fiend, it's {@condition petrified} until the end of your next turn instead.",
+                "{@i (Prerequisite: 20th level)} You gain the benefits of all of this sword's variant properties, including those whose prerequisites you don't meet."
+              ]
+            }
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying Silverwind",
+          entries: [
+            "The only way to destroy Silverwind, the Cleansing Breeze is to melt it in the fires of the Magmarath Caldera, a raging volcano in the Lower Planes overrun with fiends. It must remain submerged in the magma for 10 years before it succumbs to the fire and is destroyed. When it does, the volcano erupts."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "dancing lights",
+        "disguise self",
+        "druidcraft",
+        "minor illusion",
+        "true strike"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/GriffonsSaddlebag2/Items/Silverwind-the-Cleansing-Breeze.webp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      name: "The Griffon's Saddlebag",
+      source: "GriffonsSaddlebag2",
+      page: 174,
+      tier: "major",
+      rarity: "artifact",
+      wondrous: true,
+      sentient: true,
+      weight: 3,
+      recharge: "dawn",
+      rechargeAmount: "{@dice 1d6 + 2}",
+      charges: 8,
+      entries: [
+        "These leather bags have the stylized face of a griffon on their front and appear across the multiverse in strange locations. One may be found in the belly of a dragon, while another in the limbs of a great tree. Regardless of where it's found, a {@i Griffon's Saddlebag} is typically discovered by an adventurer with a destiny.",
+        "The saddlebags are made by a great, six-armed griffon on the Astral Plane. Believed by some to be a demigod of pocket dimensions and craftsmen everywhere, the griffon is a patron of artificers and creators across the multiverse. The griffon creates magical items in its great forge using materials collected from various planes of existence to add to its collection. While no one knows exactly how to contact the griffon, it has a knack for knowing what items are needed by whom.",
+        {
+          type: "entries",
+          name: "Superior Holding",
+          entries: [
+            "This 1-foot-wide bag always weighs 3 pounds, regardless of what's inside it. It functions as a bag of holding that can only be pierced by another artifact. Placing a {@item bag of holding}, {@item Heward's handy haversack|DMG|handy haversack}, {@item portable hole}, or similar item inside the extradimensional space created by the saddlebag, or vice versa, destroys the extradimensional item but leaves the saddlebag unharmed. Any item stored within the other extradimensional space is magically moved to the space within the saddlebag instead. If doing so overloads the bag, random contents from either space are scattered in the Astral Plane."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Magic Courier",
+          entries: [
+            "At the GM's discretion, the saddlebag's beak opens up to reveal a letter. The magical script can be read by all creatures with an Intelligence score of 4 or higher. The note is a delivery request or similar that includes the name of an item as well as either specific or vague descriptions of a person or place. At the bottom of the letter is a price listed in coins or other form of payment, as well as a date or time depending on its urgency.",
+            "If the saddlebag is brought to the described person or place within the allotted time, it dispenses the magical item into the hand of the appropriate recipient. If the payment isn't received by the bag within 1 hour of dispensing the magic item, the item vanishes and is lost. After receiving the payment for an item in this way, the bag's beak reopens to dispense a reward for the courier."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Sell Magic Items",
+          entries: [
+            "The saddlebag has a connection to the griffon's forge on the Astral Plane. Depending on the magic item, you can sell a magic item to the saddlebag for half the cost of its base price."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Spells",
+          entries: [
+            "The saddlebag has 8 charges and regains {@dice 1d6 + 2} expended charges daily at dawn. While wearing the saddlebag, you can expend 1 or more of its charges to cast the following spells from it: {@spell detect magic} (1 charge), {@spell identify} (1 charge), or {@spell legend lore} (5 charges)."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Additional Spells",
+          entries: [
+            "At the GM's discretion, such as after reaching certain milestones or completing {@i Magic Courier} quests, the saddlebag may offer the following additional spells that can be cast from it: {@spell blink} (3 charges), {@spell dimension door} (4 charges), {@spell divination} (4 charges), {@spell etherealness} (7 charges), {@spell fly} (3 charges), {@spell Mordenkainen's magnificent mansion||magnificent mansion} (7 charges), {@spell plane shift} (7 charges), or {@spell Leomund's secret chest||secret chest} (4 charges)."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Sentience",
+          entries: [
+            "The saddlebag is a sentient chaotic neutral bag with an Intelligence of 13, a Wisdom of 15, and a Charisma of 16. It has hearing and normal vision out to a range of 60 feet.",
+            "The bag can speak, read, and understand {@language Common}. When in the presence of only creatures it trusts, the bag's beak moves when it speaks. Otherwise, the bag communicates telepathically with its wearer. The bag can speak and communicate with griffons."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Personality",
+          entries: [
+            "The bag's purpose is to carry, collect, and deliver magic items. Different bags have different personalities, but they are for the most part largely pleasant to talk to. Their voices are bird-like and are filled with occasional coos and squawks, and their stitched eyes widen, squint, and move expressively.",
+            "If the bag's wearer or allies fail to fulfill Magic Courier quests, it may stop offering its magic to them. If it does, their items may be lost or inaccessible within the bag, or potentially spat out. While the bag provides the names of item recipients and delivery locations, it doesn't know any more information than what was provided to it by the astral griffon. Regardless, it does its best to help its wearer and allies find the specified person or location on the letter."
+          ]
+        },
+        {
+          type: "entries",
+          name: "Destroying the Griffon's Saddlebag",
+          entries: [
+            "While there is no way to permanently destroy the saddlebag, piercing it with an artifact returns it to its place of origin for repair before it's returned to the multiverse in a new location. Placing a {@i Griffon's Saddlebag} inside the extradimensional space created by another {@i Griffon's Saddlebag} returns both items to their place of origin and sends all the items stored within them to the griffon's forge on the Astral Plane."
+          ]
+        }
+      ],
+      attachedSpells: [
+        "detect magic",
+        "identify",
+        "legend lore",
+        "blink",
+        "dimension door",
+        "divination",
+        "etherealness",
+        "fly",
+        "Mordenkainen's magnificent mansion",
+        "plane shift",
+        "Leomund's secret chest"
+      ],
+      fluff: {
+        images: [
+          {
+            type: "image",
+            href: {
+              type: "external",
+              url: "https://raw.githubusercontent.com/TheGiddyLimit/homebrew/master/_img/TGS1/The-Griffons-Saddlebag.webp"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
